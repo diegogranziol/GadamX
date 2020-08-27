@@ -1,0 +1,66 @@
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00000.pt
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+#      train_loss    train_acc    test_loss    test_acc    loss_mean    loss_var    grad_mean_norm_sq    grad_var    hess_mean_norm_sq    hess_var    hess_mu    delta    alpha     time
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+1/1           6.9         0.11          6.9        0.08          6.9        0.15                0.006     2.4e+02              3.1e-07     2.5e-06    6.3e-08  3.1e-07        1  1.5e+05
+Traceback (most recent call last):
+  File "../loss_stats.py", line 203, in <module>
+    args.ckpt[:-val]+name+'_loss_stats_b='+str(args.num_samples),
+TypeError: can only concatenate list (not "str") to list
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00010.pt
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+#      train_loss    train_acc    test_loss    test_acc    loss_mean    loss_var    grad_mean_norm_sq    grad_var    hess_mean_norm_sq    hess_var    hess_mu    delta    alpha     time
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+1/1           1.5           64          2.1          53          7.5         1.7                 0.35     1.9e+02              1.7e-06     3.7e-06    1.5e-07  1.7e-06        1  1.4e+05
+Traceback (most recent call last):
+  File "../loss_stats.py", line 203, in <module>
+    args.ckpt[:-val]+name+'_loss_stats_b='+str(args.num_samples),
+TypeError: can only concatenate list (not "str") to list
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00020.pt
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+#      train_loss    train_acc    test_loss    test_acc    loss_mean    loss_var    grad_mean_norm_sq    grad_var    hess_mean_norm_sq    hess_var    hess_mu    delta    alpha     time
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+1/1           0.9           76          2.1          55          7.6           2                 0.62     3.4e+02              3.5e-06     1.6e-05    3.1e-07  3.5e-06        1  1.4e+05
+Traceback (most recent call last):
+  File "../loss_stats.py", line 203, in <module>
+    args.ckpt[:-val]+name+'_loss_stats_b='+str(args.num_samples),
+TypeError: can only concatenate list (not "str") to list
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00030.pt
+slurmstepd-dgj410: error: *** JOB 450111 ON dgj410 CANCELLED AT 2020-01-27T15:41:15 ***
+slurmstepd-dgj410: error: task_p_post_term: rmdir(/dev/cpuset/slurm_dgj410_450111/slurm450111.4294967294_0) failed Device or resource busy

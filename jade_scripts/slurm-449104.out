@@ -1,0 +1,44 @@
+
+	Python anaconda is now loaded in your environment.
+
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+Using 5000 samples for validation [deterministic split]
+Downloading http://www.image-net.org/image/downsample/Imagenet32_train_npz.zip to /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/imagenet32/Imagenet32_train_npz.zip
+Traceback (most recent call last):
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/tarfile.py", line 1643, in gzopen
+    t = cls.taropen(name, mode, fileobj, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/tarfile.py", line 1619, in taropen
+    return cls(name, mode, fileobj, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/tarfile.py", line 1482, in __init__
+    self.firstmember = self.next()
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/tarfile.py", line 2287, in next
+    tarinfo = self.tarinfo.fromtarfile(self)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/tarfile.py", line 1092, in fromtarfile
+    buf = tarfile.fileobj.read(BLOCKSIZE)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/gzip.py", line 276, in read
+    return self._buffer.read(size)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'PK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "../spectrum.py", line 91, in <module>
+    train_subset_seed=args.subsample_seed,
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 46, in datasets
+    test_set = ds(root=path, train=True, download=True, transform=transform_test)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/imagenet32_old.py", line 64, in __init__
+    self.download()
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/imagenet32_old.py", line 161, in download
+    tar = tarfile.open(os.path.join(root, self.filename), "r:gz")
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/tarfile.py", line 1589, in open
+    return func(name, filemode, fileobj, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/tarfile.py", line 1647, in gzopen
+    raise ReadError("not a gzip file")
+tarfile.ReadError: not a gzip file

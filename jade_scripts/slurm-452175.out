@@ -1,0 +1,39 @@
+numpy imported
+Preparing directory out/ImageNet32/WideResNet28x10/SSGDMN/seed=1_epoch_freq=10_curvaturesize=32_warmstart=-1_mom=0.0_wd=0.0001_numepochs=50/
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+SGD training
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (32) + test (50000)
+Traceback (most recent call last):
+  File "../run_ssgdmn_fastanddirty.py", line 219, in <module>
+    matrix_shape=(num_parametrs, num_parametrs))
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/gpytorch/utils/lanczos.py", line 73, in lanczos_tridiag
+    r_vec = matmul_closure(q_0_vec)
+  File "../run_ssgdmn_fastanddirty.py", line 209, in __call__
+    bn_train_mode = not args.bn_train_mode_off)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 449, in hess_vec
+    for input, target in loader:
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 801, in __next__
+    return self._process_data(data)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 846, in _process_data
+    data.reraise()
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/_utils.py", line 385, in reraise
+    raise self.exc_type(msg)
+IndexError: Caught IndexError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/utils/data/_utils/worker.py", line 178, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/imagenet32_old.py", line 118, in __getitem__
+    img, target = self.train_data[index], self.train_labels[index]
+IndexError: index 32 is out of bounds for axis 0 with size 32
+

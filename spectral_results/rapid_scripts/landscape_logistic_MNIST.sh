@@ -1,0 +1,10 @@
+python3 ../hess_landscape_1d.py --dataset=MNIST --data_path=/nfs/home/dgranziol/kfac-curvature/data/ --model=Logistic --basis_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hessian_1000 --seed=1 --save_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hess_loss_results-d=1.npz --dist=1 
+python3 ../hess_landscape_1d.py --dataset=MNIST --data_path=/nfs/home/dgranziol/kfac-curvature/data/ --model=Logistic --basis_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hessian_1000 --seed=1 --save_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hess_loss_results-d=2.npz --dist=2 
+python3 ../hess_landscape_1d.py --dataset=MNIST --data_path=/nfs/home/dgranziol/kfac-curvature/data/ --model=Logistic --basis_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hessian_1000 --seed=1 --save_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hess_loss_results-d=0p5.npz --dist=0.5 
+python3 ../hess_landscape_1d.py --dataset=MNIST --data_path=/nfs/home/dgranziol/kfac-curvature/data/ --model=Logistic --basis_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hessian_1000 --seed=1 --save_path=/nfs/home/dgranziol/kfac-curvature/out/fullgrad/MNIST/Logistic/SGD/lr=0.03_wd=0.0005/hess_loss_results-d=0p25.npz --dist=0.25 
+
+python3 ../spectrum.py --ckpt /nfs/home/dgranziol/kfac-curvature/out/MNIST/Logistic/SGD/lr=0.1_wd=0.0005/checkpoint-00050.pt --iters 100 --basis --model Logistic --data_path data/ --dataset MNIST
+
+python3 ../spectrum.py --ckpt /nfs/home/dgranziol/kfac-curvature/out/MNIST/Logistic/SGD/ss/lr=0.1_wd=0.0005_size=100_seed=1/checkpoint-00050.pt --iters 100 --basis --model Logistic --data_path data/ --dataset MNIST
+
+python3 ../spectrum.py --ckpt /nfs/home/dgranziol/kfac-curvature/out/MNIST/Logistic/SGD/ss/lr=0.1_wd=0.0005_size=1000_seed=1/checkpoint-00050.pt --iters 100 --basis --model Logistic --data_path data/ --dataset MNIST

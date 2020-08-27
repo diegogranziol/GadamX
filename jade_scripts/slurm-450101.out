@@ -1,0 +1,36 @@
+usage: loss_stats.py [-h] [--dataset DATASET] --data_path PATH [--use_test]
+                     [--batch_size N] [--num_workers N] --model MODEL
+                     [--num_samples N] [--subsample_seed N] [--stats_batch B]
+                     [--ckpt CKPT] [--swag] --save_path SAVE_PATH [--seed S]
+                     [--curvature_matrix CURVATURE_MATRIX]
+loss_stats.py: error: the following arguments are required: --save_path
+usage: loss_stats.py [-h] [--dataset DATASET] --data_path PATH [--use_test]
+                     [--batch_size N] [--num_workers N] --model MODEL
+                     [--num_samples N] [--subsample_seed N] [--stats_batch B]
+                     [--ckpt CKPT] [--swag] --save_path SAVE_PATH [--seed S]
+                     [--curvature_matrix CURVATURE_MATRIX]
+loss_stats.py: error: the following arguments are required: --save_path
+usage: loss_stats.py [-h] [--dataset DATASET] --data_path PATH [--use_test]
+                     [--batch_size N] [--num_workers N] --model MODEL
+                     [--num_samples N] [--subsample_seed N] [--stats_batch B]
+                     [--ckpt CKPT] [--swag] --save_path SAVE_PATH [--seed S]
+                     [--curvature_matrix CURVATURE_MATRIX]
+loss_stats.py: error: the following arguments are required: --save_path
+usage: loss_stats.py [-h] [--dataset DATASET] --data_path PATH [--use_test]
+                     [--batch_size N] [--num_workers N] --model MODEL
+                     [--num_samples N] [--subsample_seed N] [--stats_batch B]
+                     [--ckpt CKPT] [--swag] --save_path SAVE_PATH [--seed S]
+                     [--curvature_matrix CURVATURE_MATRIX]
+loss_stats.py: error: the following arguments are required: --save_path
+usage: loss_stats.py [-h] [--dataset DATASET] --data_path PATH [--use_test]
+                     [--batch_size N] [--num_workers N] --model MODEL
+                     [--num_samples N] [--subsample_seed N] [--stats_batch B]
+                     [--ckpt CKPT] [--swag] --save_path SAVE_PATH [--seed S]
+                     [--curvature_matrix CURVATURE_MATRIX]
+loss_stats.py: error: the following arguments are required: --save_path
+usage: loss_stats.py [-h] [--dataset DATASET] --data_path PATH [--use_test]
+                     [--batch_size N] [--num_workers N] --model MODEL
+                     [--num_samples N] [--subsample_seed N] [--stats_batch B]
+                     [--ckpt CKPT] [--swag] --save_path SAVE_PATH [--seed S]
+                     [--curvature_matrix CURVATURE_MATRIX]
+loss_stats.py: error: the following arguments are required: --save_path

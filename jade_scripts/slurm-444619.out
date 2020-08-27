@@ -1,0 +1,32 @@
+
+	Python anaconda is now loaded in your environment.
+
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out//CIFAR100/VGG16/SWA/lr=0.01_wd=1e-05_swastart=161_swalr=0.0005/
+Using model VGG16
+Loading CIFAR100 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{}
+SWAG training
+----  --------  ---------  --------  ---------  --------  -------------  ------------
+  ep        lr    tr_loss    tr_acc    te_loss    te_acc    swa_te_loss    swa_tr_acc
+----  --------  ---------  --------  ---------  --------  -------------  ------------
+   1    0.0100     4.6054    1.0800     4.6045    1.3600        22.3747        0.1156
+   2    0.0100     4.5394    1.5911     4.4719    1.6000        17.0073        0.2313
+   3    0.0100     4.4391    2.2533     4.4223    2.2200        17.0561        0.2313
+   4    0.0100     4.3898    2.3244     4.3649    1.9000        16.9841        0.2313
+   5    0.0100     4.3173    2.4733     4.3623    2.1000        16.9332        0.2313
+   6    0.0100     4.2330    2.7800     4.2083    3.3800        17.0202        0.2313
+   7    0.0100     4.1610    3.5778     4.0526    4.7800        17.0270        0.2313
+   8    0.0100     4.0104    5.2467     3.9182    6.3800        16.8343        0.2313
+   9    0.0100     3.8889    7.1822     3.7551    8.5200        16.8700        0.2313
+  10    0.0100     3.7525    9.1933     3.7084    9.9200        16.9222        0.2313
+  11    0.0100     3.6088   10.9889     3.4448   14.0200        16.8814        0.2313
+  12    0.0100     3.4856   13.1333     3.3429   15.5000        16.8441        0.2313
+  13    0.0100     3.3647   15.0244     3.2786   17.0800        16.9505        0.2313
+  14    0.0100     3.2527   17.3778     3.1624   18.8800        16.8458        0.2313
+slurmstepd-dgj318: error: *** JOB 444619 ON dgj318 CANCELLED AT 2019-12-17T17:36:43 ***
+slurmstepd-dgj318: error: task_p_post_term: rmdir(/dev/cpuset/slurm_dgj318_444619/slurm444619.4294967294_0) failed Device or resource busy

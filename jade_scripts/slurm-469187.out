@@ -1,0 +1,14 @@
+
+	Python anaconda is now loaded in your environment.
+
+numpy imported
+Preparing directory ../out/ImageNet/WideResNet28x10/SGDSWA/seed=1_lr=0.05_swalr=0.05_swastart=31.0_mom=0.9_wd=0.0_numepochs=50/
+Using model WideResNet28x10
+Traceback (most recent call last):
+  File "../run_sgd.py", line 131, in <module>
+    use_validation=not args.use_test,
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 89, in loaders
+    dataset, path, transform_train, transform_test, use_validation=use_validation, val_size=val_size)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 18, in datasets
+    assert dataset in {'CIFAR10', 'CIFAR100', 'MNIST', 'ImageNet32'}
+AssertionError

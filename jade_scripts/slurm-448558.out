@@ -1,0 +1,38 @@
+
+	Python anaconda is now loaded in your environment.
+
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/PadamX/seed=1_lr=0.03_wd=0.0003_swa_start=10.0_swa_lr=0.03/
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+No Covariance Estimation
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+  ep        lr    tr_loss    tr_acc    te_loss    te_acc    te_top5_acc  swa_tr_loss    swa_tr_acc    swa_te_loss    swa_te_acc    swa_te_top5_acc         time    mem_usage
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+   1    0.0300     4.7459   12.5065     3.9029   21.0320        44.7040                                                                               2247.9138       0.6950
+   2    0.0300     3.3118   29.6772     3.2314   31.3060        57.3120                                                                               2242.5016       0.6950
+   3    0.0300     2.7973   38.2604     2.8825   37.6920        63.8020                                                                               2242.2067       0.6950
+   4    0.0300     2.4935   43.6226     2.6555   41.3660        67.4940                                                                               2234.9000       0.6950
+   5    0.0300     2.2857   47.4874     2.5040   44.0500        70.3360                                                                               2245.4323       0.6950
+   6    0.0300     2.1307   50.3815     2.4475   45.7040        71.3940                                                                               2243.7237       0.6950
+   7    0.0300     2.0125   52.6033     2.3386   47.6580        73.1060                                                                               2239.7778       0.6950
+   8    0.0300     1.9158   54.5066     2.3080   48.3440        73.7620                                                                               2236.8649       0.6950
+   9    0.0300     1.8351   56.0573     2.2958   48.8180        73.8620                                                                               2243.9001       0.6950
+  10    0.0300     1.7696   57.3728     2.2356   49.9580        75.0100                                                                               2239.7176       0.6950
+  11    0.0300     1.7120   58.4454     2.1948   50.6040        75.8080         1.6027       60.6518         2.1754       50.9280            76.2040  2240.3740       0.6950
+  12    0.0300     1.7371   57.9881     2.2398   50.1060        75.0720         1.3729       65.9206         1.9705       55.0660            79.2380  2233.9223       0.8339
+  13    0.0300     1.7486   57.7291     2.2177   50.3160        75.3500         1.2999       67.6060         1.9169       56.2400            80.0721  2236.9104       0.8339
+Traceback (most recent call last):
+  File "../run_padam.py", line 285, in <module>
+    state_dict=swag_model.state_dict(),
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 19, in save_checkpoint
+    torch.save(state, filepath)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/serialization.py", line 260, in save
+    return _with_file_like(f, "wb", lambda f: _save(obj, f, pickle_module, pickle_protocol))
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/serialization.py", line 183, in _with_file_like
+    f = open(f, mode)
+OSError: [Errno 27] File too large: '../out/ImageNet32/WideResNet28x10/PadamX/seed=1_lr=0.03_wd=0.0003_swa_start=10.0_swa_lr=0.03/swag-00013.pt'

@@ -1,0 +1,18 @@
+
+	Python anaconda is now loaded in your environment.
+
+directory is /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/VGG16/SGDOPT/
+Using model VGG16
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+Files already downloaded and verified
+You are going to run models on the test set. Are you sure?
+Files already downloaded and verified
+Using train (50000) + test (10000)
+Preparing model
+{}
+SWA training
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/VGG16/SGDOPT/checkpoint-00161.pt
+Traceback (most recent call last):
+  File "../run_swa_gap.py", line 176, in <module>
+    values = [args.init_epochs + epoch + 1, args.lr, train_res['loss'], train_res['accuracy'], test_res['loss'],
+NameError: name 'train_res' is not defined

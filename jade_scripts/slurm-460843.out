@@ -1,0 +1,31 @@
+
+	Python anaconda is now loaded in your environment.
+
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/SGDSWA/seed=5_lr=0.03_swalr=0.02_swastart=30.0_mom=0.9_wd=0.0001_numepochs=50/
+Using model WideResNet28x10
+Loading ImageNet32 from ../data/
+Traceback (most recent call last):
+  File "../run_sgd.py", line 131, in <module>
+    use_validation=not args.use_test,
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 89, in loaders
+    dataset, path, transform_train, transform_test, use_validation=use_validation, val_size=val_size)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 24, in datasets
+    train_set = ds(root=path, train=True, download=False, transform=transform_train)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/imagenet32_old.py", line 81, in __init__
+    fo = open(file, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/imagenet32/Imagenet32_train_npz/train_data_batch_1.npz'
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/SGDSWA/seed=6_lr=0.03_swalr=0.02_swastart=30.0_mom=0.9_wd=0.0001_numepochs=50/
+Using model WideResNet28x10
+Loading ImageNet32 from ../data/
+Traceback (most recent call last):
+  File "../run_sgd.py", line 131, in <module>
+    use_validation=not args.use_test,
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 89, in loaders
+    dataset, path, transform_train, transform_test, use_validation=use_validation, val_size=val_size)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 24, in datasets
+    train_set = ds(root=path, train=True, download=False, transform=transform_train)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/imagenet32_old.py", line 81, in __init__
+    fo = open(file, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/imagenet32/Imagenet32_train_npz/train_data_batch_1.npz'

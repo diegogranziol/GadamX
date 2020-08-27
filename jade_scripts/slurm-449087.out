@@ -1,0 +1,20 @@
+
+	Python anaconda is now loaded in your environment.
+
+directory is /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/VGG16/SGDOP
+Using model VGG16
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+Files already downloaded and verified
+You are going to run models on the test set. Are you sure?
+Files already downloaded and verified
+Using train (50000) + test (10000)
+Preparing model
+{}
+SWA training
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/VGG16/SGDOPcheckpoint-00161.pt
+Traceback (most recent call last):
+  File "../run_swa_gap.py", line 91, in <module>
+    checkpoint = torch.load(args.ckpt)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/serialization.py", line 419, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/VGG16/SGDOPcheckpoint-00161.pt'

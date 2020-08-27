@@ -1,0 +1,16 @@
+
+	Python anaconda is now loaded in your environment.
+
+directory is /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=10.0_slr=0.03/
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+SWA training
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=10.0_slr=0.03/checkpoint-00010.pt
+Traceback (most recent call last):
+  File "../run_swa_gap.py", line 181, in <module>
+    values = [args.init_epochs + epoch + 1, args.lr, train_res['loss'], train_res['accuracy'], test_res['loss'], test_res['accuracy'],
+NameError: name 'train_res' is not defined

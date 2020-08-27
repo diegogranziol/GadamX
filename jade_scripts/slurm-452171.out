@@ -1,0 +1,25 @@
+Preparing directory out/ImageNet32/WideResNet28x10/Shrinkage_SGD/seed=1_lr=0.03_swastart=161_slr=0.02_wdfreq=10_matrix=hessian_wdend=None/
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+SGD_noschedule training
+learning weight decay
+Traceback (most recent call last):
+  File "../shrinkage_sgd.py", line 236, in <module>
+    if args.epochend is not None and epoch > args.epochend:
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 905, in loss_stats
+    dL_dz.backward()
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/tensor.py", line 166, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/autograd/__init__.py", line 99, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 15.75 GiB total capacity; 11.18 GiB already allocated; 1.88 MiB free; 3.50 GiB cached)

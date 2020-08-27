@@ -1,0 +1,9 @@
+
+	Python anaconda is now loaded in your environment.
+
+usage: run_swa_gap.py [-h] [--dataset DATASET] --data_path PATH [--use_test]
+                      [--batch_size N] [--num_workers N] --model MODEL
+                      [--ckpt CKPT] [--init_epochs N] [--save_freq N]
+                      [--eval_freq N] [--lr LR] [--momentum M] [--wd WD]
+                      [--swa_epochs N] [--swa_gap N] [--seed S]
+run_swa_gap.py: error: unrecognized arguments: --dir ../out/

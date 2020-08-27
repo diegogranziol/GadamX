@@ -1,0 +1,645 @@
+import argparse
+import time
+import math
+import numpy as np
+import torch
+import torch.nn as nn
+
+import language_model.data
+# import language_model.model
+
+from language_model.utils import batchify, get_batch, repackage_hidden
+from curvature.methods.swag import SWA
+from gpytorch.utils.lanczos import lanczos_tridiag
+
+parser = argparse.ArgumentParser(description='PyTorch PennTreeBank RNN/LSTM Language Model')
+parser.add_argument('--data_path', type=str, default='data/penn/',
+                    help='location of the data corpus')
+parser.add_argument("--dataset", type=str)
+parser.add_argument("--dir", type=str, help='location of the save result')
+parser.add_argument('--model', type=str, default='LSTM',
+                    help='type of recurrent net (LSTM, QRNN, GRU)')
+parser.add_argument('--emsize', type=int, default=400,
+                    help='size of word embeddings')
+parser.add_argument('--nhid', type=int, default=1150,
+                    help='number of hidden units per layer')
+parser.add_argument('--nlayers', type=int, default=3,
+                    help='number of layers')
+parser.add_argument('--lr', type=float, default=30,
+                    help='initial learning rate')
+parser.add_argument('--clip', type=float, default=0.25,
+                    help='gradient clipping')
+parser.add_argument('--epochs', type=int, default=200,
+                    help='upper epoch limit')
+parser.add_argument('--batch_size', type=int, default=20, metavar='N',
+                    help='batch size')
+parser.add_argument('--bptt', type=int, default=70,
+                    help='sequence length')
+parser.add_argument('--dropout', type=float, default=0.4,
+                    help='dropout applied to layers (0 = no dropout)')
+parser.add_argument('--dropouth', type=float, default=0.25,
+                    help='dropout for rnn layers (0 = no dropout)')
+parser.add_argument('--dropouti', type=float, default=0.65,
+                    help='dropout for input embedding layers (0 = no dropout)')
+parser.add_argument('--dropoute', type=float, default=0.1,
+                    help='dropout to remove words from embedding layer (0 = no dropout)')
+parser.add_argument('--wdrop', type=float, default=0.5,
+                    help='amount of weight dropout to apply to the RNN hidden to hidden matrix')
+parser.add_argument('--seed', type=int, default=1111,
+                    help='random seed')
+parser.add_argument('--nonmono', type=int, default=5,
+                    help='random seed')
+parser.add_argument('--cuda', action='store_false',
+                    help='use CUDA')
+parser.add_argument('--log-interval', type=int, default=200, metavar='N',
+                    help='report interval')
+randomhash = ''.join(str(time.time()).split('.'))
+parser.add_argument('--save', type=str, default=randomhash + '.pt',
+                    help='path to save the final model')
+parser.add_argument('--alpha', type=float, default=2,
+                    help='alpha L2 regularization on RNN activation (alpha = 0 means no regularization)')
+parser.add_argument('--beta', type=float, default=1,
+                    help='beta slowness regularization applied on RNN activiation (beta = 0 means no regularization)')
+parser.add_argument('--wdecay', type=float, default=1.2e-6,
+                    help='weight decay applied to all weights')
+parser.add_argument("--partial", type=float, default=0.2, help='partially adaptive parameter. '
+                                                                   'Only applicable if using padam optimizer and its variants.')
+parser.add_argument("--decoupled_wd", action='store_true')
+parser.add_argument("--switch", type=str, default=None, help='switching strategy: ASGD, SWA, None (for no averaging)')
+parser.add_argument('--switch_start', type=float, default=None, )
+parser.add_argument("--swag_lr", type=float, default=None)
+parser.add_argument("--swag_c_batches", type=int, default=1, help='frequency of SWA model collection (by *minibatches*)')
+parser.add_argument('--resume', type=str, default='',
+                    help='path of model to resume')
+parser.add_argument("--resume_epoch", type=int, default=None, help='the epoch number to resume from')
+parser.add_argument('--optimizer', type=str, default='sgd',
+                    help='optimizer to use (sgd, adam)')
+parser.add_argument('--when', nargs="+", type=int, default=[-1],
+                    help='When (which epochs) to divide the learning rate by 10 - accepts multiple')
+parser.add_argument("--lr_decay_factor", type=float, default=10., help='Amount of learning rate decay')
+
+#added DIEGO Lanczos arguments
+parser.add_argument('--iters', type=int, default=20, metavar='N', help='number of lanczos steps (default: 20)')
+parser.add_argument('--warmstart', type=int, default=-1, metavar='N', help='number of epoch warm starts (default: 10)')
+parser.add_argument('--epochfreq', type=int, default=20, metavar='N', help='number of epochs at learned learning rate (default: 10)')
+parser.add_argument('--curvaturebatchsize', type=int, default=1024, metavar='N', help='number of samples to learn the curvature from')
+
+
+args = parser.parse_args()
+args.tied = True
+
+# Generate a specific directory to save the results
+args.dir += '/' + args.dataset + '/' + args.model + '/' + args.optimizer
+if args.switch == 'SWA':
+    if args.optimizer == 'padam' and args.decoupled_wd:
+        args.dir += 'X'
+    elif args.optimizer == 'adam' and args.decoupled_wd:
+        args.dir += 'X'
+    else:
+        args.dir += 'SWA'
+else:
+    if args.decoupled_wd: args.dir += "W"
+    if args.switch == 'ASGD': args.dir += 'ASGD'
+
+args.dir += '/lr=' + str(args.lr) + '_wd=' + str(args.wdecay) + '/'
+import os
+
+if not os.path.exists(args.dir): os.makedirs(args.dir)
+print('Preparing directory ' + args.dir)
+
+save = args.dir + str(randomhash) + '.pt'
+
+# Set the random seed manually for reproducibility.
+np.random.seed(args.seed)
+torch.manual_seed(args.seed)
+if torch.cuda.is_available():
+    if not args.cuda:
+        print("WARNING: You have a CUDA device, so you should probably run with --cuda")
+    else:
+        torch.cuda.manual_seed(args.seed)
+
+
+###############################################################################
+# Load data
+###############################################################################
+
+def model_save(fn):
+    with open(fn, 'wb') as f:
+        torch.save([model, criterion, optimizer], f)
+
+
+def model_load(fn):
+    global model, criterion, optimizer
+    with open(fn, 'rb') as f:
+        model, criterion, optimizer = torch.load(f)
+
+
+import os
+import hashlib
+
+fn = args.dir + 'corpus.{}.data'.format(hashlib.md5(args.data_path.encode()).hexdigest())
+if os.path.exists(fn):
+    print('Loading cached dataset...')
+    corpus = torch.load(fn)
+else:
+    print('Producing dataset...')
+    corpus = language_model.data.Corpus(args.data_path)
+    torch.save(corpus, fn)
+
+eval_batch_size = 10
+test_batch_size = 1
+train_data = batchify(corpus.train, args.batch_size, args)
+val_data = batchify(corpus.valid, eval_batch_size, args)
+test_data = batchify(corpus.test, test_batch_size, args)
+
+###############################################################################
+# Build the model
+###############################################################################
+
+from language_model.splitcross import SplitCrossEntropyLoss
+from language_model.model import RNNModel
+
+criterion = None
+
+ntokens = len(corpus.dictionary)
+model = RNNModel(args.model, ntokens, args.emsize, args.nhid, args.nlayers, args.dropout, args.dropouth,  #
+                 args.dropouti, args.dropoute, args.wdrop, args.tied)
+
+###
+start_epoch = 1
+if args.resume:
+    print('Resuming model ...')
+    if args.resume_epoch is not None: start_epoch += args.resume_epoch
+    model_load(args.resume)
+    optimizer.param_groups[0]['lr'] = args.lr
+    model.dropouti, model.dropouth, model.dropout, args.dropoute = args.dropouti, args.dropouth, args.dropout, args.dropoute
+    if args.wdrop:
+        from language_model.weight_drop import WeightDrop
+
+        for rnn in model.rnns:
+            if type(rnn) == WeightDrop:
+                rnn.dropout = args.wdrop
+            elif rnn.zoneout > 0:
+                rnn.zoneout = args.wdrop
+###
+
+if not criterion:
+    splits = []
+    if ntokens > 500000:
+        # One Billion
+        # This produces fairly even matrix mults for the buckets:
+        # 0: 11723136, 1: 10854630, 2: 11270961, 3: 11219422
+        splits = [4200, 35000, 180000]
+    elif ntokens > 75000:
+        # WikiText-103
+        splits = [2800, 20000, 76000]
+    print('Using', splits)
+    criterion = SplitCrossEntropyLoss(args.emsize, splits=splits, verbose=False)
+###
+if args.cuda:
+    model = model.cuda()
+    criterion = criterion.cuda()
+###
+params = list(model.parameters()) + list(criterion.parameters())
+total_params = sum(x.size()[0] * x.size()[1] if len(x.size()) > 1 else x.size()[0] for x in params if x.size())
+print('Args:', args)
+print('Model total parameters:', total_params)
+if args.switch == 'SWA':
+    swag_model = SWA(RNNModel, args.model, ntokens, args.emsize, args.nhid, args.nlayers, args.dropout, args.dropouth,  #
+                 args.dropouti, args.dropoute, args.wdrop, args.tied)
+    if args.cuda:
+        swag_model.cuda()
+else:
+    swag_model = None
+
+
+###############################################################################
+# Training code
+###############################################################################
+
+def evaluate(data_source, batch_size=10, eval_swag=False):
+    # Turn on evaluation mode which disables dropout.
+    if eval_swag and args.switch == 'SWA':
+        swag_model.eval()
+        m = swag_model.base_model
+    else:
+        m = model
+    model.eval()
+    if args.model == 'QRNN': m.reset()
+    total_swag_loss = 0.
+    total_loss = 0.
+    ntokens = len(corpus.dictionary)
+    hidden = m.init_hidden(batch_size)
+    for i in range(0, data_source.size(0) - 1, args.bptt):
+        data, targets = get_batch(data_source, i, args, evaluation=True)
+        if eval_swag and args.switch == 'SWA':
+            swag_model.set_swa()
+            output, hidden = swag_model(data, hidden)
+            total_swag_loss += len(data) * criterion(swag_model.base_model.decoder.weight,
+                                                     swag_model.base_model.decoder.bias, output, targets).data
+            output, _ = model(data, hidden)
+            total_loss += len(data) * criterion(model.decoder.weight, model.decoder.bias, output, targets).data
+        else:
+            output, hidden = model(data, hidden)
+            total_loss += len(data) * criterion(model.decoder.weight, model.decoder.bias, output, targets).data
+        hidden = repackage_hidden(hidden)
+    print('Loss:', total_loss.item() / len(data_source))
+    if args.switch == 'SWA' and eval_swag:
+        print('Swag Loss:', str(total_swag_loss.item() / len(data_source)))
+        return total_swag_loss.item() / len(data_source)
+    return total_loss.item() / len(data_source)
+
+
+def train(swag=False):
+    """By default, if swa_model is supplied, every model at the end of a batch will be averaged."""
+    # Turn on training mode which enables dropout.
+    if args.model == 'QRNN': model.reset()
+    total_loss = 0
+    start_time = time.time()
+    ntokens = len(corpus.dictionary)
+    hidden = model.init_hidden(args.batch_size)
+    batch, i = 0, 0
+    while i < train_data.size(0) - 1 - 1:
+        bptt = args.bptt if np.random.random() < 0.95 else args.bptt / 2.
+        # Prevent excessively small or negative sequence lengths
+        seq_len = max(5, int(np.random.normal(bptt, 5)))
+        # There's a very small chance that it could select a very long sequence length resulting in OOM
+        # seq_len = min(seq_len, args.bptt + 10)
+
+        lr2 = optimizer.param_groups[0]['lr']
+        optimizer.param_groups[0]['lr'] = lr2 * seq_len / args.bptt
+        model.train()
+        data, targets = get_batch(train_data, i, args, seq_len=seq_len)
+
+        # Starting each batch, we detach the hidden state from how it was previously produced.
+        # If we didn't, the model would try backpropagating all the way to start of the dataset.
+        hidden = repackage_hidden(hidden)
+        optimizer.zero_grad()
+
+        output, hidden, rnn_hs, dropped_rnn_hs = model(data, hidden, return_h=True)
+        raw_loss = criterion(model.decoder.weight, model.decoder.bias, output, targets)
+
+        loss = raw_loss
+        # Activiation Regularization
+        if args.alpha: loss = loss + sum(
+            args.alpha * dropped_rnn_h.pow(2).mean() for dropped_rnn_h in dropped_rnn_hs[-1:])
+        # Temporal Activation Regularization (slowness)
+        if args.beta: loss = loss + sum(args.beta * (rnn_h[1:] - rnn_h[:-1]).pow(2).mean() for rnn_h in rnn_hs[-1:])
+        loss.backward()
+
+        # `clip_grad_norm` helps prevent the exploding gradient problem in RNNs / LSTMs.
+        if args.clip: torch.nn.utils.clip_grad_norm_(params, args.clip)
+        optimizer.step()
+
+        total_loss += raw_loss.data
+        optimizer.param_groups[0]['lr'] = lr2
+        #  cur_loss = np.nan
+        if batch % args.log_interval == 0 and batch > 0:
+            cur_loss = total_loss.item() / args.log_interval
+            elapsed = time.time() - start_time
+            print('| epoch {:3d} | {:5d}/{:5d} batches | lr {:05.5f} | ms/batch {:5.2f} | '
+                  'loss {:5.2f} | ppl {:8.2f} | bpc {:8.3f}'.format(
+                epoch, batch, len(train_data) // args.bptt, optimizer.param_groups[0]['lr'],
+                              elapsed * 1000 / args.log_interval, cur_loss, math.exp(cur_loss), cur_loss / math.log(2)))
+            total_loss = 0
+            start_time = time.time()
+        ###
+
+        if swag and args.switch == 'SWA' and batch % args.swag_c_batches == 0:
+            swag_model.collect_model(model)
+            # print(swag_model.n_models)
+        batch += 1
+        i += seq_len
+
+    return {'train_loss': cur_loss, 'train_perplexity': math.exp(cur_loss),
+                       'train_bpc': cur_loss / math.log(2)}
+
+
+# Loop over epochs.
+lr = args.lr
+best_val_loss = []
+stored_loss = 100000000
+
+# At any point you can hit Ctrl + C to break out of training early.
+try:
+    optimizer = None
+    from optimizers.adam import Adam
+    from optimizers import Padam
+
+    # Ensure the optimizer is optimizing params, which includes both the model's weights as well as the criterion's
+    # weight (i.e. Adaptive Softmax)
+    if args.optimizer == 'sgd':
+        optimizer = torch.optim.SGD(params, lr=args.lr, weight_decay=args.wdecay)
+    if args.optimizer == 'ssgdmn':
+        gammi = []
+        eigvel = []
+        if epoch >= args.warmstart and epoch % args.epochfreq == 0:
+            model.to(args.device)
+
+            num_parametrs = sum([p.numel() for p in model.parameters()])
+
+
+            class HessVecProduct(object):
+                def __init__(self, loader, model, criterion):
+                    self.loader = loader
+                    self.model = model
+                    self.criterion = criterion
+                    self.iters = 0
+                    self.timestamp = time.time()
+
+                def __call__(self, vector):
+                    start_time = time.time()
+                    output = utils.hess_vec(vector, self.loader, self.model, self.criterion,
+                                            cuda=args.device.type == 'cuda',
+                                            bn_train_mode=not args.bn_train_mode_off)
+                    time_diff = time.time() - start_time
+                    self.iters += 1
+                    print('Iter %d. Time: %.2f' % (self.iters, time_diff))
+                    return output.cpu().unsqueeze(1)
+
+
+            productor = HessVecProduct(loaderbeast, model, criterion)
+
+            Q, T = lanczos_tridiag(productor, args.iters, dtype=torch.float32, device='cpu',
+                                   matrix_shape=(num_parametrs, num_parametrs))
+
+            eigvals, eigvects = T.eig(eigenvectors=True)
+            gammas = eigvects[0, :] ** 2
+            V = eigvects.t() @ Q.t()
+            # eigvals = eigvals*float(num_parametrs / args.batch_size)
+
+            order = np.argsort(np.abs(eigvals.numpy()[:, 0]))[::-1]
+            table = [[eigvals[order[i], 0].item(), gammas[order[i]].item()] for i in range(order.size)]
+            print(tabulate.tabulate(table, headers=['value', 'weight'], tablefmt='simple'))
+
+            eigvals = np.sort(np.abs(eigvals))
+            eigvals = np.sum(eigvals, axis=1)
+
+            print(eigvals)
+
+            # Sort out new minimum which isn't super near 0
+            threshold = 0.5
+            weight = gammas
+            eig = eigvals
+            while (weight[np.argmax(weight)] > threshold):
+                idx = np.argmax(weight)
+                weightvalue = weight[np.argmax(weight)]
+                weight = np.delete(weight, idx)
+                eig = np.delete(eig, idx)
+            mu = np.min(eig)
+            # outliers = int(args.iters/2)
+
+            lr = np.power(mu / np.amax(eigvals), 0.5)
+            print('learning rate')
+            print(lr)
+            top = (np.power(np.amax(eigvals), 0.5)) - (np.power(mu, 0.5))
+            print('top')
+            print(top)
+            bottom = (np.power(np.amax(eigvals), 0.5) + (np.power(mu, 0.5)))
+            print('bottom')
+            print(bottom)
+            momentum = top / bottom
+            print('momentum')
+            print(momentum)
+
+            # Potential Edit to the learning rate
+            # loss_stats = utils.loss_stats(stats_loader, model, criterion, cuda=True, bn_train_mode=False)
+            # alpha = loss_stats['alpha'].item()
+
+            # lr = schedule(epoch)
+            utils.adjust_learning_rate_and_momentum(optimizer, lr, momentum)
+
+            eigvel.append(eigvals)
+            gammi.append(np.array(gammas))
+
+            lrlearned = lr
+            momlearned = momentum
+
+            np.savez(
+                args.dir + 'lanczos-' + str(epoch),
+                eigvals=eigvals,
+                gammas=gammas,
+                lr=lrlearned,
+                mom=momlearned
+            )
+
+        if epoch >= args.warmstart:
+            try:
+                utils.adjust_learning_rate_and_momentum(optimizer, lrlearned, momlearned)
+                lr = lrlearned
+                momentum = momlearned
+            except NameError:
+                print('learned momentum and lr rate not defined')
+                pass
+
+    elif args.optimizer == 'adam':
+        optimizer = Adam(params, lr=args.lr, weight_decay=args.wdecay, decoupled_wd=args.decoupled_wd)
+    elif args.optimizer == 'padam':
+        optimizer = Padam(params, lr=args.lr, weight_decay=args.wdecay, decoupled_wd=args.decoupled_wd,
+                          partial=args.partial)
+    else:
+        raise ValueError("Unknown optimizer " + str(args.optimizer))
+
+    start_average = False
+    
+    for epoch in range(start_epoch, args.epochs + 1):
+
+        if epoch >= args.warmstart and epoch % args.epochfreq == 0:
+            model.to(args.device)
+
+            num_parametrs = sum([p.numel() for p in model.parameters()])
+
+
+            class HessVecProduct(object):
+                def __init__(self, loader, model, criterion):
+                    self.loader = loader
+                    self.model = model
+                    self.criterion = criterion
+                    self.iters = 0
+                    self.timestamp = time.time()
+
+                def __call__(self, vector):
+                    start_time = time.time()
+                    output = utils.hess_vec(vector, self.loader, self.model, self.criterion,
+                                            cuda=args.device.type == 'cuda',
+                                            bn_train_mode=not args.bn_train_mode_off)
+                    time_diff = time.time() - start_time
+                    self.iters += 1
+                    print('Iter %d. Time: %.2f' % (self.iters, time_diff))
+                    return output.cpu().unsqueeze(1)
+
+
+            productor = HessVecProduct(loaderbeast, model, criterion)
+
+            Q, T = lanczos_tridiag(productor, args.iters, dtype=torch.float32, device='cpu',
+                                   matrix_shape=(num_parametrs, num_parametrs))
+
+            eigvals, eigvects = T.eig(eigenvectors=True)
+            gammas = eigvects[0, :] ** 2
+            V = eigvects.t() @ Q.t()
+            # eigvals = eigvals*float(num_parametrs / args.batch_size)
+
+            order = np.argsort(np.abs(eigvals.numpy()[:, 0]))[::-1]
+            table = [[eigvals[order[i], 0].item(), gammas[order[i]].item()] for i in range(order.size)]
+            print(tabulate.tabulate(table, headers=['value', 'weight'], tablefmt='simple'))
+
+            eigvals = np.sort(np.abs(eigvals))
+            eigvals = np.sum(eigvals, axis=1)
+
+            print(eigvals)
+
+            # Sort out new minimum which isn't super near 0
+            threshold = 0.5
+            weight = gammas
+            eig = eigvals
+            while (weight[np.argmax(weight)] > threshold):
+                idx = np.argmax(weight)
+                weightvalue = weight[np.argmax(weight)]
+                weight = np.delete(weight, idx)
+                eig = np.delete(eig, idx)
+
+            mu = np.min(eig)
+            # outliers = int(args.iters/2)
+
+            lr = np.power(mu / np.amax(eigvals), 0.5)
+            print('learning rate')
+            print(lr)
+            top = (np.power(np.amax(eigvals), 0.5)) - (np.power(mu, 0.5))
+            print('top')
+            print(top)
+            bottom = (np.power(np.amax(eigvals), 0.5) + (np.power(mu, 0.5)))
+            print('bottom')
+            print(bottom)
+            momentum = top / bottom
+            print('momentum')
+            print(momentum)
+
+            # Potential Edit to the learning rate
+            # loss_stats = utils.loss_stats(stats_loader, model, criterion, cuda=True, bn_train_mode=False)
+            # alpha = loss_stats['alpha'].item()
+
+            # lr = schedule(epoch)
+            utils.adjust_learning_rate_and_momentum(optimizer, lr, momentum)
+
+            eigvel.append(eigvals)
+            gammi.append(np.array(gammas))
+
+            lrlearned = lr
+            momlearned = momentum
+
+            np.savez(
+                args.dir + 'lanczos-' + str(epoch),
+                eigvals=eigvals,
+                gammas=gammas,
+                lr=lrlearned,
+                mom=momlearned
+            )
+
+        if epoch >= args.warmstart:
+            utils.adjust_learning_rate_and_momentum(optimizer, lrlearned, momlearned)
+            lr = lrlearned
+            momentum = momlearned
+
+
+        epoch_start_time = time.time()
+        val_loss = None
+        val_loss2 = None
+        if args.switch is not None:
+            if args.switch_start and epoch >= args.switch_start:
+                start_average = True
+                print('Starting average')
+
+        train_stat = None
+        if start_average and args.switch == 'SWA':
+            train_stat = train(True)
+        else:
+            train_stat = train()
+        if isinstance(optimizer, torch.optim.ASGD):
+            tmp = {}
+            for (prm, st) in optimizer.state.items():
+                tmp[prm] = prm.clone().detach()
+                prm.data = st['ax'].clone().detach()
+                
+            val_loss2 = evaluate(val_data, eval_swag=start_average, )
+            print('-' * 89)
+            print('| end of epoch {:3d} | time: {:5.2f}s | valid loss {:5.2f} | '
+                  'valid ppl {:8.2f} | valid bpc {:8.3f}'.format(
+                epoch, (time.time() - epoch_start_time), val_loss2, math.exp(val_loss2), val_loss2 / math.log(2)))
+            print('-' * 89)
+
+            if val_loss2 < stored_loss:
+                model_save(save)
+                print('Saving Averaged!')
+                stored_loss = val_loss2
+            #
+            for (prm, st) in optimizer.state.items():
+                prm.data = tmp[prm].clone().detach()
+
+        else:
+            val_loss = evaluate(val_data, eval_batch_size, eval_swag=start_average)
+            print('-' * 89)
+            print('| end of epoch {:3d} | time: {:5.2f}s | valid loss {:5.2f} | '
+                  'valid ppl {:8.2f} | valid bpc {:8.3f}'.format(
+                epoch, (time.time() - epoch_start_time), val_loss, math.exp(val_loss), val_loss / math.log(2)))
+            print('-' * 89)
+
+            if val_loss < stored_loss:
+                model_save(save)
+                print('Saving model (new best validation)')
+                stored_loss = val_loss
+
+            # Switching Strategy for averaging - ASGD by default averages every iteration
+            if args.switch == 'ASGD':
+                if args.optimizer == 'sgd' \
+                    and args.switch_start is None \
+                        and 't0' not in optimizer.param_groups[0] \
+                        and (len(best_val_loss) > args.nonmono and val_loss > min(best_val_loss[:-args.nonmono])):
+                    print('Switching to ASGD - Automatically triggered')
+                    optimizer = torch.optim.ASGD(model.parameters(), lr=args.lr, t0=0, lambd=0.,
+                                                 weight_decay=args.wdecay)
+                    start_average = True
+                elif start_average and not isinstance(optimizer, torch.optim.ASGD):
+                    print('Switching to ASGD - Manulally triggered')
+                    optimizer = torch.optim.ASGD(model.parameters(), lr=args.lr, t0=0, lambd=0.,
+                                                 weight_decay=args.wdecay)
+            elif args.switch == 'SWA':
+                if args.switch_start is None and len(best_val_loss) > args.nonmono and val_loss > min(best_val_loss[:-args.nonmono]):
+                    print('Iterative Averaging Activated')
+                    start_average = True
+            if epoch in args.when and not start_average:
+                print('Saving model before learning rate decreased')
+                model_save('{}.e{}'.format(args.dir, epoch))
+                print('Dividing learning rate by' + str(args.lr_decay_factor))
+                optimizer.param_groups[0]['lr'] /= args.lr_decay_factor
+
+            # Setting the learning rate to swag lr (if specified) - else use the previous lr
+            if start_average is True and args.swag_lr is not None and args.switch == 'SWA':
+                optimizer.param_groups[0]['lr'] = args.swag_lr
+
+            best_val_loss.append(val_loss)
+
+        np.savez(
+            args.dir + 'stats-' + str(epoch),
+            time_ep=(time.time() - epoch_start_time),
+            valid_loss=val_loss,
+            valid_perplexity=math.exp(val_loss) if val_loss else None,
+            valid_bpc=val_loss / math.log(2) if val_loss else None,
+            valid_loss_avg=val_loss2,
+            valid_perplexity_avg=math.exp(val_loss2) if val_loss2 else None,
+            valid_bpc_avg=val_loss2 / math.log(2) if val_loss2 else None,
+            **train_stat
+        )
+
+except KeyboardInterrupt:
+    print('-' * 89)
+    print('Exiting from training early')
+
+# Load the best saved model.
+model_load(save)
+
+# Run on test data.
+test_loss = evaluate(test_data, test_batch_size, eval_swag=args.switch == 'SWA')
+print('=' * 89)
+print('| End of training | test loss {:5.2f} | test ppl {:8.2f} | test bpc {:8.3f}'.format(
+    test_loss, math.exp(test_loss), test_loss / math.log(2)))
+print('=' * 89)

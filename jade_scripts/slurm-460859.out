@@ -1,0 +1,14 @@
+
+	Python anaconda is now loaded in your environment.
+
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/PadamX/seed=5_lr=0.03_wd=0.0003_swa_start=30.0_swa_lr=0.0005/
+Using model WideResNet28x10
+Loading ImageNet32 from ../../curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+No Covariance Estimation
+slurmstepd-dgj321: error: *** JOB 460859 ON dgj321 CANCELLED AT 2020-02-17T13:55:29 ***
+slurmstepd-dgj321: error: task_p_post_term: rmdir(/dev/cpuset/slurm_dgj321_460859/slurm460859.4294967294_0) failed Device or resource busy

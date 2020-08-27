@@ -1,0 +1,16 @@
+
+	Python anaconda is now loaded in your environment.
+
+numpy imported
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/PreResNet110/AdamX/lr=0.003_wd=0.01_swa_start=176.0_swa_lr=0.005/
+Using model PreResNet110
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 110}
+SWA-Gaussian training
+Traceback (most recent call last):
+  File "../run_adam.py", line 274, in <module>
+    swag_train_acc = train_res_swag['accuracy'],
+NameError: name 'train_res_swag' is not defined

@@ -1,0 +1,15 @@
+usage: run_padam.py [-h] [--dir DIR] [--dataset DATASET] --data_path PATH
+                    [--use_test] [--batch_size N] [--num_workers N] --model
+                    MODEL [--resume CKPT] [--reset_resume] [--epochs N]
+                    [--save_freq N] [--eval_freq N] [--lr_init LR]
+                    [--momentum M] [--wd WD] [--decoupled_wd]
+                    [--normalized_wd] [--partial PARTIAL] [--no_schedule]
+                    [--cosine_annealing] [--linear_annealing] [--swag]
+                    [--auto] [--patience PATIENCE] [--no_covariance]
+                    [--swag_subspace {covariance,pca,freq_dir}]
+                    [--swag_rank SWAG_RANK] [--swag_start N] [--swag_lr LR]
+                    [--schedule_swag_lr] [--swag_c_epochs N]
+                    [--swag_resume CKPT] [--seed S] [--verbose]
+                    [--save_freq_weight_norm N]
+run_padam.py: error: unrecognized arguments: -dataset=ImageNet32
+numpy imported

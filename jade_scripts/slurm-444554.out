@@ -1,0 +1,13 @@
+
+	Python anaconda is now loaded in your environment.
+
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/PreResNet110/SWA/lr=0.05_wd=8e-06_swastart=176.0_swalr=0.005/
+Using model PreResNet110
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 110}
+SWAG training
+slurmstepd-dgj216: error: *** JOB 444554 ON dgj216 CANCELLED AT 2019-12-17T12:35:00 ***
+slurmstepd-dgj216: error: task_p_post_term: rmdir(/dev/cpuset/slurm_dgj216_444554/slurm444554.4294967294_0) failed Device or resource busy

@@ -1,0 +1,18 @@
+
+	Python anaconda is now loaded in your environment.
+
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/VGG16/SWA/lr=0.05_wd=8e-06_swastart=176.0_swalr=0.005/
+Using model VGG16
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{}
+SWAG training
+----  --------  ---------  --------  ---------  --------  -------------  ------------
+  ep        lr    tr_loss    tr_acc    te_loss    te_acc    swa_te_loss    swa_tr_acc
+----  --------  ---------  --------  ---------  --------  -------------  ------------
+   1    0.0500     6.4429    0.7964     5.8287    2.3840       522.8806        0.1192
+   2    0.0500     5.5779    3.6062     5.4293    4.6800       525.2680        0.2379
+   3    0.0500     5.9112    2.7117     6.6443    0.4880       517.9684        0.2379
+   4    0.0500        nan    0.0509        nan    0.0420       519.5652        0.2379

@@ -1,0 +1,12 @@
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 3e-05 --decoupled_wd --wd=3.3333333333333335
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 3e-05 --decoupled_wd --wd=16.666666666666668
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 3e-05 --decoupled_wd --wd=0.0
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.0001 --decoupled_wd --wd=1.0
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.0001 --decoupled_wd --wd=5.0
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.0001 --decoupled_wd --wd=0.0
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.0003 --decoupled_wd --wd=0.33333333333333337
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.0003 --decoupled_wd --wd=1.6666666666666667
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.0003 --decoupled_wd --wd=0.0
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.01 --decoupled_wd --wd=0.01
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.01 --decoupled_wd --wd=0.05
+python3 run_adam.py --dir out/ --dataset MNIST --data_path=data/ --model=Logistic --epochs=1000 --save_freq=25 --eval_freq=1 --lr_init 0.01 --decoupled_wd --wd=0.0

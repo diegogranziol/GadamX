@@ -1,0 +1,15 @@
+usage: run_sgd.py [-h] --dir DIR [--dataset DATASET] --data_path PATH
+                  [--use_test] [--batch_size N] [--num_workers N] --model
+                  MODEL [--resume CKPT] [--reset_resume] [--epochs N]
+                  [--save_freq N] [--eval_freq N] [--lr_init LR] [--lr_r LR_R]
+                  [--momentum M] [--wd WD] [--normalized_wd] [--no_schedule]
+                  [--step_schedule] [--when WHEN [WHEN ...]]
+                  [--cosine_annealing] [--swag] [--linear_annealing]
+                  [--no_covariance]
+                  [--swag_subspace {covariance,pca,freq_dir}]
+                  [--swag_rank SWAG_RANK] [--swag_start N] [--swag_lr LR]
+                  [--schedule_swag_lr] [--swag_c_epochs N] [--swag_save_stats]
+                  [--swag_resume CKPT] [--verbose] [--save_freq_weight_norm N]
+                  [--seed S]
+run_sgd.py: error: the following arguments are required: --dir
+numpy imported

@@ -1,0 +1,70 @@
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00000.pt
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+#      train_loss    train_acc    test_loss    test_acc    loss_mean    loss_var    grad_mean_norm_sq    grad_var    hess_mean_norm_sq    hess_var    hess_mu    delta    alpha     time
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+1/1           6.9         0.11          6.9        0.08          6.9        0.15                0.006     2.4e+02              3.1e-07     2.5e-06    6.3e-08  3.1e-07        1  1.4e+05
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00010.pt
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+#      train_loss    train_acc    test_loss    test_acc    loss_mean    loss_var    grad_mean_norm_sq    grad_var    hess_mean_norm_sq    hess_var    hess_mu    delta    alpha     time
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+1/1           1.5           64          2.1          53          7.5         1.7                 0.35     1.9e+02              1.7e-06     3.7e-06    1.5e-07  1.7e-06        1  1.3e+05
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00020.pt
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+#      train_loss    train_acc    test_loss    test_acc    loss_mean    loss_var    grad_mean_norm_sq    grad_var    hess_mean_norm_sq    hess_var    hess_mu    delta    alpha     time
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+1/1           0.9           76          2.1          55          7.6           2                 0.62     3.4e+02              3.5e-06     1.6e-05    3.1e-07  3.5e-06        1  1.3e+05
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+saving to /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/30-iterate_loss_stats_b=None
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/checkpoint-00030.pt
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+#      train_loss    train_acc    test_loss    test_acc    loss_mean    loss_var    grad_mean_norm_sq    grad_var    hess_mean_norm_sq    hess_var    hess_mu    delta    alpha     time
+---  ------------  -----------  -----------  ----------  -----------  ----------  -------------------  ----------  -------------------  ----------  ---------  -------  -------  -------
+1/1          0.45           87          2.5          55            8         2.9                  2.1     7.1e+02              2.8e-05     0.00014    8.5e-07  2.8e-05        1  1.1e+05
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+saving to /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/40-swagpoint_loss_stats_b=None
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=30.0_slr=0.015/swag-00040.pt
+slurmstepd-dgj413: error: *** JOB 450973 ON dgj413 CANCELLED AT 2020-02-03T10:55:52 DUE TO TIME LIMIT ***
+slurmstepd-dgj413: error: task_p_post_term: rmdir(/dev/cpuset/slurm_dgj413_450973/slurm450973.4294967294_0) failed Device or resource busy

@@ -1,0 +1,1 @@
+python3 ../spectrum.py --curvature_matrix=hessian   --dataset=CIFAR10 --iters=100 --data_path=/nfs/home/dgranziol/curvature/data/ --model=VGG16basicSGD --ckpt=/nfs/home/dgranziol/kfac-curvature/out/CIFAR10/VGG16basicSGD/lr=0.05_wd=0.0005/checkpoint-00000.pt

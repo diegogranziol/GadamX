@@ -1,0 +1,17 @@
+
+	Python anaconda is now loaded in your environment.
+
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out//CIFAR100/VGG16/SWA/lr=0.01_wd=1e-05_swastart=161_swalr=0.0005/
+Using model VGG16
+Loading CIFAR100 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{}
+SWAG training
+Traceback (most recent call last):
+  File "../run_swag.py", line 206, in <module>
+    values = values[:-2] + [swag_res['loss'],  train_res_swag['accuracy'], swag_res['accuracy']] + values[-2:]
+NameError: name 'train_res_swag' is not defined

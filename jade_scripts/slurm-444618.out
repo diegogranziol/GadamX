@@ -1,0 +1,16 @@
+
+	Python anaconda is now loaded in your environment.
+
+Traceback (most recent call last):
+  File "../run_swag.py", line 10, in <module>
+    from curvature import data, models, losses, utils
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/__init__.py", line 8, in <module>
+    from . import (
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/methods/__init__.py", line 1, in <module>
+    from . import (
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/methods/swag.py", line 3, in <module>
+    from ..utils import set_weights
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 606
+    =======
+     ^
+SyntaxError: invalid syntax

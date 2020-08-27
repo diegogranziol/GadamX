@@ -1,0 +1,38 @@
+numpy imported
+Preparing directory out/ImageNet32/WideResNet28x10/SSGDMN/seed=1_epoch_freq=10_curvaturesize=10000_warmstart=-1_mom=0.0_wd=0.0001_numepochs=50/
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+SGD training
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (10000) + test (50000)
+Traceback (most recent call last):
+  File "../run_ssgdmn_fastanddirty.py", line 219, in <module>
+    matrix_shape=(num_parametrs, num_parametrs))
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/gpytorch/utils/lanczos.py", line 73, in lanczos_tridiag
+    r_vec = matmul_closure(q_0_vec)
+  File "../run_ssgdmn_fastanddirty.py", line 209, in __call__
+    bn_train_mode = not args.bn_train_mode_off)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 453, in hess_vec
+    loss, _, _ = criterion(model, input, target)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/losses.py", line 19, in cross_entropy
+    output = model(input)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/nn/modules/module.py", line 541, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/models/wide_resnet.py", line 82, in forward
+    out = self.layer1(out)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/nn/modules/module.py", line 541, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/nn/modules/module.py", line 541, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/models/wide_resnet.py", line 46, in forward
+    out = self.conv2(F.relu(self.bn2(out)))
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/nn/functional.py", line 914, in relu
+    result = torch.relu(input)
+RuntimeError: CUDA out of memory. Tried to allocate 6.10 GiB (GPU 0; 15.75 GiB total capacity; 14.43 GiB already allocated; 221.88 MiB free; 35.71 MiB cached)

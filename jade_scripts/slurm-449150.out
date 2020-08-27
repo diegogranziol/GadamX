@@ -1,0 +1,15 @@
+
+	Python anaconda is now loaded in your environment.
+
+usage: run_padam.py [-h] [--dir DIR] [--dataset DATASET] --data_path PATH
+                    [--use_test] [--batch_size N] [--num_workers N] --model
+                    MODEL [--resume CKPT] [--epochs N] [--save_freq N]
+                    [--eval_freq N] [--lr_init LR] [--momentum M] [--wd WD]
+                    [--decoupled_wd] [--partial PARTIAL] [--no_schedule]
+                    [--swag] [--no_covariance]
+                    [--swag_subspace {covariance,pca,freq_dir}]
+                    [--swag_rank SWAG_RANK] [--swag_start N] [--swag_lr LR]
+                    [--swag_c_epochs N] [--swag_resume CKPT] [--seed S]
+                    [--verbose] [--save_freq_weight_norm N]
+run_padam.py: error: argument --wd: invalid float value: '0.0001--swag_start'
+numpy imported

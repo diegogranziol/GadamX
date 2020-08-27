@@ -1,0 +1,17 @@
+
+	Python anaconda is now loaded in your environment.
+
+usage: run_sgd.py [-h] --dir DIR [--dataset DATASET] --data_path PATH
+                  [--use_test] [--batch_size N] [--num_workers N] --model
+                  MODEL [--resume CKPT] [--epochs N] [--save_freq N]
+                  [--eval_freq N] [--lr_init LR] [--momentum M] [--wd WD]
+                  [--normalized_wd] [--no_schedule] [--step_schedule]
+                  [--step_schedule_r STEP_SCHEDULE_R]
+                  [--step_schedule_d STEP_SCHEDULE_D] [--swag]
+                  [--no_covariance] [--smartswag]
+                  [--swag_subspace {covariance,pca,freq_dir}]
+                  [--swag_rank SWAG_RANK] [--swag_start N] [--swag_lr LR]
+                  [--swag_c_epochs N] [--swag_save_stats] [--swag_resume CKPT]
+                  [--verbose] [--save_freq_weight_norm N] [--seed S]
+run_sgd.py: error: unrecognized arguments: --swagsmart
+numpy imported

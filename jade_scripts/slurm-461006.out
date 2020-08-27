@@ -1,0 +1,54 @@
+
+	Python anaconda is now loaded in your environment.
+
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/Padam_nogapX/seed=5_lr=0.03_wd=0.0003_swa_start=30.0_swa_lr=0.0005/
+Using model WideResNet28x10
+Loading ImageNet32 from ../../curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+No Covariance Estimation
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+  ep        lr    tr_loss    tr_acc    te_loss    te_acc    te_top5_acc  swa_tr_loss    swa_tr_acc    swa_te_loss    swa_te_acc    swa_te_top5_acc         time    mem_usage
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+   1    0.0300     4.7009   12.9139     3.9064   21.1560        44.6880                                                                               2307.8784       0.6950
+   2    0.0300     3.2821   30.0972     3.2337   31.5880        57.3020                                                                               2317.4455       0.6950
+   3    0.0300     2.7751   38.5771     2.8618   37.9780        64.1620                                                                               2315.0169       0.6950
+   4    0.0300     2.4765   43.9030     2.6288   41.3960        67.8640                                                                               2296.0223       0.6950
+   5    0.0300     2.2705   47.6455     2.5047   44.1720        70.0220                                                                               2290.2692       0.6950
+   6    0.0300     2.1189   50.5351     2.4414   45.7480        71.4139                                                                               2292.4790       0.6950
+   7    0.0300     1.9997   52.8647     2.2954   48.0680        73.5900                                                                               2310.5920       0.6950
+   8    0.0300     1.9064   54.6467     2.2747   48.9220        74.2540                                                                               2297.6327       0.6950
+   9    0.0300     1.8273   56.1998     2.2471   49.4500        74.8380                                                                               2283.1177       0.6950
+  10    0.0300     1.7603   57.4882     2.2317   50.0420        74.9280                                                                               2308.2744       0.6950
+  11    0.0300     1.7054   58.5647     2.2359   50.3820        75.3120                                                                               2304.6731       0.6950
+  12    0.0300     1.6563   59.5744     2.1851   51.0080        75.7620                                                                               2307.7310       0.6950
+  13    0.0300     1.6138   60.3996     2.1711   51.2740        76.1381                                                                               2298.7512       0.6950
+  14    0.0300     1.5770   61.0986     2.1627   51.5580        76.3920                                                                               2301.9725       0.6950
+  15    0.0300     1.5414   61.8357     2.1499   51.9320        76.4900                                                                               2287.8778       0.6950
+  16    0.0300     1.5103   62.4658     2.1676   51.6340        76.4640                                                                               2290.3241       0.6950
+  17    0.0300     1.4826   63.0091     2.1704   51.8720        76.6881                                                                               2297.7476       0.6950
+  18    0.0300     1.4549   63.5513     2.1618   52.3160        76.7680                                                                               2302.1348       0.6950
+  19    0.0300     1.4325   63.9722     2.1807   52.3020        76.7660                                                                               2290.0625       0.6950
+  20    0.0300     1.4115   64.4605     2.1368   52.8620        77.1420                                                                               2295.8058       0.6950
+  21    0.0300     1.3902   64.8350     2.1910   52.2280        76.7200                                                                               2285.8964       0.6950
+  22    0.0300     1.3722   65.2393     2.1376   53.2700        77.4840                                                                               2284.3139       0.6950
+  23    0.0300     1.3533   65.6297     2.1554   52.6940        77.3521                                                                               2322.2304       0.6950
+  24    0.0300     1.3376   65.9293     2.1523   53.1120        77.5440                                                                               2290.7192       0.6950
+Traceback (most recent call last):
+  File "../run_padam_gap.py", line 347, in <module>
+    model=model
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 1054, in save_weight_norm
+    linf_norms=linf_norm
+  File "<__array_function__ internals>", line 6, in savez
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 632, in savez
+    _savez(file, args, kwds, False)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 730, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 119, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+OSError: [Errno 27] File too large: '../out/ImageNet32/WideResNet28x10/Padam_nogapX/seed=5_lr=0.03_wd=0.0003_swa_start=30.0_swa_lr=0.0005/weight_norm-00025.pt.npz'

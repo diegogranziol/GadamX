@@ -1,0 +1,7 @@
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/AdamX/seed=1_lr=0.001_wd=0.001_adam_eps=1e-08_swa_start=30.0_swa_lr=0.0005/
+Using model WideResNet28x10
+Traceback (most recent call last):
+  File "../run_adam.py", line 122, in <module>
+    use_validation=not args.use_test,
+TypeError: loaders() got an unexpected keyword argument 'train_subset'

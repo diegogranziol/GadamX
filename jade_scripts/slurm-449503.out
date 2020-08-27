@@ -1,0 +1,4111 @@
+
+	Python anaconda is now loaded in your environment.
+
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00000.pt
+storing basis
+Iter 1. Time: 174.24
+Iter 2. Time: 172.12
+Iter 3. Time: 171.96
+Iter 4. Time: 172.10
+Iter 5. Time: 172.04
+Iter 6. Time: 172.04
+Iter 7. Time: 171.79
+Iter 8. Time: 171.86
+Iter 9. Time: 171.95
+Iter 10. Time: 171.85
+Iter 11. Time: 171.81
+Iter 12. Time: 171.53
+Iter 13. Time: 171.81
+Iter 14. Time: 171.90
+Iter 15. Time: 171.73
+Iter 16. Time: 171.85
+Iter 17. Time: 171.78
+Iter 18. Time: 171.76
+Iter 19. Time: 171.78
+Iter 20. Time: 171.86
+Iter 21. Time: 171.81
+Iter 22. Time: 171.86
+Iter 23. Time: 173.34
+Iter 24. Time: 172.84
+Iter 25. Time: 172.18
+Iter 26. Time: 172.15
+Iter 27. Time: 172.01
+Iter 28. Time: 172.04
+Iter 29. Time: 172.19
+Iter 30. Time: 172.09
+Iter 31. Time: 172.18
+Iter 32. Time: 172.10
+Iter 33. Time: 172.19
+Iter 34. Time: 172.12
+Iter 35. Time: 172.18
+Iter 36. Time: 171.94
+Iter 37. Time: 171.88
+Iter 38. Time: 172.16
+Iter 39. Time: 171.75
+Iter 40. Time: 172.16
+Iter 41. Time: 172.07
+Iter 42. Time: 171.95
+Iter 43. Time: 172.05
+Iter 44. Time: 172.00
+Iter 45. Time: 174.51
+Iter 46. Time: 174.88
+Iter 47. Time: 172.11
+Iter 48. Time: 171.89
+Iter 49. Time: 171.78
+Iter 50. Time: 171.96
+Iter 51. Time: 171.98
+Iter 52. Time: 171.99
+Iter 53. Time: 172.15
+Iter 54. Time: 171.97
+Iter 55. Time: 171.97
+Iter 56. Time: 172.11
+Iter 57. Time: 171.98
+Iter 58. Time: 172.12
+Iter 59. Time: 171.90
+Iter 60. Time: 171.86
+Iter 61. Time: 171.97
+Iter 62. Time: 171.87
+Iter 63. Time: 172.05
+Iter 64. Time: 171.88
+Iter 65. Time: 171.98
+Iter 66. Time: 171.79
+Iter 67. Time: 171.90
+Iter 68. Time: 172.27
+Iter 69. Time: 173.08
+Iter 70. Time: 171.81
+Iter 71. Time: 171.65
+Iter 72. Time: 171.93
+Iter 73. Time: 171.98
+Iter 74. Time: 171.86
+Iter 75. Time: 172.00
+Iter 76. Time: 171.91
+Iter 77. Time: 172.07
+Iter 78. Time: 171.96
+Iter 79. Time: 172.07
+Iter 80. Time: 172.00
+Iter 81. Time: 171.77
+Iter 82. Time: 172.00
+Iter 83. Time: 172.07
+Iter 84. Time: 172.01
+Iter 85. Time: 172.10
+Iter 86. Time: 172.17
+Iter 87. Time: 172.04
+Iter 88. Time: 171.99
+Iter 89. Time: 172.11
+Iter 90. Time: 173.11
+Iter 91. Time: 172.09
+Iter 92. Time: 172.10
+Iter 93. Time: 172.28
+Iter 94. Time: 172.21
+Iter 95. Time: 172.13
+Iter 96. Time: 172.03
+Iter 97. Time: 172.18
+Iter 98. Time: 172.18
+Iter 99. Time: 172.04
+Iter 100. Time: 171.97
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+         value       weight
+--------------  -----------
+-445.725        2.18121e-06
+-283.129        2.07863e-08
+-219.854        1.74276e-06
+-201.073        1.84699e-06
+-179.599        1.68055e-06
+-156.853        6.56864e-07
+-131.456        3.00634e-09
+-121.729        4.32105e-09
+-109.107        9.01743e-09
+ -76.8357       4.41464e-07
+ -61.2355       3.24014e-06
+ -58.4957       9.24584e-07
+ -52.7242       3.50568e-06
+ -47.287        1.11035e-07
+ -44.9179       3.92738e-06
+ -41.426        3.63039e-09
+ -40.1049       1.80523e-06
+ -37.2462       1.84e-07
+ -36.2321       1.44904e-07
+ -32.8897       1.12395e-06
+ -32.6094       5.16158e-06
+ -31.0628       5.14915e-07
+ -30.1488       1.13049e-06
+ -29.5384       1.3069e-06
+ -28.7045       5.56856e-07
+ -28.3046       1.71698e-07
+ -25.8531       2.6183e-06
+ -24.7192       5.46891e-07
+ -24.3157       6.96337e-08
+ -22.9334       2.28828e-07
+ -21.9874       1.34185e-06
+ -21.5642       1.85088e-08
+ -21.1655       2.31496e-06
+ -20.6274       1.69562e-06
+ -20.1718       8.92844e-08
+ -19.709        4.1874e-07
+ -18.9972       3.01722e-08
+ -18.8425       7.97562e-07
+ -17.679        5.45663e-07
+ -17.4185       4.13716e-07
+ -16.4818       2.34415e-08
+ -16.404        9.54649e-07
+ -15.8935       3.60226e-06
+ -15.4917       4.36093e-06
+ -15.4084       7.18909e-07
+ -14.7792       2.99777e-08
+ -14.5183       2.85351e-08
+ -13.9686       2.15018e-06
+ -13.5113       8.92578e-07
+ -13.3346       1.94624e-06
+ -12.9202       8.40478e-07
+ -12.5041       8.10184e-07
+ -12.1966       2.52416e-06
+ -11.811        6.1923e-07
+ -11.3784       8.79338e-07
+ -10.7713       3.47144e-06
+ -10.4232       2.03744e-06
+  -9.93518      6.53752e-07
+  -9.36411      3.58587e-06
+  -8.8879       1.93348e-07
+  -8.51182      1.41107e-06
+  -7.99055      1.86471e-06
+  -7.52022      5.00627e-06
+  -7.20955      4.63301e-06
+  -6.70158      5.71412e-06
+  -6.38987      4.15588e-06
+  -5.86069      3.59377e-06
+   5.65267      3.94968e-08
+  -5.48009      1.24672e-05
+   5.15152      4.33163e-07
+  -4.9674       9.15789e-06
+  -4.73449      1.14884e-05
+   4.58289      4.81381e-08
+  -4.21102      1.11306e-05
+   4.12528      1.58824e-07
+  -3.86388      1.31535e-05
+   3.61568      3.33958e-06
+  -3.45224      9.55955e-06
+   3.37133      3.97192e-10
+  -3.10171      1.66593e-05
+   3.00156      2.70074e-06
+  -2.75477      1.75326e-05
+   2.73075      6.86104e-06
+  -2.40974      2.82891e-05
+   2.24546      6.94533e-07
+  -2.09304      2.31137e-05
+  -1.76045      3.34803e-05
+  -1.46182      5.19903e-05
+  -1.17985      5.0288e-05
+  -0.896237     0.000112511
+   0.670009     3.70222e-08
+  -0.654955     0.000147353
+   0.51612      3.46961e-07
+  -0.421271     0.000312189
+   0.411701     9.25681e-06
+   0.290179     5.5254e-05
+  -0.222754     0.000792398
+   0.172346     0.000263025
+  -0.0475458    0.00513571
+  -0.000429395  0.992768
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00000.pt
+storing basis
+Iter 1. Time: 119.24
+Iter 2. Time: 117.20
+Iter 3. Time: 117.13
+Iter 4. Time: 117.16
+Iter 5. Time: 117.19
+Iter 6. Time: 117.14
+Iter 7. Time: 117.16
+Iter 8. Time: 117.19
+Iter 9. Time: 117.15
+Iter 10. Time: 117.19
+Iter 11. Time: 117.10
+Iter 12. Time: 117.13
+Iter 13. Time: 117.15
+Iter 14. Time: 117.19
+Iter 15. Time: 117.12
+Iter 16. Time: 117.21
+Iter 17. Time: 117.21
+Iter 18. Time: 117.14
+Iter 19. Time: 117.09
+Iter 20. Time: 117.19
+Iter 21. Time: 117.17
+Iter 22. Time: 117.14
+Iter 23. Time: 117.12
+Iter 24. Time: 117.18
+Iter 25. Time: 117.15
+Iter 26. Time: 117.12
+Iter 27. Time: 117.12
+Iter 28. Time: 117.12
+Iter 29. Time: 117.20
+Iter 30. Time: 117.19
+Iter 31. Time: 117.12
+Iter 32. Time: 117.25
+Iter 33. Time: 120.41
+Iter 34. Time: 118.33
+Iter 35. Time: 117.28
+Iter 36. Time: 117.24
+Iter 37. Time: 117.28
+Iter 38. Time: 117.38
+Iter 39. Time: 117.30
+Iter 40. Time: 117.41
+Iter 41. Time: 117.42
+Iter 42. Time: 117.37
+Iter 43. Time: 117.32
+Iter 44. Time: 117.32
+Iter 45. Time: 117.33
+Iter 46. Time: 117.34
+Iter 47. Time: 117.26
+Iter 48. Time: 117.28
+Iter 49. Time: 117.31
+Iter 50. Time: 117.34
+Iter 51. Time: 118.77
+Iter 52. Time: 117.74
+Iter 53. Time: 117.36
+Iter 54. Time: 117.26
+Iter 55. Time: 117.25
+Iter 56. Time: 117.25
+Iter 57. Time: 117.25
+Iter 58. Time: 117.25
+Iter 59. Time: 117.24
+Iter 60. Time: 117.28
+Iter 61. Time: 117.36
+Iter 62. Time: 117.51
+Iter 63. Time: 117.36
+Iter 64. Time: 117.25
+Iter 65. Time: 117.28
+Iter 66. Time: 117.29
+Iter 67. Time: 117.60
+Iter 68. Time: 117.51
+Iter 69. Time: 117.35
+Iter 70. Time: 117.36
+Iter 71. Time: 117.26
+Iter 72. Time: 117.35
+Iter 73. Time: 117.32
+Iter 74. Time: 117.34
+Iter 75. Time: 117.29
+Iter 76. Time: 117.28
+Iter 77. Time: 117.31
+Iter 78. Time: 117.30
+Iter 79. Time: 117.46
+Iter 80. Time: 117.38
+Iter 81. Time: 117.40
+Iter 82. Time: 117.47
+Iter 83. Time: 117.33
+Iter 84. Time: 117.37
+Iter 85. Time: 117.39
+Iter 86. Time: 117.38
+Iter 87. Time: 117.33
+Iter 88. Time: 117.31
+Iter 89. Time: 117.35
+Iter 90. Time: 117.28
+Iter 91. Time: 117.23
+Iter 92. Time: 117.37
+Iter 93. Time: 117.33
+Iter 94. Time: 117.38
+Iter 95. Time: 117.29
+Iter 96. Time: 117.34
+Iter 97. Time: 117.35
+Iter 98. Time: 117.37
+Iter 99. Time: 117.33
+Iter 100. Time: 117.34
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+Traceback (most recent call last):
+  File "../spectrum.py", line 296, in <module>
+    gammas=gammas.numpy() if gammas is not None else None
+  File "<__array_function__ internals>", line 6, in savez
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 632, in savez
+    _savez(file, args, kwds, False)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 730, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 119, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+OSError: [Errno 27] File too large: '/jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/hessian_0_bn_train_mode_off.npz'
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00025.pt
+storing basis
+Iter 1. Time: 174.52
+Iter 2. Time: 172.55
+Iter 3. Time: 172.59
+Iter 4. Time: 172.66
+Iter 5. Time: 172.53
+Iter 6. Time: 172.54
+Iter 7. Time: 172.60
+Iter 8. Time: 172.79
+Iter 9. Time: 172.65
+Iter 10. Time: 172.77
+Iter 11. Time: 172.63
+Iter 12. Time: 172.64
+Iter 13. Time: 172.53
+Iter 14. Time: 172.52
+Iter 15. Time: 172.56
+Iter 16. Time: 172.61
+Iter 17. Time: 172.49
+Iter 18. Time: 172.63
+Iter 19. Time: 172.69
+Iter 20. Time: 172.62
+Iter 21. Time: 172.69
+Iter 22. Time: 172.75
+Iter 23. Time: 176.63
+Iter 24. Time: 172.95
+Iter 25. Time: 172.75
+Iter 26. Time: 172.73
+Iter 27. Time: 172.70
+Iter 28. Time: 172.84
+Iter 29. Time: 172.84
+Iter 30. Time: 172.77
+Iter 31. Time: 172.71
+Iter 32. Time: 172.82
+Iter 33. Time: 172.80
+Iter 34. Time: 172.86
+Iter 35. Time: 172.90
+Iter 36. Time: 172.87
+Iter 37. Time: 172.65
+Iter 38. Time: 172.78
+Iter 39. Time: 172.95
+Iter 40. Time: 172.74
+Iter 41. Time: 172.85
+Iter 42. Time: 172.92
+Iter 43. Time: 172.99
+Iter 44. Time: 173.04
+Iter 45. Time: 172.93
+Iter 46. Time: 173.46
+Iter 47. Time: 173.37
+Iter 48. Time: 172.88
+Iter 49. Time: 173.04
+Iter 50. Time: 172.94
+Iter 51. Time: 172.94
+Iter 52. Time: 172.92
+Iter 53. Time: 172.91
+Iter 54. Time: 172.97
+Iter 55. Time: 172.93
+Iter 56. Time: 172.86
+Iter 57. Time: 172.97
+Iter 58. Time: 173.05
+Iter 59. Time: 172.86
+Iter 60. Time: 172.79
+Iter 61. Time: 172.78
+Iter 62. Time: 172.81
+Iter 63. Time: 172.91
+Iter 64. Time: 172.91
+Iter 65. Time: 173.04
+Iter 66. Time: 173.03
+Iter 67. Time: 172.99
+Iter 68. Time: 173.81
+Iter 69. Time: 173.53
+Iter 70. Time: 173.29
+Iter 71. Time: 173.38
+Iter 72. Time: 173.50
+Iter 73. Time: 173.40
+Iter 74. Time: 173.29
+Iter 75. Time: 173.19
+Iter 76. Time: 173.07
+Iter 77. Time: 173.13
+Iter 78. Time: 173.30
+Iter 79. Time: 173.29
+Iter 80. Time: 173.23
+Iter 81. Time: 173.28
+Iter 82. Time: 173.30
+Iter 83. Time: 173.26
+Iter 84. Time: 173.30
+Iter 85. Time: 173.27
+Iter 86. Time: 173.36
+Iter 87. Time: 173.33
+Iter 88. Time: 173.32
+Iter 89. Time: 173.24
+Iter 90. Time: 173.25
+Iter 91. Time: 173.29
+Iter 92. Time: 173.15
+Iter 93. Time: 173.13
+Iter 94. Time: 173.16
+Iter 95. Time: 173.26
+Iter 96. Time: 173.36
+Iter 97. Time: 173.33
+Iter 98. Time: 173.26
+Iter 99. Time: 173.26
+Iter 100. Time: 173.38
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+Traceback (most recent call last):
+  File "../spectrum.py", line 296, in <module>
+    gammas=gammas.numpy() if gammas is not None else None
+  File "<__array_function__ internals>", line 6, in savez
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 632, in savez
+    _savez(file, args, kwds, False)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 730, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 119, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+OSError: [Errno 27] File too large: '/jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/hessian_25.npz'
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00025.pt
+storing basis
+Iter 1. Time: 119.06
+Iter 2. Time: 117.11
+Iter 3. Time: 117.01
+Iter 4. Time: 117.05
+Iter 5. Time: 117.04
+Iter 6. Time: 117.04
+Iter 7. Time: 116.99
+Iter 8. Time: 116.95
+Iter 9. Time: 116.98
+Iter 10. Time: 117.01
+Iter 11. Time: 116.98
+Iter 12. Time: 116.97
+Iter 13. Time: 116.97
+Iter 14. Time: 116.96
+Iter 15. Time: 116.91
+Iter 16. Time: 116.98
+Iter 17. Time: 116.97
+Iter 18. Time: 116.99
+Iter 19. Time: 116.97
+Iter 20. Time: 117.05
+Iter 21. Time: 116.98
+Iter 22. Time: 116.99
+Iter 23. Time: 117.00
+Iter 24. Time: 117.10
+Iter 25. Time: 116.99
+Iter 26. Time: 116.94
+Iter 27. Time: 116.95
+Iter 28. Time: 116.92
+Iter 29. Time: 116.93
+Iter 30. Time: 116.99
+Iter 31. Time: 117.06
+Iter 32. Time: 117.02
+Iter 33. Time: 118.55
+Iter 34. Time: 118.39
+Iter 35. Time: 117.07
+Iter 36. Time: 117.00
+Iter 37. Time: 117.10
+Iter 38. Time: 117.15
+Iter 39. Time: 117.10
+Iter 40. Time: 117.08
+Iter 41. Time: 117.11
+Iter 42. Time: 117.12
+Iter 43. Time: 117.13
+Iter 44. Time: 117.08
+Iter 45. Time: 117.12
+Iter 46. Time: 117.08
+Iter 47. Time: 117.07
+Iter 48. Time: 117.10
+Iter 49. Time: 117.13
+Iter 50. Time: 117.12
+Iter 51. Time: 117.10
+Iter 52. Time: 117.09
+Iter 53. Time: 117.54
+Iter 54. Time: 117.15
+Iter 55. Time: 117.21
+Iter 56. Time: 117.17
+Iter 57. Time: 117.15
+Iter 58. Time: 117.10
+Iter 59. Time: 117.10
+Iter 60. Time: 117.09
+Iter 61. Time: 117.14
+Iter 62. Time: 117.10
+Iter 63. Time: 117.26
+Iter 64. Time: 117.16
+Iter 65. Time: 117.11
+Iter 66. Time: 117.08
+Iter 67. Time: 117.10
+Iter 68. Time: 117.00
+Iter 69. Time: 117.08
+Iter 70. Time: 117.10
+Iter 71. Time: 117.07
+Iter 72. Time: 117.12
+Iter 73. Time: 117.14
+Iter 74. Time: 117.13
+Iter 75. Time: 117.14
+Iter 76. Time: 117.09
+Iter 77. Time: 117.09
+Iter 78. Time: 117.11
+Iter 79. Time: 117.12
+Iter 80. Time: 117.11
+Iter 81. Time: 117.09
+Iter 82. Time: 117.10
+Iter 83. Time: 117.14
+Iter 84. Time: 117.15
+Iter 85. Time: 117.10
+Iter 86. Time: 117.09
+Iter 87. Time: 116.92
+Iter 88. Time: 116.90
+Iter 89. Time: 116.85
+Iter 90. Time: 116.85
+Iter 91. Time: 116.87
+Iter 92. Time: 116.85
+Iter 93. Time: 116.94
+Iter 94. Time: 116.96
+Iter 95. Time: 116.79
+Iter 96. Time: 116.81
+Iter 97. Time: 116.88
+Iter 98. Time: 116.88
+Iter 99. Time: 116.86
+Iter 100. Time: 116.82
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+69.9668       7.72681e-07
+62.1337       8.03931e-06
+53.3464       3.08026e-07
+33.9422       7.42766e-07
+28.6927       1.10434e-06
+21.8091       3.2028e-07
+19.6251       8.24943e-08
+18.7013       1.97805e-06
+15.6396       3.98522e-08
+12.1104       2.32148e-07
+ 9.25733      3.27273e-07
+ 7.225        3.89495e-07
+ 6.46103      2.06787e-07
+ 6.21539      3.41534e-06
+ 5.28006      3.45396e-07
+ 4.89939      2.59771e-08
+ 4.48275      2.98596e-08
+ 4.06353      4.84711e-08
+ 3.7847       1.61639e-06
+ 3.51442      5.20565e-07
+ 3.26394      4.62527e-06
+ 3.05763      1.52666e-06
+ 2.99071      2.91103e-08
+ 2.80291      3.48453e-07
+ 2.66488      7.26365e-07
+ 2.56837      4.94187e-08
+ 2.4088       3.38004e-09
+ 2.28557      8.79625e-07
+ 2.17468      3.21853e-06
+ 2.14576      4.69702e-06
+ 2.09969      3.81391e-06
+ 2.06433      4.76615e-07
+ 1.97783      2.42802e-06
+ 1.87283      1.43714e-06
+ 1.79327      1.46917e-07
+ 1.71474      1.49449e-07
+ 1.67462      5.82635e-06
+ 1.66446      1.08036e-06
+ 1.62144      3.62012e-07
+ 1.59327      3.21939e-06
+ 1.5217       9.3277e-07
+ 1.49196      5.40322e-07
+ 1.4336       7.17298e-07
+ 1.40812      1.03787e-06
+ 1.37142      7.61055e-07
+ 1.3265       2.72614e-06
+ 1.25061      7.06699e-07
+ 1.2117       9.94503e-07
+ 1.17025      1.35616e-06
+ 1.09382      8.94733e-06
+ 1.05079      4.6442e-06
+-1.03617      3.33961e-07
+-1.00146      4.25413e-08
+ 0.998399     4.28041e-06
+-0.944259     1.24644e-08
+ 0.936051     7.11666e-06
+-0.90589      5.01208e-08
+-0.883802     1.39834e-07
+ 0.876601     9.62302e-06
+-0.870657     9.07019e-08
+-0.855481     1.989e-06
+-0.842523     1.89984e-07
+ 0.82678      1.0418e-05
+-0.804014     3.17984e-06
+-0.794367     6.72001e-07
+-0.772857     1.00215e-06
+ 0.768569     9.96935e-06
+-0.756149     2.21079e-06
+-0.726896     2.51984e-06
+-0.694913     2.75732e-06
+ 0.692311     1.14695e-05
+-0.663756     4.14034e-06
+ 0.645126     1.81269e-05
+-0.628828     5.48234e-06
+-0.604726     1.65408e-05
+ 0.5856       2.33598e-05
+-0.569397     8.50769e-06
+-0.530893     1.30442e-05
+ 0.527061     5.02385e-05
+-0.487931     2.2805e-05
+ 0.469758     7.30645e-05
+-0.450401     3.99841e-05
+ 0.410115     0.000143927
+-0.406059     4.60508e-05
+-0.363067     7.18424e-05
+ 0.355443     0.000240719
+-0.319539     0.000144971
+ 0.302043     0.000299014
+-0.273034     0.00020436
+ 0.246175     0.0004804
+-0.226647     0.000386486
+ 0.190175     0.000722043
+-0.178155     0.000700777
+ 0.136085     0.00135582
+-0.130476     0.00141945
+ 0.0828837    0.00302213
+-0.0809485    0.00338577
+-0.0302579    0.0190171
+ 0.0289877    0.0190226
+ 8.24014e-06  0.948911
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00050.pt
+storing basis
+Iter 1. Time: 173.76
+Iter 2. Time: 171.69
+Iter 3. Time: 172.20
+Iter 4. Time: 172.13
+Iter 5. Time: 172.04
+Iter 6. Time: 172.13
+Iter 7. Time: 172.13
+Iter 8. Time: 171.82
+Iter 9. Time: 171.83
+Iter 10. Time: 171.90
+Iter 11. Time: 171.85
+Iter 12. Time: 172.07
+Iter 13. Time: 171.91
+Iter 14. Time: 172.10
+Iter 15. Time: 171.83
+Iter 16. Time: 171.99
+Iter 17. Time: 171.86
+Iter 18. Time: 172.14
+Iter 19. Time: 172.47
+Iter 20. Time: 172.56
+Iter 21. Time: 172.70
+Iter 22. Time: 172.55
+Iter 23. Time: 175.02
+Iter 24. Time: 172.56
+Iter 25. Time: 172.47
+Iter 26. Time: 172.41
+Iter 27. Time: 172.47
+Iter 28. Time: 172.59
+Iter 29. Time: 172.55
+Iter 30. Time: 172.48
+Iter 31. Time: 167.92
+Iter 32. Time: 167.02
+Iter 33. Time: 166.92
+Iter 34. Time: 166.95
+Iter 35. Time: 167.01
+Iter 36. Time: 167.04
+Iter 37. Time: 167.00
+Iter 38. Time: 167.00
+Iter 39. Time: 167.06
+Iter 40. Time: 166.98
+Iter 41. Time: 167.02
+Iter 42. Time: 166.98
+Iter 43. Time: 167.03
+Iter 44. Time: 166.97
+Iter 45. Time: 166.97
+Iter 46. Time: 168.65
+Iter 47. Time: 168.20
+Iter 48. Time: 167.07
+Iter 49. Time: 167.06
+Iter 50. Time: 167.05
+Iter 51. Time: 167.02
+Iter 52. Time: 167.05
+Iter 53. Time: 167.05
+Iter 54. Time: 167.02
+Iter 55. Time: 167.03
+Iter 56. Time: 167.03
+Iter 57. Time: 167.06
+Iter 58. Time: 166.99
+Iter 59. Time: 166.97
+Iter 60. Time: 166.83
+Iter 61. Time: 166.84
+Iter 62. Time: 166.73
+Iter 63. Time: 167.14
+Iter 64. Time: 166.76
+Iter 65. Time: 166.65
+Iter 66. Time: 166.76
+Iter 67. Time: 166.73
+Iter 68. Time: 166.76
+Iter 69. Time: 166.74
+Iter 70. Time: 166.75
+Iter 71. Time: 166.71
+Iter 72. Time: 166.75
+Iter 73. Time: 166.73
+Iter 74. Time: 166.75
+Iter 75. Time: 166.69
+Iter 76. Time: 166.71
+Iter 77. Time: 166.79
+Iter 78. Time: 166.74
+Iter 79. Time: 167.40
+Iter 80. Time: 171.46
+Iter 81. Time: 175.53
+Iter 82. Time: 174.57
+Iter 83. Time: 174.91
+Iter 84. Time: 174.89
+Iter 85. Time: 175.06
+Iter 86. Time: 176.23
+Iter 87. Time: 175.64
+Iter 88. Time: 175.42
+Iter 89. Time: 175.14
+Iter 90. Time: 175.55
+Iter 91. Time: 175.03
+Iter 92. Time: 175.83
+Iter 93. Time: 176.13
+Iter 94. Time: 175.83
+Iter 95. Time: 175.83
+Iter 96. Time: 175.40
+Iter 97. Time: 175.24
+Iter 98. Time: 175.18
+Iter 99. Time: 174.98
+Iter 100. Time: 176.34
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+ 4.80626      3.0012e-06
+ 3.55947      1.02525e-07
+ 2.84629      9.77041e-07
+ 2.45405      5.70555e-07
+ 2.12605      1.92105e-07
+ 1.82446      1.07033e-06
+ 1.76877      2.35771e-06
+ 1.59727      5.0053e-07
+ 1.4502       7.9235e-07
+ 1.33808      2.38954e-07
+ 1.30856      2.57647e-09
+ 1.21886      8.17223e-07
+ 1.16176      2.03332e-06
+ 1.11382      9.26146e-08
+ 1.08527      2.13649e-07
+ 1.0134       1.93928e-08
+ 0.994041     6.1053e-08
+ 0.98583      4.47858e-07
+ 0.965875     2.82579e-07
+ 0.94545      7.27606e-07
+ 0.898614     2.98204e-07
+-0.896043     3.90786e-06
+ 0.875426     8.42826e-07
+ 0.864539     8.66718e-09
+ 0.839924     2.25898e-08
+ 0.8331       2.84788e-08
+-0.821147     5.78975e-07
+ 0.796231     1.04621e-06
+ 0.773308     1.24411e-06
+ 0.763035     1.13191e-06
+-0.758608     2.14914e-07
+ 0.744273     1.56278e-06
+-0.737448     5.88213e-07
+ 0.732004     1.01092e-06
+ 0.719511     5.10851e-07
+-0.696579     7.7703e-07
+ 0.694761     2.20118e-07
+-0.678852     1.30936e-07
+ 0.6751       1.78574e-06
+-0.667585     1.43078e-07
+ 0.657789     2.69827e-06
+-0.651481     6.09354e-07
+-0.640274     5.68691e-07
+ 0.633746     1.56267e-06
+-0.623977     1.6046e-07
+-0.619976     2.31418e-06
+ 0.606044     3.16951e-06
+-0.605515     3.18507e-07
+ 0.58918      5.95444e-06
+-0.58356      2.14986e-06
+-0.578623     2.73038e-06
+ 0.56669      7.86812e-06
+-0.556425     1.7768e-08
+ 0.546438     2.98372e-06
+-0.527589     2.05865e-07
+ 0.523918     1.55735e-06
+-0.520602     3.37541e-06
+-0.495641     4.42041e-07
+ 0.493022     3.98682e-06
+-0.481413     1.38057e-06
+-0.47163      2.37558e-06
+ 0.463371     3.24299e-06
+-0.448556     1.23118e-06
+ 0.442554     9.63196e-06
+-0.429417     1.15015e-06
+-0.419919     1.72472e-06
+ 0.416946     1.58815e-05
+-0.400201     9.90111e-07
+ 0.38985      6.88355e-06
+-0.378458     8.38118e-07
+ 0.363099     6.88597e-06
+-0.359073     2.61718e-06
+-0.336144     9.90977e-06
+ 0.335021     9.7236e-06
+-0.322476     5.08372e-06
+ 0.308422     1.79572e-05
+-0.288303     2.10812e-06
+ 0.278283     3.08617e-05
+-0.268997     5.02273e-06
+ 0.250735     2.72556e-05
+-0.247143     1.47975e-05
+ 0.222295     5.2258e-05
+-0.221716     2.54276e-05
+-0.197746     2.01111e-05
+ 0.197136     3.97459e-05
+-0.174508     2.5772e-05
+ 0.169335     7.48942e-05
+-0.147769     4.5486e-05
+ 0.138347     0.000131895
+-0.120262     0.000125571
+ 0.11153      0.000325865
+-0.0958313    0.000253879
+ 0.0850906    0.000576396
+-0.0692268    0.000656098
+ 0.0579649    0.00171887
+-0.0436456    0.00251063
+ 0.0326922    0.00669218
+-0.0196508    0.015887
+ 0.00843565   0.0706679
+-0.000426845  0.899923
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00050.pt
+storing basis
+Iter 1. Time: 121.12
+Iter 2. Time: 118.91
+Iter 3. Time: 119.01
+Iter 4. Time: 119.13
+Iter 5. Time: 119.12
+Iter 6. Time: 119.06
+Iter 7. Time: 119.13
+Iter 8. Time: 119.03
+Iter 9. Time: 119.09
+Iter 10. Time: 119.30
+Iter 11. Time: 119.12
+Iter 12. Time: 119.24
+Iter 13. Time: 119.23
+Iter 14. Time: 118.98
+Iter 15. Time: 118.98
+Iter 16. Time: 118.90
+Iter 17. Time: 119.16
+Iter 18. Time: 119.21
+Iter 19. Time: 119.14
+Iter 20. Time: 119.29
+Iter 21. Time: 119.17
+Iter 22. Time: 119.18
+Iter 23. Time: 119.21
+Iter 24. Time: 118.98
+Iter 25. Time: 118.76
+Iter 26. Time: 119.03
+Iter 27. Time: 118.85
+Iter 28. Time: 119.12
+Iter 29. Time: 119.18
+Iter 30. Time: 119.10
+Iter 31. Time: 119.28
+Iter 32. Time: 119.16
+Iter 33. Time: 119.17
+Iter 34. Time: 118.92
+Iter 35. Time: 119.11
+Iter 36. Time: 118.73
+Iter 37. Time: 116.22
+Iter 38. Time: 116.17
+Iter 39. Time: 116.20
+Iter 40. Time: 116.11
+Iter 41. Time: 116.03
+Iter 42. Time: 116.08
+Iter 43. Time: 116.18
+Iter 44. Time: 116.44
+Iter 45. Time: 116.20
+Iter 46. Time: 116.32
+Iter 47. Time: 118.79
+Iter 48. Time: 119.41
+Iter 49. Time: 119.26
+Iter 50. Time: 119.27
+Iter 51. Time: 119.26
+Iter 52. Time: 119.32
+Iter 53. Time: 119.27
+Iter 54. Time: 119.25
+Iter 55. Time: 119.17
+Iter 56. Time: 119.13
+Iter 57. Time: 119.17
+Iter 58. Time: 119.25
+Iter 59. Time: 119.34
+Iter 60. Time: 119.26
+Iter 61. Time: 119.33
+Iter 62. Time: 119.23
+Iter 63. Time: 119.52
+Iter 64. Time: 119.31
+Iter 65. Time: 119.23
+Iter 66. Time: 120.86
+Iter 67. Time: 119.71
+Iter 68. Time: 119.64
+Iter 69. Time: 119.33
+Iter 70. Time: 119.41
+Iter 71. Time: 119.20
+Iter 72. Time: 119.43
+Iter 73. Time: 120.00
+Iter 74. Time: 119.57
+Iter 75. Time: 119.37
+Iter 76. Time: 119.14
+Iter 77. Time: 119.20
+Iter 78. Time: 119.38
+Iter 79. Time: 119.31
+Iter 80. Time: 119.26
+Iter 81. Time: 119.27
+Iter 82. Time: 119.19
+Iter 83. Time: 119.25
+Iter 84. Time: 119.25
+Iter 85. Time: 119.19
+Iter 86. Time: 119.24
+Iter 87. Time: 119.20
+Iter 88. Time: 119.39
+Iter 89. Time: 119.21
+Iter 90. Time: 119.41
+Iter 91. Time: 119.08
+Iter 92. Time: 119.32
+Iter 93. Time: 119.20
+Iter 94. Time: 119.29
+Iter 95. Time: 119.19
+Iter 96. Time: 119.37
+Iter 97. Time: 119.32
+Iter 98. Time: 119.65
+Iter 99. Time: 119.65
+Iter 100. Time: 122.66
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+      value       weight
+-----------  -----------
+69.2906      4.18356e-07
+45.9791      2.12465e-06
+38.3163      1.59008e-09
+33.1072      1.56822e-06
+28.0498      2.38278e-07
+25.3964      2.32623e-08
+19.1012      1.82273e-06
+17.9288      5.38482e-06
+15.1008      8.71558e-07
+12.9671      4.05476e-08
+10.4602      2.94214e-06
+ 7.62704     6.41252e-07
+ 7.00906     2.4861e-07
+ 6.10567     3.3922e-08
+ 5.54892     1.6754e-07
+ 4.98922     1.12527e-08
+ 4.46379     2.38305e-08
+ 4.02629     8.31013e-07
+ 3.80334     1.48766e-06
+ 3.63487     1.72892e-06
+ 3.40947     3.07812e-06
+ 3.29872     4.01364e-06
+ 3.04894     1.99546e-10
+ 2.75562     6.25962e-08
+ 2.51705     1.79883e-06
+ 2.48446     2.51396e-07
+ 2.28285     1.00307e-07
+ 2.26971     1.75061e-06
+ 2.17883     1.76118e-07
+ 2.13547     1.74487e-07
+ 2.06267     1.25989e-06
+ 2.0283      8.36767e-06
+ 1.97509     3.30428e-07
+ 1.96148     4.10462e-06
+ 1.8655      7.77723e-08
+ 1.77009     5.25827e-06
+ 1.73845     4.669e-08
+ 1.6877      1.11407e-08
+ 1.67085     3.43088e-06
+ 1.62131     5.02702e-07
+ 1.56544     1.47312e-06
+ 1.5305      3.78339e-08
+ 1.48951     1.16291e-06
+ 1.44255     4.0768e-06
+ 1.40688     1.76954e-07
+ 1.36725     1.27696e-06
+ 1.3225      7.51516e-07
+ 1.25187     6.26027e-07
+ 1.20229     2.86333e-06
+ 1.18089     2.00488e-06
+ 1.10081     3.22933e-06
+ 1.05277     5.38734e-06
+-1.03012     4.69446e-07
+ 0.993897    4.33982e-06
+ 0.924476    7.41842e-06
+ 0.890215    6.21764e-06
+-0.885905    1.33788e-06
+-0.843463    2.73628e-07
+-0.824177    1.5704e-09
+ 0.824151    1.32097e-05
+-0.793319    3.51029e-07
+-0.775093    2.61227e-07
+ 0.765858    9.6689e-06
+-0.756871    2.30278e-07
+-0.731591    2.75122e-07
+ 0.713145    1.31627e-05
+-0.708499    1.35701e-07
+-0.692252    6.70769e-07
+-0.6773      3.83209e-06
+-0.649939    2.76912e-06
+ 0.648804    2.97373e-05
+-0.632206    1.53221e-06
+-0.602237    1.29188e-06
+ 0.597131    2.20747e-05
+-0.566499    1.47595e-06
+-0.538996    4.35397e-06
+ 0.533635    2.87287e-05
+-0.50568     8.00502e-06
+ 0.477306    3.53918e-05
+-0.473311    7.41124e-06
+-0.433913    1.45086e-05
+ 0.420702    9.00747e-05
+-0.395722    2.47433e-05
+ 0.366177    0.000173695
+-0.352737    5.5197e-05
+ 0.316051    0.000232731
+-0.314396    0.000112331
+-0.274194    0.000165789
+ 0.261975    0.000359054
+-0.231748    0.00026062
+ 0.208166    0.000550836
+-0.18782     0.000470559
+ 0.156047    0.000874251
+-0.143184    0.000986321
+ 0.10537     0.00177102
+-0.0975772   0.00199152
+ 0.0542822   0.00531073
+-0.0505743   0.00671987
+ 0.00377227  0.46442
+-0.00328689  0.515112
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00075.pt
+storing basis
+Iter 1. Time: 176.62
+Iter 2. Time: 174.71
+Iter 3. Time: 174.96
+Iter 4. Time: 174.76
+Iter 5. Time: 174.90
+Iter 6. Time: 174.91
+Iter 7. Time: 174.82
+Iter 8. Time: 174.99
+Iter 9. Time: 175.13
+Iter 10. Time: 174.74
+Iter 11. Time: 174.75
+Iter 12. Time: 172.86
+Iter 13. Time: 169.43
+Iter 14. Time: 172.24
+Iter 15. Time: 172.63
+Iter 16. Time: 172.73
+Iter 17. Time: 172.49
+Iter 18. Time: 172.72
+Iter 19. Time: 172.68
+Iter 20. Time: 172.67
+Iter 21. Time: 172.73
+Iter 22. Time: 172.96
+Iter 23. Time: 172.70
+Iter 24. Time: 172.59
+Iter 25. Time: 172.57
+Iter 26. Time: 172.70
+Iter 27. Time: 172.94
+Iter 28. Time: 173.36
+Iter 29. Time: 173.01
+Iter 30. Time: 172.87
+Iter 31. Time: 173.17
+Iter 32. Time: 169.36
+Iter 33. Time: 167.65
+Iter 34. Time: 167.62
+Iter 35. Time: 168.06
+Iter 36. Time: 171.33
+Iter 37. Time: 173.39
+Iter 38. Time: 173.86
+Iter 39. Time: 173.68
+Iter 40. Time: 173.72
+Iter 41. Time: 173.72
+Iter 42. Time: 173.69
+Iter 43. Time: 173.64
+Iter 44. Time: 174.14
+Iter 45. Time: 173.55
+Iter 46. Time: 173.49
+Iter 47. Time: 173.87
+Iter 48. Time: 173.82
+Iter 49. Time: 173.72
+Iter 50. Time: 173.55
+Iter 51. Time: 173.87
+Iter 52. Time: 173.64
+Iter 53. Time: 173.68
+Iter 54. Time: 173.50
+Iter 55. Time: 173.87
+Iter 56. Time: 173.98
+Iter 57. Time: 173.78
+Iter 58. Time: 173.64
+Iter 59. Time: 173.90
+Iter 60. Time: 173.74
+Iter 61. Time: 174.31
+Iter 62. Time: 173.80
+Iter 63. Time: 173.57
+Iter 64. Time: 173.93
+Iter 65. Time: 173.92
+Iter 66. Time: 173.72
+Iter 67. Time: 173.80
+Iter 68. Time: 173.89
+Iter 69. Time: 173.47
+Iter 70. Time: 174.46
+Iter 71. Time: 173.95
+Iter 72. Time: 173.80
+Iter 73. Time: 174.05
+Iter 74. Time: 173.94
+Iter 75. Time: 173.78
+Iter 76. Time: 173.52
+Iter 77. Time: 173.69
+Iter 78. Time: 173.77
+Iter 79. Time: 173.91
+Iter 80. Time: 173.76
+Iter 81. Time: 173.51
+Iter 82. Time: 173.94
+Iter 83. Time: 173.91
+Iter 84. Time: 173.69
+Iter 85. Time: 173.86
+Iter 86. Time: 173.86
+Iter 87. Time: 173.91
+Iter 88. Time: 173.80
+Iter 89. Time: 173.62
+Iter 90. Time: 173.83
+Iter 91. Time: 173.56
+Iter 92. Time: 174.07
+Iter 93. Time: 173.77
+Iter 94. Time: 173.52
+Iter 95. Time: 173.96
+Iter 96. Time: 173.71
+Iter 97. Time: 173.77
+Iter 98. Time: 173.76
+Iter 99. Time: 173.92
+Iter 100. Time: 173.95
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+10.3248       3.79316e-07
+ 4.72092      1.03265e-06
+ 3.03767      1.33694e-07
+ 2.73856      5.67863e-07
+ 2.26359      4.78627e-08
+ 2.09869      1.27151e-06
+ 2.05443      1.4282e-06
+ 1.76174      1.355e-06
+ 1.64805      1.19859e-06
+ 1.47931      5.82681e-07
+ 1.3409       1.95588e-09
+ 1.29018      1.39129e-06
+ 1.21056      6.32086e-09
+ 1.10521      2.03316e-07
+ 1.08873      9.23017e-07
+ 1.06785      6.41988e-07
+ 1.03735      8.85221e-09
+ 1.0068       3.21662e-07
+ 0.997627     2.24241e-08
+ 0.946279     3.32062e-06
+ 0.939814     9.14584e-07
+ 0.916768     1.17164e-06
+-0.896727     5.37003e-06
+ 0.884439     3.7087e-07
+ 0.878761     5.96923e-09
+ 0.836858     1.6141e-07
+-0.829626     1.55687e-06
+ 0.815808     2.49277e-07
+ 0.79558      1.10673e-06
+ 0.775897     1.37299e-07
+ 0.755205     4.79066e-07
+ 0.738073     1.31362e-06
+-0.727716     1.22942e-07
+ 0.722113     1.07427e-06
+ 0.694319     1.29331e-06
+ 0.686065     8.52355e-08
+-0.674618     6.71856e-09
+ 0.669381     5.32958e-07
+ 0.639566     2.28337e-07
+-0.636457     1.02755e-07
+ 0.625291     3.50227e-07
+ 0.606987     8.64036e-07
+-0.592067     1.5045e-06
+-0.583019     8.49945e-09
+ 0.582791     1.1079e-06
+-0.580629     1.00778e-08
+-0.568077     2.13197e-07
+ 0.565002     1.20459e-06
+-0.557423     1.0512e-09
+-0.550837     9.10745e-07
+ 0.543783     1.61716e-06
+-0.542726     2.74854e-07
+-0.520666     3.21342e-07
+ 0.520491     4.04984e-06
+-0.496243     3.11752e-07
+ 0.490652     3.05582e-06
+ 0.469425     4.98657e-06
+-0.453939     2.81368e-07
+ 0.449557     1.35122e-05
+-0.434607     6.52396e-08
+ 0.422291     8.05937e-06
+-0.417981     7.4186e-07
+ 0.401544     8.72396e-06
+-0.393831     6.35883e-07
+-0.384761     5.94765e-07
+ 0.376379     5.97349e-06
+-0.359628     3.73725e-06
+-0.345672     1.44269e-06
+ 0.345037     1.19809e-05
+-0.33612      1.43343e-06
+ 0.325921     1.55654e-05
+-0.321919     2.20057e-06
+-0.304862     2.6495e-06
+ 0.29666      1.91332e-05
+-0.290138     1.88825e-06
+ 0.271056     2.3843e-05
+-0.26606      3.14998e-06
+-0.252539     6.69538e-06
+ 0.244341     2.96486e-05
+-0.233389     7.16202e-06
+ 0.21933      3.28362e-05
+-0.210902     1.00925e-05
+-0.19143      1.50952e-05
+ 0.189989     5.63298e-05
+-0.170113     2.03984e-05
+ 0.166082     0.000108789
+-0.146188     3.32234e-05
+ 0.140105     0.00013129
+-0.124445     6.18729e-05
+ 0.113951     0.000222752
+-0.100211     0.000130636
+ 0.0886403    0.000483158
+-0.0773482    0.00033865
+ 0.06361      0.00111247
+-0.0532868    0.00105688
+ 0.0397085    0.00393826
+-0.0305569    0.00502279
+ 0.0174134    0.0187184
+-0.00909819   0.0571508
+ 0.000284563  0.911129
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00075.pt
+storing basis
+Iter 1. Time: 118.49
+Iter 2. Time: 115.76
+Iter 3. Time: 115.85
+Iter 4. Time: 115.90
+Iter 5. Time: 115.95
+Iter 6. Time: 115.88
+Iter 7. Time: 115.91
+Iter 8. Time: 115.91
+Iter 9. Time: 115.87
+Iter 10. Time: 115.87
+Iter 11. Time: 115.83
+Iter 12. Time: 115.90
+Iter 13. Time: 115.89
+Iter 14. Time: 115.84
+Iter 15. Time: 115.81
+Iter 16. Time: 115.88
+Iter 17. Time: 115.91
+Iter 18. Time: 115.88
+Iter 19. Time: 115.95
+Iter 20. Time: 115.94
+Iter 21. Time: 115.92
+Iter 22. Time: 115.88
+Iter 23. Time: 116.03
+Iter 24. Time: 116.09
+Iter 25. Time: 116.01
+Iter 26. Time: 115.94
+Iter 27. Time: 115.97
+Iter 28. Time: 115.91
+Iter 29. Time: 116.01
+Iter 30. Time: 115.98
+Iter 31. Time: 115.99
+Iter 32. Time: 115.97
+Iter 33. Time: 115.92
+Iter 34. Time: 115.96
+Iter 35. Time: 115.92
+Iter 36. Time: 115.94
+Iter 37. Time: 115.96
+Iter 38. Time: 115.95
+Iter 39. Time: 115.89
+Iter 40. Time: 115.96
+Iter 41. Time: 115.92
+Iter 42. Time: 115.95
+Iter 43. Time: 119.72
+Iter 44. Time: 115.79
+Iter 45. Time: 115.81
+Iter 46. Time: 115.80
+Iter 47. Time: 115.89
+Iter 48. Time: 115.88
+Iter 49. Time: 116.20
+Iter 50. Time: 115.88
+Iter 51. Time: 115.84
+Iter 52. Time: 115.76
+Iter 53. Time: 115.84
+Iter 54. Time: 115.98
+Iter 55. Time: 115.85
+Iter 56. Time: 115.92
+Iter 57. Time: 115.91
+Iter 58. Time: 115.89
+Iter 59. Time: 115.86
+Iter 60. Time: 115.98
+Iter 61. Time: 115.91
+Iter 62. Time: 115.97
+Iter 63. Time: 115.90
+Iter 64. Time: 115.87
+Iter 65. Time: 115.73
+Iter 66. Time: 115.79
+Iter 67. Time: 115.74
+Iter 68. Time: 115.76
+Iter 69. Time: 115.88
+Iter 70. Time: 115.82
+Iter 71. Time: 115.88
+Iter 72. Time: 115.85
+Iter 73. Time: 115.89
+Iter 74. Time: 115.75
+Iter 75. Time: 115.80
+Iter 76. Time: 115.74
+Iter 77. Time: 115.79
+Iter 78. Time: 115.74
+Iter 79. Time: 116.03
+Iter 80. Time: 115.88
+Iter 81. Time: 115.84
+Iter 82. Time: 115.83
+Iter 83. Time: 116.76
+Iter 84. Time: 115.90
+Iter 85. Time: 115.92
+Iter 86. Time: 115.94
+Iter 87. Time: 115.92
+Iter 88. Time: 115.93
+Iter 89. Time: 116.01
+Iter 90. Time: 115.85
+Iter 91. Time: 115.89
+Iter 92. Time: 115.97
+Iter 93. Time: 116.02
+Iter 94. Time: 115.94
+Iter 95. Time: 115.99
+Iter 96. Time: 116.01
+Iter 97. Time: 116.08
+Iter 98. Time: 116.05
+Iter 99. Time: 116.00
+Iter 100. Time: 116.07
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+67.7041       1.10537e-08
+51.8662       7.71977e-07
+51.6316       4.70931e-07
+35.8418       2.59986e-08
+31.6416       1.00263e-06
+27.2464       3.02861e-07
+24.3242       1.28186e-07
+21.2201       2.56242e-06
+16.84         3.19228e-06
+16.0044       1.39447e-07
+11.8031       3.4722e-06
+ 9.01868      9.85777e-07
+ 8.56552      6.50377e-08
+ 6.79871      3.12093e-08
+ 6.2175       2.98151e-07
+ 5.62096      7.10178e-07
+ 5.10053      5.34606e-07
+ 4.47778      3.99518e-08
+ 4.38551      1.46278e-06
+ 4.04059      2.96579e-08
+ 3.78393      2.75385e-06
+ 3.48494      4.2041e-09
+ 3.14737      2.94931e-07
+ 3.07103      3.94229e-07
+ 2.84616      2.57315e-07
+ 2.71619      1.22513e-06
+ 2.62403      2.56935e-06
+ 2.55938      7.22849e-07
+ 2.4474       1.97587e-08
+ 2.41362      5.0728e-07
+ 2.30088      3.10023e-07
+ 2.21654      5.43453e-07
+ 2.15262      7.21348e-07
+ 2.10449      4.01696e-07
+ 2.02432      7.6568e-08
+ 1.99521      2.34652e-10
+ 1.94433      1.35077e-07
+ 1.94058      1.05454e-06
+ 1.87087      3.14569e-06
+ 1.85128      7.79882e-08
+ 1.78797      2.68229e-07
+ 1.69217      4.27619e-06
+ 1.65734      1.18475e-06
+ 1.62131      9.28442e-07
+ 1.56126      8.81676e-07
+ 1.53314      1.67854e-06
+ 1.45454      1.40806e-06
+ 1.42578      9.91035e-07
+ 1.37611      1.16948e-06
+ 1.31518      1.78336e-06
+ 1.26814      2.35781e-06
+ 1.21104      2.90624e-06
+ 1.16397      1.12041e-06
+ 1.08062      2.94093e-06
+ 1.0345       2.69506e-06
+ 0.961879     1.68707e-06
+ 0.893742     3.2634e-06
+ 0.84029      9.8444e-06
+-0.816967     5.11084e-07
+-0.798379     3.50753e-07
+-0.785972     4.36765e-07
+ 0.774977     5.16672e-06
+-0.771747     3.19233e-07
+-0.755683     3.68415e-06
+-0.73821      3.9078e-07
+-0.71527      6.65551e-07
+ 0.712447     1.17796e-05
+-0.699707     3.1337e-07
+-0.687915     1.17142e-06
+-0.65945      3.04306e-06
+ 0.653354     2.6108e-05
+-0.645498     1.51552e-06
+-0.615905     2.50329e-06
+ 0.594079     3.42605e-05
+-0.584971     8.27628e-06
+-0.557513     5.66623e-06
+ 0.537441     4.22943e-05
+-0.526548     1.26317e-05
+-0.493369     1.31444e-05
+ 0.479949     5.9855e-05
+-0.457189     1.86134e-05
+-0.421701     2.20424e-05
+ 0.421234     8.16489e-05
+-0.380451     3.41721e-05
+ 0.360457     0.000137474
+-0.339794     5.53712e-05
+ 0.302594     0.0002817
+-0.296221     0.000105226
+-0.253922     0.000186088
+ 0.249554     0.000392852
+-0.209879     0.000351133
+ 0.197003     0.000633216
+-0.164681     0.000716231
+ 0.143128     0.000937373
+-0.118917     0.0013041
+ 0.0875828    0.00225515
+-0.0702054    0.0035553
+ 0.0360183    0.0110074
+-0.0218731    0.0295106
+ 0.000353068  0.948122
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00100.pt
+storing basis
+Iter 1. Time: 172.10
+Iter 2. Time: 169.72
+Iter 3. Time: 169.70
+Iter 4. Time: 169.65
+Iter 5. Time: 169.81
+Iter 6. Time: 169.78
+Iter 7. Time: 169.99
+Iter 8. Time: 169.91
+Iter 9. Time: 169.73
+Iter 10. Time: 169.68
+Iter 11. Time: 169.75
+Iter 12. Time: 169.72
+Iter 13. Time: 169.56
+Iter 14. Time: 169.60
+Iter 15. Time: 169.54
+Iter 16. Time: 169.37
+Iter 17. Time: 169.39
+Iter 18. Time: 169.49
+Iter 19. Time: 169.42
+Iter 20. Time: 169.44
+Iter 21. Time: 169.51
+Iter 22. Time: 169.38
+Iter 23. Time: 172.44
+Iter 24. Time: 170.03
+Iter 25. Time: 170.25
+Iter 26. Time: 170.27
+Iter 27. Time: 170.10
+Iter 28. Time: 170.15
+Iter 29. Time: 170.02
+Iter 30. Time: 170.18
+Iter 31. Time: 170.58
+Iter 32. Time: 169.97
+Iter 33. Time: 169.88
+Iter 34. Time: 169.83
+Iter 35. Time: 169.75
+Iter 36. Time: 169.77
+Iter 37. Time: 169.95
+Iter 38. Time: 169.87
+Iter 39. Time: 169.88
+Iter 40. Time: 169.84
+Iter 41. Time: 169.95
+Iter 42. Time: 169.96
+Iter 43. Time: 169.91
+Iter 44. Time: 170.13
+Iter 45. Time: 169.98
+Iter 46. Time: 169.88
+Iter 47. Time: 169.87
+Iter 48. Time: 169.96
+Iter 49. Time: 170.05
+Iter 50. Time: 170.17
+Iter 51. Time: 170.10
+Iter 52. Time: 170.10
+Iter 53. Time: 170.05
+Iter 54. Time: 171.20
+Iter 55. Time: 170.19
+Iter 56. Time: 170.10
+Iter 57. Time: 170.13
+Iter 58. Time: 170.30
+Iter 59. Time: 170.24
+Iter 60. Time: 170.16
+Iter 61. Time: 170.06
+Iter 62. Time: 170.02
+Iter 63. Time: 169.92
+Iter 64. Time: 169.85
+Iter 65. Time: 169.81
+Iter 66. Time: 169.84
+Iter 67. Time: 169.94
+Iter 68. Time: 169.85
+Iter 69. Time: 170.33
+Iter 70. Time: 169.90
+Iter 71. Time: 169.68
+Iter 72. Time: 169.72
+Iter 73. Time: 169.73
+Iter 74. Time: 169.94
+Iter 75. Time: 169.41
+Iter 76. Time: 169.36
+Iter 77. Time: 169.99
+Iter 78. Time: 169.36
+Iter 79. Time: 169.21
+Iter 80. Time: 169.03
+Iter 81. Time: 169.10
+Iter 82. Time: 168.93
+Iter 83. Time: 169.05
+Iter 84. Time: 169.39
+Iter 85. Time: 169.18
+Iter 86. Time: 169.19
+Iter 87. Time: 169.23
+Iter 88. Time: 169.34
+Iter 89. Time: 169.15
+Iter 90. Time: 169.14
+Iter 91. Time: 169.22
+Iter 92. Time: 169.79
+Iter 93. Time: 169.17
+Iter 94. Time: 169.06
+Iter 95. Time: 169.09
+Iter 96. Time: 169.09
+Iter 97. Time: 169.09
+Iter 98. Time: 169.11
+Iter 99. Time: 169.02
+Iter 100. Time: 169.17
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+Traceback (most recent call last):
+  File "../spectrum.py", line 296, in <module>
+    gammas=gammas.numpy() if gammas is not None else None
+  File "<__array_function__ internals>", line 6, in savez
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 632, in savez
+    _savez(file, args, kwds, False)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 730, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 119, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+OSError: [Errno 27] File too large: '/jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/hessian_100.npz'
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00100.pt
+storing basis
+Iter 1. Time: 117.45
+Iter 2. Time: 115.32
+Iter 3. Time: 115.30
+Iter 4. Time: 115.34
+Iter 5. Time: 115.31
+Iter 6. Time: 115.29
+Iter 7. Time: 115.33
+Iter 8. Time: 115.28
+Iter 9. Time: 115.27
+Iter 10. Time: 115.34
+Iter 11. Time: 115.35
+Iter 12. Time: 115.29
+Iter 13. Time: 115.35
+Iter 14. Time: 115.31
+Iter 15. Time: 115.23
+Iter 16. Time: 115.29
+Iter 17. Time: 115.32
+Iter 18. Time: 115.32
+Iter 19. Time: 115.32
+Iter 20. Time: 115.33
+Iter 21. Time: 115.35
+Iter 22. Time: 115.39
+Iter 23. Time: 115.39
+Iter 24. Time: 115.44
+Iter 25. Time: 115.47
+Iter 26. Time: 115.51
+Iter 27. Time: 115.47
+Iter 28. Time: 115.47
+Iter 29. Time: 115.41
+Iter 30. Time: 115.63
+Iter 31. Time: 115.49
+Iter 32. Time: 115.43
+Iter 33. Time: 115.57
+Iter 34. Time: 118.16
+Iter 35. Time: 115.71
+Iter 36. Time: 115.44
+Iter 37. Time: 115.40
+Iter 38. Time: 115.42
+Iter 39. Time: 115.40
+Iter 40. Time: 115.31
+Iter 41. Time: 115.38
+Iter 42. Time: 115.34
+Iter 43. Time: 115.34
+Iter 44. Time: 115.28
+Iter 45. Time: 115.32
+Iter 46. Time: 115.29
+Iter 47. Time: 115.26
+Iter 48. Time: 115.31
+Iter 49. Time: 115.32
+Iter 50. Time: 115.36
+Iter 51. Time: 115.34
+Iter 52. Time: 115.27
+Iter 53. Time: 115.90
+Iter 54. Time: 115.33
+Iter 55. Time: 116.40
+Iter 56. Time: 115.22
+Iter 57. Time: 115.32
+Iter 58. Time: 115.31
+Iter 59. Time: 115.33
+Iter 60. Time: 115.33
+Iter 61. Time: 115.29
+Iter 62. Time: 115.32
+Iter 63. Time: 115.35
+Iter 64. Time: 115.30
+Iter 65. Time: 115.36
+Iter 66. Time: 115.32
+Iter 67. Time: 115.32
+Iter 68. Time: 115.55
+Iter 69. Time: 115.40
+Iter 70. Time: 115.32
+Iter 71. Time: 115.26
+Iter 72. Time: 115.28
+Iter 73. Time: 115.24
+Iter 74. Time: 115.31
+Iter 75. Time: 115.21
+Iter 76. Time: 115.28
+Iter 77. Time: 115.27
+Iter 78. Time: 115.26
+Iter 79. Time: 115.21
+Iter 80. Time: 115.27
+Iter 81. Time: 115.23
+Iter 82. Time: 115.29
+Iter 83. Time: 115.60
+Iter 84. Time: 115.32
+Iter 85. Time: 115.43
+Iter 86. Time: 115.35
+Iter 87. Time: 115.36
+Iter 88. Time: 115.36
+Iter 89. Time: 115.63
+Iter 90. Time: 115.53
+Iter 91. Time: 115.42
+Iter 92. Time: 115.44
+Iter 93. Time: 115.42
+Iter 94. Time: 115.42
+Iter 95. Time: 115.40
+Iter 96. Time: 115.34
+Iter 97. Time: 115.41
+Iter 98. Time: 115.36
+Iter 99. Time: 115.33
+Iter 100. Time: 115.30
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+      value       weight
+-----------  -----------
+64.1141      1.77044e-07
+52.6435      7.27184e-08
+40.7812      1.64326e-07
+33.5039      3.11449e-07
+28.9585      3.81014e-06
+28.5494      3.01693e-08
+23.3027      1.13038e-06
+20.0636      5.79395e-07
+17.5339      4.84426e-07
+14.9336      1.23494e-06
+10.2262      7.6469e-08
+ 9.69914     5.66143e-07
+ 8.87287     4.04026e-07
+ 6.94483     3.78774e-07
+ 6.46726     1.98228e-07
+ 5.64779     1.34945e-08
+ 5.07704     1.22141e-06
+ 4.89452     4.31968e-08
+ 4.40258     2.34924e-07
+ 4.0236      2.98291e-06
+ 3.76824     3.30265e-07
+ 3.732       8.53929e-07
+ 3.49174     2.3438e-06
+ 3.23943     5.97133e-06
+ 2.9545      6.41247e-07
+ 2.79232     4.99362e-07
+ 2.7514      8.38178e-07
+ 2.69231     1.56685e-07
+ 2.62288     1.07167e-06
+ 2.41987     5.3044e-06
+ 2.35046     4.34693e-06
+ 2.33075     4.90717e-07
+ 2.22356     2.39616e-07
+ 2.15737     2.8528e-06
+ 2.11791     1.18489e-07
+ 2.04031     5.35149e-09
+ 1.976       6.06605e-07
+ 1.93976     3.16208e-06
+ 1.93119     7.91664e-09
+ 1.87412     3.17485e-07
+ 1.86836     8.48233e-08
+ 1.78941     2.9684e-09
+ 1.74903     2.16716e-07
+ 1.69492     1.34569e-06
+ 1.66283     3.58754e-08
+ 1.57648     1.67454e-07
+ 1.53264     1.66983e-08
+ 1.45759     3.44234e-06
+ 1.41057     8.86071e-07
+ 1.34531     2.23255e-06
+ 1.2887      4.14716e-06
+ 1.22237     1.04898e-05
+ 1.19085     2.09187e-06
+ 1.12883     5.82411e-06
+ 1.06454     5.94531e-06
+ 1.01151     3.531e-06
+ 0.943208    3.8888e-06
+-0.904064    6.30732e-07
+ 0.872972    3.37898e-06
+-0.868309    6.54576e-11
+-0.805407    1.74777e-06
+ 0.803845    5.79124e-06
+-0.79716     9.65032e-09
+-0.755066    9.86578e-08
+ 0.74913     7.66268e-06
+-0.72352     3.74482e-08
+-0.707449    3.57411e-07
+-0.692049    6.96873e-07
+ 0.684721    1.02972e-05
+-0.676479    8.51813e-07
+-0.662048    2.97631e-06
+-0.646267    2.17289e-06
+ 0.622833    1.32004e-05
+-0.613678    3.12397e-06
+-0.588868    3.29577e-06
+ 0.566227    2.59431e-05
+-0.55882     2.15121e-06
+-0.520372    4.51322e-06
+ 0.495031    2.66422e-05
+-0.490024    6.39319e-06
+-0.454708    1.44723e-05
+ 0.437974    8.10248e-05
+-0.415492    2.08586e-05
+ 0.377453    0.000111938
+-0.374517    3.34955e-05
+-0.332976    5.7322e-05
+ 0.323102    0.000198646
+-0.289972    0.000123094
+ 0.266197    0.000309074
+-0.246235    0.000209973
+ 0.211391    0.000489591
+-0.201084    0.000375532
+-0.15647     0.000664711
+ 0.155921    0.00086833
+-0.108137    0.00160892
+ 0.102524    0.00182279
+-0.0613556   0.00449555
+ 0.0485257   0.00569866
+-0.00947986  0.120417
+ 0.00121623  0.862233
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00125.pt
+storing basis
+Iter 1. Time: 170.40
+Iter 2. Time: 168.29
+Iter 3. Time: 168.39
+Iter 4. Time: 168.30
+Iter 5. Time: 168.32
+Iter 6. Time: 168.36
+Iter 7. Time: 168.31
+Iter 8. Time: 168.26
+Iter 9. Time: 168.43
+Iter 10. Time: 168.70
+Iter 11. Time: 168.73
+Iter 12. Time: 168.60
+Iter 13. Time: 168.50
+Iter 14. Time: 168.43
+Iter 15. Time: 168.41
+Iter 16. Time: 168.46
+Iter 17. Time: 168.56
+Iter 18. Time: 168.41
+Iter 19. Time: 168.46
+Iter 20. Time: 168.54
+Iter 21. Time: 168.45
+Iter 22. Time: 168.53
+Iter 23. Time: 168.45
+Iter 24. Time: 168.49
+Iter 25. Time: 168.54
+Iter 26. Time: 168.55
+Iter 27. Time: 168.48
+Iter 28. Time: 168.46
+Iter 29. Time: 168.52
+Iter 30. Time: 168.55
+Iter 31. Time: 168.42
+Iter 32. Time: 168.50
+Iter 33. Time: 168.51
+Iter 34. Time: 168.51
+Iter 35. Time: 168.37
+Iter 36. Time: 168.44
+Iter 37. Time: 168.53
+Iter 38. Time: 168.39
+Iter 39. Time: 168.46
+Iter 40. Time: 170.47
+Iter 41. Time: 169.12
+Iter 42. Time: 169.04
+Iter 43. Time: 169.13
+Iter 44. Time: 169.06
+Iter 45. Time: 169.04
+Iter 46. Time: 168.92
+Iter 47. Time: 169.08
+Iter 48. Time: 169.00
+Iter 49. Time: 168.75
+Iter 50. Time: 168.90
+Iter 51. Time: 168.71
+Iter 52. Time: 168.77
+Iter 53. Time: 168.72
+Iter 54. Time: 168.53
+Iter 55. Time: 168.68
+Iter 56. Time: 168.78
+Iter 57. Time: 168.76
+Iter 58. Time: 168.80
+Iter 59. Time: 168.77
+Iter 60. Time: 168.74
+Iter 61. Time: 168.63
+Iter 62. Time: 168.68
+Iter 63. Time: 168.96
+Iter 64. Time: 169.13
+Iter 65. Time: 170.66
+Iter 66. Time: 168.99
+Iter 67. Time: 169.03
+Iter 68. Time: 168.76
+Iter 69. Time: 168.82
+Iter 70. Time: 168.66
+Iter 71. Time: 168.60
+Iter 72. Time: 168.63
+Iter 73. Time: 168.67
+Iter 74. Time: 168.65
+Iter 75. Time: 168.64
+Iter 76. Time: 168.65
+Iter 77. Time: 168.60
+Iter 78. Time: 168.53
+Iter 79. Time: 168.97
+Iter 80. Time: 168.81
+Iter 81. Time: 168.61
+Iter 82. Time: 168.86
+Iter 83. Time: 168.78
+Iter 84. Time: 168.72
+Iter 85. Time: 168.84
+Iter 86. Time: 168.69
+Iter 87. Time: 168.68
+Iter 88. Time: 168.74
+Iter 89. Time: 168.57
+Iter 90. Time: 168.57
+Iter 91. Time: 168.57
+Iter 92. Time: 168.60
+Iter 93. Time: 168.60
+Iter 94. Time: 168.60
+Iter 95. Time: 168.65
+Iter 96. Time: 168.70
+Iter 97. Time: 168.70
+Iter 98. Time: 168.71
+Iter 99. Time: 168.74
+Iter 100. Time: 168.75
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+ 4.71033      6.04256e-07
+ 3.07286      3.37001e-08
+ 2.84636      5.21663e-07
+ 2.35835      1.31263e-06
+ 2.10829      6.31391e-06
+ 1.8325       1.55221e-06
+ 1.57399      3.35966e-10
+ 1.46765      9.67304e-09
+ 1.44669      7.64815e-07
+ 1.33071      3.81135e-10
+ 1.31947      1.78082e-07
+ 1.28491      4.21474e-07
+-1.25707      2.02113e-06
+ 1.20663      3.74505e-10
+ 1.116        5.28212e-07
+-1.10327      7.06248e-07
+ 1.0843       4.6065e-08
+ 1.06308      7.70486e-07
+ 1.02045      1.23156e-08
+ 1.01604      5.49746e-13
+ 0.993402     6.30325e-07
+ 0.97306      2.69967e-09
+ 0.93248      1.54973e-06
+ 0.901797     7.19602e-07
+ 0.872832     1.26901e-09
+ 0.869231     1.02739e-07
+ 0.852632     1.96437e-07
+-0.835166     1.39428e-06
+ 0.831392     4.00384e-06
+ 0.814995     1.69971e-06
+ 0.797834     1.40781e-06
+ 0.792838     7.92008e-07
+ 0.780089     5.80879e-06
+ 0.751167     5.58006e-07
+-0.740063     2.95394e-06
+ 0.720241     3.31161e-07
+-0.718459     1.91915e-06
+ 0.710843     1.52661e-06
+ 0.696848     2.6345e-06
+-0.678373     4.23969e-06
+ 0.665846     1.7072e-06
+-0.662412     5.18652e-08
+-0.651086     8.47806e-12
+ 0.643363     6.20472e-06
+ 0.616275     1.17475e-06
+ 0.597792     9.91654e-07
+-0.594351     3.0155e-06
+-0.578304     4.53271e-09
+ 0.569201     1.88029e-06
+ 0.547218     4.02829e-06
+-0.546312     5.81543e-07
+-0.536623     1.90595e-08
+ 0.523665     5.92982e-06
+-0.52044      1.19481e-06
+-0.510805     1.0051e-06
+ 0.500261     1.01333e-05
+-0.491049     4.64796e-07
+-0.477758     5.36981e-07
+-0.472824     2.03444e-06
+ 0.470854     1.27389e-05
+-0.468221     4.07371e-06
+-0.450798     4.92816e-07
+ 0.441835     4.59201e-06
+-0.438703     5.29224e-06
+ 0.418939     1.41134e-05
+-0.4151       1.83705e-08
+-0.399607     9.09279e-07
+ 0.392515     9.97691e-06
+-0.379333     3.9492e-07
+-0.365152     2.52132e-06
+ 0.363523     7.96074e-06
+-0.34813      1.38823e-06
+ 0.337073     1.08862e-05
+-0.322356     2.81452e-06
+-0.310181     2.02903e-06
+ 0.305283     1.96199e-05
+ 0.282644     2.69228e-05
+-0.276278     3.96121e-06
+-0.258164     1.35175e-05
+ 0.254131     2.63059e-05
+-0.240376     1.68534e-05
+ 0.222884     3.92428e-05
+-0.216702     1.25108e-05
+ 0.195504     6.08984e-05
+-0.188858     2.25918e-05
+ 0.168408     0.000117014
+-0.1664       4.5304e-05
+-0.142583     7.70983e-05
+ 0.139953     0.000146433
+-0.117069     0.000165525
+ 0.112753     0.000307699
+-0.0915581    0.000333699
+ 0.0854267    0.000740359
+-0.0666511    0.000963575
+ 0.0591121    0.00181358
+-0.0419866    0.00334141
+ 0.034014     0.00668821
+-0.0183745    0.0193157
+ 0.00994596   0.0584489
+-0.000310706  0.907083
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00125.pt
+storing basis
+Iter 1. Time: 119.23
+Iter 2. Time: 117.08
+Iter 3. Time: 117.17
+Iter 4. Time: 117.09
+Iter 5. Time: 117.08
+Iter 6. Time: 117.08
+Iter 7. Time: 117.08
+Iter 8. Time: 117.06
+Iter 9. Time: 117.06
+Iter 10. Time: 117.01
+Iter 11. Time: 117.08
+Iter 12. Time: 117.09
+Iter 13. Time: 117.13
+Iter 14. Time: 117.10
+Iter 15. Time: 117.08
+Iter 16. Time: 117.03
+Iter 17. Time: 117.03
+Iter 18. Time: 117.05
+Iter 19. Time: 117.03
+Iter 20. Time: 117.01
+Iter 21. Time: 117.04
+Iter 22. Time: 117.07
+Iter 23. Time: 117.07
+Iter 24. Time: 116.99
+Iter 25. Time: 117.04
+Iter 26. Time: 117.09
+Iter 27. Time: 117.09
+Iter 28. Time: 117.05
+Iter 29. Time: 117.14
+Iter 30. Time: 117.14
+Iter 31. Time: 117.14
+Iter 32. Time: 117.09
+Iter 33. Time: 117.13
+Iter 34. Time: 117.25
+Iter 35. Time: 117.06
+Iter 36. Time: 117.03
+Iter 37. Time: 117.08
+Iter 38. Time: 117.02
+Iter 39. Time: 117.09
+Iter 40. Time: 117.01
+Iter 41. Time: 117.10
+Iter 42. Time: 117.08
+Iter 43. Time: 117.12
+Iter 44. Time: 117.10
+Iter 45. Time: 117.04
+Iter 46. Time: 117.10
+Iter 47. Time: 117.03
+Iter 48. Time: 117.05
+Iter 49. Time: 117.08
+Iter 50. Time: 117.21
+Iter 51. Time: 117.13
+Iter 52. Time: 117.16
+Iter 53. Time: 117.21
+Iter 54. Time: 117.20
+Iter 55. Time: 117.10
+Iter 56. Time: 117.12
+Iter 57. Time: 117.13
+Iter 58. Time: 116.99
+Iter 59. Time: 116.97
+Iter 60. Time: 117.09
+Iter 61. Time: 117.04
+Iter 62. Time: 117.10
+Iter 63. Time: 129.83
+Iter 64. Time: 117.23
+Iter 65. Time: 117.22
+Iter 66. Time: 117.20
+Iter 67. Time: 117.16
+Iter 68. Time: 117.11
+Iter 69. Time: 117.19
+Iter 70. Time: 117.17
+Iter 71. Time: 117.14
+Iter 72. Time: 117.15
+Iter 73. Time: 117.15
+Iter 74. Time: 117.13
+Iter 75. Time: 117.10
+Iter 76. Time: 117.19
+Iter 77. Time: 117.25
+Iter 78. Time: 117.19
+Iter 79. Time: 117.16
+Iter 80. Time: 117.13
+Iter 81. Time: 117.15
+Iter 82. Time: 117.09
+Iter 83. Time: 117.04
+Iter 84. Time: 117.10
+Iter 85. Time: 117.19
+Iter 86. Time: 117.28
+Iter 87. Time: 117.21
+Iter 88. Time: 117.16
+Iter 89. Time: 117.10
+Iter 90. Time: 117.12
+Iter 91. Time: 117.04
+Iter 92. Time: 117.06
+Iter 93. Time: 117.19
+Iter 94. Time: 117.08
+Iter 95. Time: 117.20
+Iter 96. Time: 117.35
+Iter 97. Time: 117.82
+Iter 98. Time: 117.05
+Iter 99. Time: 117.13
+Iter 100. Time: 116.98
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+62.4168       6.78507e-09
+52.7671       8.66721e-07
+36.8565       7.61754e-08
+36.0613       2.37104e-07
+32.4498       2.9043e-07
+24.3905       2.11236e-06
+23.3497       1.3959e-09
+19.4129       5.2046e-07
+17.9979       5.87991e-06
+14.0784       9.77015e-07
+12.0456       3.56789e-08
+10.5755       6.57228e-08
+ 9.33018      2.985e-08
+ 8.20363      2.08874e-06
+ 6.62548      1.16126e-07
+ 5.98142      4.04766e-08
+ 5.86867      4.38326e-06
+ 4.68881      3.89916e-07
+ 4.63144      2.36604e-08
+ 4.56859      3.63317e-08
+ 4.14309      8.88616e-07
+ 3.6691       8.573e-07
+ 3.4607       1.27342e-06
+ 3.37387      4.98687e-06
+ 3.24552      1.3302e-06
+ 3.11548      1.95038e-06
+ 2.87562      2.5217e-06
+ 2.7898       8.35948e-07
+ 2.72269      9.54418e-07
+ 2.5305       2.16735e-07
+ 2.38729      1.12466e-06
+ 2.35342      1.1021e-06
+ 2.28622      3.9597e-07
+ 2.21483      6.39495e-11
+ 2.14476      9.65902e-07
+ 2.10218      1.06939e-05
+ 2.03167      1.48585e-07
+ 1.99993      1.15687e-07
+ 1.87759      1.07738e-07
+ 1.83063      1.51402e-06
+ 1.75937      4.33096e-07
+ 1.7268       3.85955e-06
+ 1.7063       1.26558e-07
+ 1.6635       4.34511e-08
+ 1.6338       4.3599e-07
+ 1.57109      1.0537e-09
+ 1.44879      2.46475e-06
+ 1.43031      1.11497e-07
+ 1.37653      1.13663e-06
+ 1.34544      2.48252e-06
+ 1.27898      9.27834e-07
+ 1.24022      3.01676e-06
+ 1.18726      4.75967e-07
+ 1.11232      2.80926e-06
+ 1.07731      8.43982e-06
+ 1.01886      2.28787e-06
+ 0.944041     4.44422e-06
+ 0.899971     7.6995e-06
+ 0.837263     6.25477e-06
+ 0.786692     7.0417e-06
+-0.755311     1.92834e-07
+-0.724441     5.61139e-08
+ 0.712547     1.23753e-05
+-0.681034     2.76615e-07
+-0.678242     2.97766e-07
+ 0.664047     1.01108e-05
+-0.661454     2.21235e-07
+-0.655626     8.02421e-07
+-0.636529     1.36672e-07
+-0.610005     1.15268e-06
+ 0.603003     1.72974e-05
+-0.596158     2.1123e-06
+-0.576718     1.24993e-06
+-0.553789     1.87633e-06
+ 0.537625     2.50838e-05
+-0.535066     1.88584e-06
+-0.496175     2.47941e-06
+ 0.495431     5.49716e-05
+-0.468993     5.51727e-06
+-0.443207     7.03027e-06
+ 0.426776     4.8158e-05
+-0.405107     1.03646e-05
+ 0.373131     9.67929e-05
+-0.368676     2.51613e-05
+-0.336215     4.04016e-05
+ 0.317455     0.000145817
+-0.296847     7.22176e-05
+ 0.264553     0.000248917
+-0.25593      0.000129902
+-0.215298     0.000202813
+ 0.212323     0.000429416
+-0.171913     0.000444075
+ 0.162618     0.000734082
+-0.130539     0.000937366
+ 0.110254     0.00122727
+-0.0862713    0.00211944
+ 0.0597006    0.00359353
+-0.0406181    0.007883
+ 0.0106101    0.0890248
+-0.000843812  0.892362
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00150.pt
+storing basis
+Iter 1. Time: 170.15
+Iter 2. Time: 168.37
+Iter 3. Time: 168.51
+Iter 4. Time: 168.82
+Iter 5. Time: 168.65
+Iter 6. Time: 168.26
+Iter 7. Time: 168.39
+Iter 8. Time: 168.43
+Iter 9. Time: 168.50
+Iter 10. Time: 168.50
+Iter 11. Time: 168.73
+Iter 12. Time: 168.68
+Iter 13. Time: 168.54
+Iter 14. Time: 168.31
+Iter 15. Time: 168.39
+Iter 16. Time: 168.38
+Iter 17. Time: 168.48
+Iter 18. Time: 168.43
+Iter 19. Time: 168.30
+Iter 20. Time: 168.58
+Iter 21. Time: 168.62
+Iter 22. Time: 168.75
+Iter 23. Time: 168.54
+Iter 24. Time: 168.79
+Iter 25. Time: 168.51
+Iter 26. Time: 168.47
+Iter 27. Time: 168.46
+Iter 28. Time: 168.46
+Iter 29. Time: 168.29
+Iter 30. Time: 168.43
+Iter 31. Time: 168.50
+Iter 32. Time: 168.36
+Iter 33. Time: 168.43
+Iter 34. Time: 168.61
+Iter 35. Time: 168.39
+Iter 36. Time: 168.33
+Iter 37. Time: 168.38
+Iter 38. Time: 168.44
+Iter 39. Time: 168.43
+Iter 40. Time: 168.84
+Iter 41. Time: 168.53
+Iter 42. Time: 168.33
+Iter 43. Time: 168.25
+Iter 44. Time: 168.67
+Iter 45. Time: 168.59
+Iter 46. Time: 168.51
+Iter 47. Time: 168.55
+Iter 48. Time: 168.45
+Iter 49. Time: 168.50
+Iter 50. Time: 168.43
+Iter 51. Time: 168.45
+Iter 52. Time: 168.37
+Iter 53. Time: 169.16
+Iter 54. Time: 168.48
+Iter 55. Time: 168.37
+Iter 56. Time: 168.40
+Iter 57. Time: 168.62
+Iter 58. Time: 168.56
+Iter 59. Time: 168.58
+Iter 60. Time: 168.49
+Iter 61. Time: 168.43
+Iter 62. Time: 168.47
+Iter 63. Time: 168.91
+Iter 64. Time: 168.52
+Iter 65. Time: 168.80
+Iter 66. Time: 169.08
+Iter 67. Time: 168.64
+Iter 68. Time: 168.53
+Iter 69. Time: 168.39
+Iter 70. Time: 168.46
+Iter 71. Time: 168.46
+Iter 72. Time: 174.61
+Iter 73. Time: 168.53
+Iter 74. Time: 168.63
+Iter 75. Time: 168.57
+Iter 76. Time: 168.66
+Iter 77. Time: 168.87
+Iter 78. Time: 168.55
+Iter 79. Time: 168.48
+Iter 80. Time: 169.60
+Iter 81. Time: 168.96
+Iter 82. Time: 168.68
+Iter 83. Time: 168.95
+Iter 84. Time: 168.47
+Iter 85. Time: 168.56
+Iter 86. Time: 168.93
+Iter 87. Time: 168.49
+Iter 88. Time: 168.35
+Iter 89. Time: 168.28
+Iter 90. Time: 168.32
+Iter 91. Time: 168.30
+Iter 92. Time: 168.66
+Iter 93. Time: 168.45
+Iter 94. Time: 168.36
+Iter 95. Time: 168.40
+Iter 96. Time: 168.81
+Iter 97. Time: 168.46
+Iter 98. Time: 168.58
+Iter 99. Time: 168.52
+Iter 100. Time: 168.48
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+ 4.58425      5.7353e-07
+ 3.31969      7.6012e-07
+ 2.68499      5.44935e-06
+ 2.47435      1.15977e-07
+ 1.8902       1.13591e-06
+ 1.87285      8.33411e-08
+ 1.76171      1.56606e-07
+ 1.67405      4.20299e-07
+ 1.41796      5.82725e-08
+ 1.35153      1.36932e-07
+ 1.33027      3.3517e-07
+ 1.23525      1.01905e-06
+ 1.17732      2.68222e-08
+ 1.14798      1.06501e-07
+ 1.09866      3.20496e-07
+-1.05336      6.17752e-07
+ 1.02236      5.90857e-07
+ 1.00636      4.08355e-07
+ 0.987106     9.67185e-09
+ 0.963308     3.46847e-06
+ 0.933074     8.02922e-08
+ 0.918007     3.37617e-07
+ 0.893753     5.24612e-07
+ 0.865691     1.7866e-07
+ 0.859255     2.25484e-06
+ 0.82595      8.77475e-07
+ 0.810738     3.55433e-06
+ 0.798671     7.909e-07
+ 0.775321     1.9383e-06
+-0.770036     1.02359e-06
+ 0.75918      1.8783e-08
+ 0.737274     1.39667e-06
+-0.719323     5.71999e-11
+ 0.717987     8.6901e-07
+ 0.706496     1.58098e-07
+ 0.690533     3.33753e-07
+ 0.671189     7.8712e-07
+-0.665236     1.1387e-07
+ 0.653705     2.85611e-07
+-0.631453     2.37495e-07
+ 0.630802     1.38857e-06
+ 0.610007     1.05728e-06
+-0.596264     1.19303e-06
+ 0.595577     3.06541e-06
+ 0.568216     4.00283e-06
+ 0.553276     4.57524e-06
+-0.534857     1.07288e-06
+ 0.520968     2.48987e-06
+-0.508635     1.61306e-08
+ 0.504273     3.0799e-06
+-0.485829     2.3713e-06
+ 0.480797     4.07012e-06
+-0.463065     7.93545e-07
+ 0.454122     5.71344e-06
+-0.449277     2.51041e-06
+-0.442409     2.50496e-06
+ 0.432122     7.75602e-06
+-0.420378     6.41413e-07
+-0.409189     1.8355e-06
+ 0.407906     5.38068e-06
+-0.391611     1.1131e-07
+-0.389171     1.18124e-06
+ 0.379121     1.56247e-05
+-0.373434     3.0097e-06
+-0.360211     5.268e-06
+ 0.358725     1.14297e-05
+-0.355782     2.10046e-06
+-0.340264     2.43639e-07
+ 0.335038     8.2573e-06
+-0.321041     2.23392e-06
+-0.310121     5.65796e-06
+ 0.305062     1.14779e-05
+-0.293146     1.59074e-06
+ 0.278717     1.84476e-05
+-0.278019     2.4772e-06
+-0.264459     3.71068e-06
+ 0.255515     3.37809e-05
+-0.240021     3.26715e-06
+ 0.2303       4.85951e-05
+-0.220199     1.63209e-05
+-0.205013     1.39584e-05
+ 0.204436     5.43506e-05
+-0.182889     3.36967e-05
+ 0.181452     8.93444e-05
+-0.164076     5.199e-05
+ 0.157459     0.000136306
+-0.142754     5.05996e-05
+ 0.13048      0.000196912
+-0.121471     8.4466e-05
+ 0.106606     0.000323177
+-0.0980733    0.000179126
+ 0.081482     0.00072093
+-0.076593     0.000489104
+ 0.0581786    0.00168946
+-0.0544946    0.00125634
+ 0.0357306    0.00515437
+-0.0327599    0.00476603
+ 0.0137551    0.0297649
+-0.0113127    0.0382991
+ 0.000105008  0.916365
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00150.pt
+storing basis
+Iter 1. Time: 117.83
+Iter 2. Time: 115.61
+Iter 3. Time: 115.58
+Iter 4. Time: 115.58
+Iter 5. Time: 115.60
+Iter 6. Time: 115.60
+Iter 7. Time: 115.67
+Iter 8. Time: 115.67
+Iter 9. Time: 115.66
+Iter 10. Time: 115.58
+Iter 11. Time: 115.73
+Iter 12. Time: 115.59
+Iter 13. Time: 115.67
+Iter 14. Time: 115.62
+Iter 15. Time: 115.62
+Iter 16. Time: 115.68
+Iter 17. Time: 115.66
+Iter 18. Time: 115.41
+Iter 19. Time: 115.62
+Iter 20. Time: 115.65
+Iter 21. Time: 115.68
+Iter 22. Time: 115.64
+Iter 23. Time: 115.68
+Iter 24. Time: 115.58
+Iter 25. Time: 115.67
+Iter 26. Time: 115.57
+Iter 27. Time: 115.65
+Iter 28. Time: 115.66
+Iter 29. Time: 115.62
+Iter 30. Time: 115.60
+Iter 31. Time: 115.61
+Iter 32. Time: 115.69
+Iter 33. Time: 117.17
+Iter 34. Time: 115.94
+Iter 35. Time: 115.79
+Iter 36. Time: 115.62
+Iter 37. Time: 115.57
+Iter 38. Time: 115.63
+Iter 39. Time: 115.64
+Iter 40. Time: 115.65
+Iter 41. Time: 115.71
+Iter 42. Time: 115.56
+Iter 43. Time: 115.63
+Iter 44. Time: 115.69
+Iter 45. Time: 115.87
+Iter 46. Time: 116.88
+Iter 47. Time: 115.67
+Iter 48. Time: 115.68
+Iter 49. Time: 115.69
+Iter 50. Time: 115.63
+Iter 51. Time: 115.70
+Iter 52. Time: 115.67
+Iter 53. Time: 115.76
+Iter 54. Time: 115.70
+Iter 55. Time: 115.70
+Iter 56. Time: 115.78
+Iter 57. Time: 115.75
+Iter 58. Time: 115.63
+Iter 59. Time: 115.65
+Iter 60. Time: 115.66
+Iter 61. Time: 115.67
+Iter 62. Time: 115.76
+Iter 63. Time: 115.74
+Iter 64. Time: 115.60
+Iter 65. Time: 115.68
+Iter 66. Time: 115.59
+Iter 67. Time: 115.63
+Iter 68. Time: 115.65
+Iter 69. Time: 115.69
+Iter 70. Time: 115.63
+Iter 71. Time: 115.61
+Iter 72. Time: 115.67
+Iter 73. Time: 115.65
+Iter 74. Time: 115.62
+Iter 75. Time: 115.65
+Iter 76. Time: 115.58
+Iter 77. Time: 115.68
+Iter 78. Time: 115.65
+Iter 79. Time: 115.64
+Iter 80. Time: 115.65
+Iter 81. Time: 115.70
+Iter 82. Time: 115.60
+Iter 83. Time: 115.65
+Iter 84. Time: 115.71
+Iter 85. Time: 115.82
+Iter 86. Time: 115.71
+Iter 87. Time: 115.62
+Iter 88. Time: 115.67
+Iter 89. Time: 115.72
+Iter 90. Time: 115.64
+Iter 91. Time: 115.72
+Iter 92. Time: 115.66
+Iter 93. Time: 115.67
+Iter 94. Time: 115.65
+Iter 95. Time: 115.71
+Iter 96. Time: 115.72
+Iter 97. Time: 115.77
+Iter 98. Time: 115.67
+Iter 99. Time: 115.72
+Iter 100. Time: 115.68
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+64.4125       6.85766e-08
+52.1616       1.10464e-06
+40.9544       3.74308e-08
+40.6948       1.0939e-06
+33.1011       7.07033e-07
+27.5891       1.86382e-06
+22.6651       1.54704e-06
+21.4712       1.77568e-06
+18.3161       2.66301e-08
+16.7058       4.90008e-07
+14.2909       7.37739e-07
+11.2669       1.56808e-06
+ 9.48361      1.00419e-06
+ 7.54367      1.9955e-07
+ 6.48737      1.71264e-07
+ 5.66931      3.38384e-06
+ 5.20854      2.8445e-07
+ 4.85228      7.67944e-06
+ 4.56395      2.86337e-06
+ 4.19218      3.1175e-07
+ 3.96597      1.81468e-06
+ 3.75731      6.21402e-08
+ 3.69962      1.37451e-06
+ 3.32775      7.24341e-07
+ 3.23324      5.76399e-07
+ 3.20388      3.44344e-06
+ 3.05573      2.35012e-07
+ 2.9624       1.88506e-06
+ 2.77398      1.50209e-07
+ 2.61912      9.01702e-09
+ 2.49415      4.02564e-06
+ 2.39307      2.03127e-07
+ 2.34527      4.30447e-08
+ 2.22087      1.3333e-06
+ 2.19364      4.18767e-07
+ 2.08847      1.189e-07
+ 2.05887      3.44704e-08
+ 1.98643      1.96051e-08
+ 1.94231      1.91952e-06
+ 1.86669      1.64012e-07
+ 1.85091      1.08854e-06
+ 1.76248      1.3424e-06
+ 1.73616      8.03237e-07
+ 1.67702      1.06617e-06
+ 1.61657      1.87315e-06
+ 1.58605      3.49965e-07
+ 1.56602      2.01574e-07
+ 1.50105      7.50542e-07
+ 1.47283      1.2495e-07
+ 1.41036      4.94521e-07
+ 1.35704      3.69441e-07
+ 1.29388      3.01001e-06
+ 1.25359      1.98715e-06
+ 1.21182      2.47102e-06
+ 1.15269      2.04259e-06
+ 1.11689      2.60176e-06
+ 1.04993      4.86319e-06
+ 0.976202     1.07832e-06
+ 0.937443     1.84583e-06
+-0.879586     7.28158e-07
+ 0.865363     2.31226e-06
+ 0.810468     2.99425e-06
+ 0.752804     9.05067e-06
+ 0.697104     9.03151e-06
+ 0.655018     9.57813e-06
+ 0.593319     9.44977e-06
+-0.550046     1.18621e-08
+-0.531474     1.73785e-06
+ 0.530043     1.86077e-05
+-0.515599     9.73031e-07
+-0.50519      2.97046e-06
+-0.500779     4.1523e-07
+ 0.480946     2.58604e-05
+-0.472486     1.25817e-07
+-0.459317     4.41851e-07
+-0.444103     3.95083e-06
+-0.432369     2.85761e-06
+ 0.422779     3.98717e-05
+-0.405831     2.37847e-06
+-0.385966     2.19257e-06
+ 0.374128     4.05997e-05
+-0.355368     2.36585e-06
+-0.324055     8.63876e-06
+ 0.319099     8.36357e-05
+-0.296661     2.27305e-05
+ 0.271281     0.00014105
+-0.265185     4.09617e-05
+-0.235016     5.92889e-05
+ 0.221484     0.000265299
+-0.1981       0.000101001
+ 0.175128     0.000471447
+-0.162189     0.000268493
+ 0.129443     0.000765793
+-0.12571      0.000512079
+-0.0878153    0.00127231
+ 0.0850224    0.00140601
+-0.0489961    0.00388447
+ 0.0389444    0.00587443
+-0.00772481   0.115051
+ 0.000927163  0.869557
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00175.pt
+storing basis
+Iter 1. Time: 171.71
+Iter 2. Time: 169.74
+Iter 3. Time: 169.60
+Iter 4. Time: 169.58
+Iter 5. Time: 169.79
+Iter 6. Time: 169.84
+Iter 7. Time: 169.67
+Iter 8. Time: 169.69
+Iter 9. Time: 169.69
+Iter 10. Time: 169.78
+Iter 11. Time: 169.79
+Iter 12. Time: 169.73
+Iter 13. Time: 169.57
+Iter 14. Time: 169.43
+Iter 15. Time: 169.76
+Iter 16. Time: 169.49
+Iter 17. Time: 169.39
+Iter 18. Time: 169.55
+Iter 19. Time: 169.72
+Iter 20. Time: 170.11
+Iter 21. Time: 169.85
+Iter 22. Time: 169.62
+Iter 23. Time: 171.17
+Iter 24. Time: 169.64
+Iter 25. Time: 169.81
+Iter 26. Time: 169.66
+Iter 27. Time: 169.66
+Iter 28. Time: 169.85
+Iter 29. Time: 169.80
+Iter 30. Time: 169.70
+Iter 31. Time: 169.75
+Iter 32. Time: 169.71
+Iter 33. Time: 169.79
+Iter 34. Time: 169.58
+Iter 35. Time: 169.71
+Iter 36. Time: 169.80
+Iter 37. Time: 169.93
+Iter 38. Time: 169.88
+Iter 39. Time: 169.88
+Iter 40. Time: 169.92
+Iter 41. Time: 169.83
+Iter 42. Time: 169.85
+Iter 43. Time: 169.69
+Iter 44. Time: 169.78
+Iter 45. Time: 169.83
+Iter 46. Time: 170.18
+Iter 47. Time: 170.14
+Iter 48. Time: 170.32
+Iter 49. Time: 169.61
+Iter 50. Time: 169.90
+Iter 51. Time: 169.76
+Iter 52. Time: 169.76
+Iter 53. Time: 169.53
+Iter 54. Time: 169.62
+Iter 55. Time: 169.73
+Iter 56. Time: 169.69
+Iter 57. Time: 169.59
+Iter 58. Time: 169.68
+Iter 59. Time: 169.59
+Iter 60. Time: 169.63
+Iter 61. Time: 169.59
+Iter 62. Time: 169.73
+Iter 63. Time: 169.65
+Iter 64. Time: 169.61
+Iter 65. Time: 169.79
+Iter 66. Time: 169.68
+Iter 67. Time: 169.67
+Iter 68. Time: 169.67
+Iter 69. Time: 169.77
+Iter 70. Time: 169.69
+Iter 71. Time: 170.31
+Iter 72. Time: 170.65
+Iter 73. Time: 169.75
+Iter 74. Time: 169.83
+Iter 75. Time: 169.71
+Iter 76. Time: 169.84
+Iter 77. Time: 169.80
+Iter 78. Time: 169.66
+Iter 79. Time: 169.66
+Iter 80. Time: 169.77
+Iter 81. Time: 169.74
+Iter 82. Time: 169.86
+Iter 83. Time: 169.79
+Iter 84. Time: 169.71
+Iter 85. Time: 169.93
+Iter 86. Time: 169.84
+Iter 87. Time: 169.68
+Iter 88. Time: 169.76
+Iter 89. Time: 169.94
+Iter 90. Time: 169.96
+Iter 91. Time: 170.11
+Iter 92. Time: 169.95
+Iter 93. Time: 170.03
+Iter 94. Time: 169.97
+Iter 95. Time: 170.38
+Iter 96. Time: 169.94
+Iter 97. Time: 169.89
+Iter 98. Time: 169.99
+Iter 99. Time: 170.20
+Iter 100. Time: 170.16
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+ 4.78153      3.49855e-06
+ 4.18534      1.60037e-06
+ 3.69787      3.3173e-06
+ 2.97632      7.71019e-08
+ 2.60291      2.69541e-06
+ 2.33709      1.9659e-07
+ 2.26927      6.89311e-07
+ 2.15241      2.22967e-09
+ 1.86624      2.9715e-10
+ 1.72244      9.38541e-07
+ 1.68774      2.20175e-06
+ 1.67444      9.23597e-07
+ 1.62687      8.93615e-09
+ 1.57404      2.48848e-08
+ 1.52698      3.45687e-08
+ 1.49005      5.80412e-08
+ 1.42543      2.97697e-07
+ 1.40886      8.13529e-07
+ 1.31917      5.17912e-07
+-1.31668      2.06268e-12
+ 1.28232      6.60983e-07
+ 1.25431      1.75799e-06
+ 1.22683      2.47767e-06
+ 1.20409      6.18666e-07
+ 1.16028      1.69342e-06
+ 1.13854      3.14023e-06
+ 1.11223      4.23421e-09
+ 1.08991      4.00482e-07
+-1.07663      2.15847e-07
+ 1.06838      1.17395e-06
+ 1.04798      2.46266e-07
+ 1.03491      1.27331e-06
+ 1.00173      1.29216e-06
+-0.990994     1.66469e-06
+ 0.979584     1.74235e-06
+ 0.964        1.41119e-06
+ 0.940095     2.5984e-07
+-0.925888     1.18066e-07
+ 0.897029     1.52912e-06
+ 0.879394     9.30985e-07
+ 0.854066     2.87845e-06
+ 0.817922     2.00657e-06
+-0.807818     2.15084e-06
+ 0.794311     2.82773e-06
+ 0.763193     1.08668e-06
+-0.752117     7.30673e-08
+-0.739196     3.39017e-06
+-0.727217     9.36432e-07
+ 0.722866     3.04593e-06
+-0.696009     1.57157e-06
+ 0.687417     4.6539e-06
+-0.674714     4.01254e-07
+-0.666154     9.14685e-07
+ 0.66041      6.76157e-06
+-0.632185     4.68636e-07
+ 0.628355     5.70574e-06
+ 0.600337     5.82889e-06
+-0.584294     8.91464e-07
+-0.577216     4.31855e-06
+ 0.564064     7.13921e-06
+-0.559766     1.59449e-06
+-0.555946     4.35639e-07
+-0.536701     1.07947e-06
+ 0.52805      1.0497e-05
+-0.519723     5.40312e-06
+ 0.497306     7.54207e-06
+-0.4887       2.6521e-07
+-0.47869      1.74836e-06
+-0.459546     4.92036e-06
+ 0.458836     1.71745e-05
+-0.447311     2.87575e-06
+-0.425352     4.721e-07
+ 0.419927     1.40105e-05
+-0.399097     3.89912e-06
+ 0.385404     3.77901e-05
+-0.365906     1.53304e-06
+ 0.352159     2.35059e-05
+-0.343219     4.01656e-06
+-0.315961     7.61585e-06
+ 0.314157     3.96489e-05
+-0.289324     8.94119e-06
+ 0.281019     5.02358e-05
+-0.264763     1.59322e-05
+ 0.242914     0.000100785
+-0.227744     1.84147e-05
+ 0.211691     0.000132829
+-0.201781     5.22624e-05
+ 0.178313     0.000196438
+-0.174134     7.14932e-05
+ 0.143787     0.000354077
+-0.141084     0.000124981
+-0.110417     0.00032044
+ 0.109729     0.00064309
+-0.0799024    0.000928094
+ 0.0758373    0.00163568
+-0.0489859    0.00356448
+ 0.0441165    0.00631749
+-0.0197821    0.0252052
+ 0.0144599    0.0495792
+-0.000208801  0.910398
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00175.pt
+storing basis
+Iter 1. Time: 118.92
+Iter 2. Time: 116.80
+Iter 3. Time: 116.87
+Iter 4. Time: 116.79
+Iter 5. Time: 116.82
+Iter 6. Time: 116.86
+Iter 7. Time: 116.87
+Iter 8. Time: 116.86
+Iter 9. Time: 116.86
+Iter 10. Time: 116.77
+Iter 11. Time: 116.85
+Iter 12. Time: 116.89
+Iter 13. Time: 116.89
+Iter 14. Time: 116.89
+Iter 15. Time: 116.84
+Iter 16. Time: 116.85
+Iter 17. Time: 116.81
+Iter 18. Time: 116.90
+Iter 19. Time: 116.96
+Iter 20. Time: 116.88
+Iter 21. Time: 116.86
+Iter 22. Time: 116.85
+Iter 23. Time: 116.86
+Iter 24. Time: 116.85
+Iter 25. Time: 116.93
+Iter 26. Time: 116.88
+Iter 27. Time: 116.92
+Iter 28. Time: 116.63
+Iter 29. Time: 116.89
+Iter 30. Time: 116.91
+Iter 31. Time: 116.84
+Iter 32. Time: 116.87
+Iter 33. Time: 116.84
+Iter 34. Time: 116.85
+Iter 35. Time: 116.89
+Iter 36. Time: 116.91
+Iter 37. Time: 116.88
+Iter 38. Time: 120.19
+Iter 39. Time: 116.83
+Iter 40. Time: 116.80
+Iter 41. Time: 116.82
+Iter 42. Time: 116.82
+Iter 43. Time: 116.85
+Iter 44. Time: 116.81
+Iter 45. Time: 116.77
+Iter 46. Time: 117.13
+Iter 47. Time: 117.39
+Iter 48. Time: 116.96
+Iter 49. Time: 116.98
+Iter 50. Time: 116.82
+Iter 51. Time: 116.83
+Iter 52. Time: 116.69
+Iter 53. Time: 116.87
+Iter 54. Time: 116.87
+Iter 55. Time: 116.85
+Iter 56. Time: 116.73
+Iter 57. Time: 116.83
+Iter 58. Time: 117.13
+Iter 59. Time: 117.04
+Iter 60. Time: 116.86
+Iter 61. Time: 116.84
+Iter 62. Time: 116.83
+Iter 63. Time: 116.85
+Iter 64. Time: 116.90
+Iter 65. Time: 116.84
+Iter 66. Time: 116.80
+Iter 67. Time: 116.83
+Iter 68. Time: 116.86
+Iter 69. Time: 116.83
+Iter 70. Time: 116.79
+Iter 71. Time: 116.83
+Iter 72. Time: 116.82
+Iter 73. Time: 116.85
+Iter 74. Time: 116.82
+Iter 75. Time: 116.80
+Iter 76. Time: 116.76
+Iter 77. Time: 116.85
+Iter 78. Time: 116.68
+Iter 79. Time: 116.83
+Iter 80. Time: 116.79
+Iter 81. Time: 116.89
+Iter 82. Time: 116.82
+Iter 83. Time: 116.80
+Iter 84. Time: 116.82
+Iter 85. Time: 116.83
+Iter 86. Time: 116.77
+Iter 87. Time: 116.77
+Iter 88. Time: 116.78
+Iter 89. Time: 116.78
+Iter 90. Time: 116.74
+Iter 91. Time: 116.95
+Iter 92. Time: 116.79
+Iter 93. Time: 116.80
+Iter 94. Time: 116.74
+Iter 95. Time: 117.14
+Iter 96. Time: 117.78
+Iter 97. Time: 118.68
+Iter 98. Time: 119.08
+Iter 99. Time: 118.87
+Iter 100. Time: 118.89
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+80.1915       2.41169e-06
+64.7785       1.47844e-06
+47.9517       1.79356e-07
+45.3408       5.79038e-07
+40.2889       6.28057e-07
+32.2754       1.18595e-06
+31.2969       9.04834e-07
+23.8594       1.31882e-06
+21.1633       2.80497e-09
+18.7788       9.30271e-07
+15.0625       2.96048e-07
+13.6554       3.87968e-06
+10.7959       2.06362e-07
+ 9.91889      1.71973e-06
+ 9.24973      7.70674e-07
+ 7.71054      3.10335e-08
+ 6.99867      3.51462e-08
+ 6.72848      8.89649e-08
+ 5.82284      1.62115e-06
+ 5.6169       2.8896e-06
+ 5.03683      4.84292e-07
+ 4.70465      1.0426e-10
+ 4.3649       7.95984e-07
+ 4.34723      2.98958e-06
+ 4.16951      9.68916e-08
+ 3.97618      3.75595e-07
+ 3.72998      2.22784e-06
+ 3.62825      9.58277e-09
+ 3.55133      2.17578e-07
+ 3.41527      5.37863e-07
+ 3.238        7.90844e-08
+ 3.02866      2.2676e-08
+ 2.98054      2.50142e-08
+ 2.94123      1.0588e-06
+ 2.85713      3.37966e-07
+ 2.80836      1.0143e-07
+ 2.7486       1.64838e-07
+ 2.74034      2.43101e-07
+ 2.61947      2.12479e-07
+ 2.50253      2.86533e-06
+ 2.40921      2.16495e-06
+ 2.34264      6.70629e-08
+ 2.22691      3.83634e-09
+ 2.19545      1.78025e-07
+ 2.10459      2.03025e-08
+ 2.08899      7.8619e-08
+ 2.02271      4.79247e-07
+ 1.94791      1.66023e-06
+ 1.88978      8.78994e-07
+ 1.8386       5.42755e-06
+ 1.78317      2.8918e-06
+ 1.69017      1.12776e-06
+ 1.61562      9.71997e-06
+ 1.56966      8.96599e-07
+ 1.50546      1.0773e-06
+ 1.40128      3.5159e-07
+ 1.3065       1.67571e-06
+ 1.23311      2.1518e-06
+-1.20435      8.11225e-07
+ 1.15604      9.86725e-06
+-1.12591      1.5612e-07
+ 1.09311      4.48377e-06
+-1.0241       3.04227e-06
+ 1.01359      9.4811e-06
+ 0.930716     7.224e-06
+-0.925699     6.41773e-07
+-0.889864     1.40319e-06
+ 0.853021     5.94915e-06
+-0.843434     4.67086e-08
+ 0.782816     1.59433e-05
+-0.735054     1.25071e-06
+ 0.705163     1.94427e-05
+-0.686887     2.61443e-06
+-0.667153     2.07543e-09
+-0.645258     3.04359e-06
+ 0.641295     3.52808e-05
+-0.625617     1.50866e-07
+-0.60217      1.49226e-06
+ 0.558246     3.34469e-05
+-0.542583     3.99659e-07
+-0.514273     6.89122e-07
+ 0.485372     4.90779e-05
+-0.472615     2.022e-06
+-0.433815     6.58244e-06
+ 0.413248     7.45906e-05
+-0.389845     1.34188e-05
+-0.346309     2.62342e-05
+ 0.344838     0.000119054
+-0.300278     6.2989e-05
+ 0.276287     0.000253021
+-0.250144     8.80125e-05
+ 0.211922     0.000528316
+-0.196624     0.000262998
+ 0.151585     0.00095939
+-0.146842     0.000728866
+-0.0935964    0.00188052
+ 0.0877278    0.00232425
+-0.0370114    0.0110401
+ 0.0266446    0.0211511
+-0.000219296  0.960213
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00200.pt
+storing basis
+Iter 1. Time: 174.80
+Iter 2. Time: 172.11
+Iter 3. Time: 172.57
+Iter 4. Time: 172.04
+Iter 5. Time: 171.66
+Iter 6. Time: 172.63
+Iter 7. Time: 172.57
+Iter 8. Time: 172.49
+Iter 9. Time: 172.23
+Iter 10. Time: 172.36
+Iter 11. Time: 172.41
+Iter 12. Time: 171.93
+Iter 13. Time: 172.29
+Iter 14. Time: 172.26
+Iter 15. Time: 172.33
+Iter 16. Time: 172.35
+Iter 17. Time: 172.31
+Iter 18. Time: 172.50
+Iter 19. Time: 172.38
+Iter 20. Time: 172.40
+Iter 21. Time: 172.04
+Iter 22. Time: 172.39
+Iter 23. Time: 176.08
+Iter 24. Time: 172.30
+Iter 25. Time: 172.26
+Iter 26. Time: 172.12
+Iter 27. Time: 171.97
+Iter 28. Time: 172.03
+Iter 29. Time: 171.95
+Iter 30. Time: 172.18
+Iter 31. Time: 171.95
+Iter 32. Time: 172.32
+Iter 33. Time: 172.66
+Iter 34. Time: 172.08
+Iter 35. Time: 171.94
+Iter 36. Time: 172.05
+Iter 37. Time: 171.98
+Iter 38. Time: 171.88
+Iter 39. Time: 172.25
+Iter 40. Time: 171.99
+Iter 41. Time: 171.75
+Iter 42. Time: 171.59
+Iter 43. Time: 171.66
+Iter 44. Time: 171.66
+Iter 45. Time: 172.03
+Iter 46. Time: 171.89
+Iter 47. Time: 171.98
+Iter 48. Time: 171.61
+Iter 49. Time: 172.21
+Iter 50. Time: 171.72
+Iter 51. Time: 171.79
+Iter 52. Time: 171.50
+Iter 53. Time: 171.66
+Iter 54. Time: 172.20
+Iter 55. Time: 176.08
+Iter 56. Time: 171.97
+Iter 57. Time: 171.84
+Iter 58. Time: 172.16
+Iter 59. Time: 172.18
+Iter 60. Time: 172.25
+Iter 61. Time: 172.30
+Iter 62. Time: 172.19
+Iter 63. Time: 172.09
+Iter 64. Time: 172.47
+Iter 65. Time: 172.24
+Iter 66. Time: 172.29
+Iter 67. Time: 172.47
+Iter 68. Time: 174.60
+Iter 69. Time: 172.94
+Iter 70. Time: 172.20
+Iter 71. Time: 172.55
+Iter 72. Time: 172.28
+Iter 73. Time: 172.05
+Iter 74. Time: 171.90
+Iter 75. Time: 171.72
+Iter 76. Time: 171.79
+Iter 77. Time: 172.13
+Iter 78. Time: 172.37
+Iter 79. Time: 172.48
+Iter 80. Time: 172.48
+Iter 81. Time: 171.87
+Iter 82. Time: 172.34
+Iter 83. Time: 172.34
+Iter 84. Time: 171.65
+Iter 85. Time: 171.73
+Iter 86. Time: 171.69
+Iter 87. Time: 172.03
+Iter 88. Time: 171.99
+Iter 89. Time: 172.07
+Iter 90. Time: 171.98
+Iter 91. Time: 170.07
+Iter 92. Time: 169.89
+Iter 93. Time: 169.66
+Iter 94. Time: 169.65
+Iter 95. Time: 170.28
+Iter 96. Time: 169.58
+Iter 97. Time: 169.74
+Iter 98. Time: 169.98
+Iter 99. Time: 170.75
+Iter 100. Time: 172.50
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+      value       weight
+-----------  -----------
+ 5.71678     3.19191e-06
+ 4.72364     1.19935e-06
+ 3.02244     1.08777e-07
+ 2.872       1.90049e-06
+ 2.76435     2.00187e-06
+ 2.68542     3.33796e-07
+ 2.41816     4.30834e-06
+ 2.30482     8.20171e-07
+ 2.24787     1.38476e-06
+ 2.04623     6.83602e-09
+ 1.90847     2.2959e-07
+ 1.84841     3.47278e-07
+ 1.76104     7.55017e-07
+ 1.75784     3.32154e-07
+ 1.64617     5.24562e-07
+ 1.60073     2.31341e-07
+ 1.53175     1.28145e-06
+ 1.49042     1.17493e-08
+ 1.46814     2.5956e-07
+ 1.39976     1.0875e-06
+ 1.36036     1.72017e-07
+ 1.35251     4.20396e-06
+ 1.34139     1.03729e-07
+ 1.30164     5.68738e-07
+ 1.29179     3.42007e-11
+-1.28695     9.09752e-08
+ 1.26221     2.2608e-07
+ 1.20964     3.16749e-07
+ 1.17113     3.87925e-07
+ 1.16114     1.45341e-06
+ 1.13646     3.65642e-06
+ 1.11997     2.11322e-06
+ 1.08355     2.00994e-07
+-1.06477     3.0975e-07
+ 1.06293     5.24233e-06
+ 1.04804     1.10813e-06
+ 0.997       1.40004e-07
+-0.983656    1.96528e-07
+ 0.971021    1.86151e-06
+ 0.938979    2.8579e-06
+ 0.921595    9.22617e-06
+-0.905356    1.96761e-07
+ 0.867872    3.2789e-06
+-0.840857    1.40978e-07
+ 0.838919    3.05537e-06
+ 0.803878    5.8978e-06
+-0.788009    2.24172e-09
+ 0.776174    5.17949e-06
+-0.770135    9.92178e-07
+-0.754765    3.42331e-07
+ 0.740674    7.16948e-06
+-0.737532    6.91286e-11
+ 0.713343    4.97156e-06
+-0.698342    6.04226e-06
+-0.680614    4.34904e-07
+-0.677931    4.80747e-07
+ 0.660298    1.01178e-05
+-0.642633    1.05727e-07
+ 0.631673    8.1274e-06
+-0.614631    8.53737e-06
+-0.59955     6.64391e-08
+ 0.589921    1.978e-05
+-0.584455    1.215e-09
+-0.563332    1.83867e-07
+ 0.559721    1.77328e-05
+-0.55322     2.88224e-07
+-0.531901    6.5314e-08
+ 0.514623    1.30729e-05
+-0.509382    1.19188e-06
+ 0.476825    1.90971e-05
+-0.476249    4.46466e-06
+-0.463571    1.92213e-06
+-0.440968    1.75869e-06
+ 0.440349    3.1531e-05
+-0.413229    2.78947e-06
+ 0.40143     3.0912e-05
+-0.386645    5.8089e-06
+ 0.363976    5.19326e-05
+-0.36098     3.78371e-06
+ 0.326906    7.80823e-05
+-0.326334    1.14783e-05
+-0.298823    6.10501e-06
+ 0.288568    8.11738e-05
+-0.264259    1.81805e-05
+ 0.250551    0.000132238
+-0.235462    2.45168e-05
+ 0.215763    0.000197343
+-0.204234    5.47128e-05
+ 0.177331    0.00027641
+-0.170647    6.18005e-05
+ 0.139239    0.000471078
+-0.135928    0.000166961
+ 0.103429    0.000920711
+-0.102622    0.0004084
+-0.0684807   0.00125768
+ 0.0673506   0.00240138
+-0.034602    0.00745822
+ 0.0327429   0.01153
+-0.00385115  0.417528
+ 0.00292642  0.556601
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00200.pt
+storing basis
+Iter 1. Time: 119.05
+Iter 2. Time: 116.97
+Iter 3. Time: 116.88
+Iter 4. Time: 117.15
+Iter 5. Time: 117.14
+Iter 6. Time: 117.08
+Iter 7. Time: 117.08
+Iter 8. Time: 116.93
+Iter 9. Time: 116.96
+Iter 10. Time: 116.65
+Iter 11. Time: 116.73
+Iter 12. Time: 116.92
+Iter 13. Time: 116.78
+Iter 14. Time: 117.04
+Iter 15. Time: 116.82
+Iter 16. Time: 116.93
+Iter 17. Time: 116.83
+Iter 18. Time: 116.83
+Iter 19. Time: 116.77
+Iter 20. Time: 116.77
+Iter 21. Time: 116.79
+Iter 22. Time: 116.94
+Iter 23. Time: 116.85
+Iter 24. Time: 116.87
+Iter 25. Time: 116.99
+Iter 26. Time: 116.77
+Iter 27. Time: 117.08
+Iter 28. Time: 116.93
+Iter 29. Time: 116.74
+Iter 30. Time: 116.93
+Iter 31. Time: 117.06
+Iter 32. Time: 117.04
+Iter 33. Time: 117.20
+Iter 34. Time: 118.36
+Iter 35. Time: 116.92
+Iter 36. Time: 116.88
+Iter 37. Time: 117.00
+Iter 38. Time: 117.33
+Iter 39. Time: 116.76
+Iter 40. Time: 116.49
+Iter 41. Time: 117.03
+Iter 42. Time: 116.90
+Iter 43. Time: 116.93
+Iter 44. Time: 117.10
+Iter 45. Time: 116.95
+Iter 46. Time: 117.01
+Iter 47. Time: 117.09
+Iter 48. Time: 116.83
+Iter 49. Time: 116.94
+Iter 50. Time: 117.04
+Iter 51. Time: 117.21
+Iter 52. Time: 116.92
+Iter 53. Time: 118.47
+Iter 54. Time: 116.80
+Iter 55. Time: 116.76
+Iter 56. Time: 116.78
+Iter 57. Time: 116.76
+Iter 58. Time: 116.80
+Iter 59. Time: 116.78
+Iter 60. Time: 116.82
+Iter 61. Time: 116.71
+Iter 62. Time: 116.70
+Iter 63. Time: 116.95
+Iter 64. Time: 116.62
+Iter 65. Time: 116.70
+Iter 66. Time: 116.83
+Iter 67. Time: 116.68
+Iter 68. Time: 117.06
+Iter 69. Time: 116.93
+Iter 70. Time: 116.94
+Iter 71. Time: 116.88
+Iter 72. Time: 119.86
+Iter 73. Time: 117.13
+Iter 74. Time: 117.01
+Iter 75. Time: 116.88
+Iter 76. Time: 116.88
+Iter 77. Time: 116.84
+Iter 78. Time: 116.99
+Iter 79. Time: 116.98
+Iter 80. Time: 116.98
+Iter 81. Time: 117.02
+Iter 82. Time: 116.62
+Iter 83. Time: 117.09
+Iter 84. Time: 116.92
+Iter 85. Time: 116.89
+Iter 86. Time: 118.24
+Iter 87. Time: 117.20
+Iter 88. Time: 116.99
+Iter 89. Time: 116.99
+Iter 90. Time: 116.99
+Iter 91. Time: 116.85
+Iter 92. Time: 116.73
+Iter 93. Time: 116.96
+Iter 94. Time: 116.68
+Iter 95. Time: 116.88
+Iter 96. Time: 117.09
+Iter 97. Time: 116.93
+Iter 98. Time: 116.92
+Iter 99. Time: 117.13
+Iter 100. Time: 117.43
+Preparing directory /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/b=None_matrix=hessian/
+hessian
+       value       weight
+------------  -----------
+14.3779       1.94368e-06
+11.0184       4.02429e-07
+ 8.06558      6.55189e-07
+ 7.31778      3.97515e-07
+ 6.50282      4.46345e-12
+ 5.01259      6.80873e-08
+ 4.57407      2.07521e-06
+ 3.81348      1.46991e-06
+ 3.50813      1.27726e-06
+ 3.4334       1.83621e-06
+ 3.23457      4.83736e-08
+ 2.81353      5.13438e-07
+ 2.69628      1.01255e-06
+ 2.42159      2.40082e-07
+ 2.1935       8.11307e-07
+ 1.84035      1.24062e-09
+ 1.73537      9.3521e-07
+ 1.4055       5.97147e-08
+ 1.30755      1.82482e-09
+ 1.27115      1.48485e-07
+ 1.1828       1.72562e-07
+ 1.14543      1.04212e-06
+ 1.07377      4.14732e-06
+ 1.02157      1.20863e-07
+ 0.931249     3.73784e-07
+ 0.908586     4.54442e-07
+ 0.870135     6.32623e-07
+ 0.841162     1.58856e-06
+ 0.823376     3.52328e-07
+ 0.801684     2.26492e-08
+ 0.780803     1.11219e-07
+ 0.750435     7.03126e-06
+ 0.739529     4.42549e-07
+ 0.704164     2.04983e-07
+ 0.699877     4.45097e-08
+ 0.690505     3.49967e-08
+ 0.659597     1.11171e-07
+ 0.636674     5.71645e-06
+ 0.631808     8.28162e-08
+ 0.617367     9.84393e-08
+ 0.612993     2.71476e-07
+ 0.585492     2.29966e-07
+ 0.584356     3.89281e-08
+ 0.564388     1.81762e-07
+ 0.560303     1.78588e-07
+ 0.544795     1.53723e-06
+ 0.519781     2.83935e-06
+ 0.514326     1.50703e-07
+ 0.498809     2.38593e-07
+ 0.486035     7.37852e-07
+ 0.472351     1.2058e-06
+ 0.454526     1.84352e-06
+ 0.445813     1.16724e-06
+ 0.42562      2.89235e-06
+ 0.411617     2.94703e-06
+ 0.396123     2.89586e-06
+ 0.385698     7.3616e-06
+ 0.367955     4.86904e-06
+ 0.349657     5.70341e-06
+ 0.337252     6.38838e-06
+ 0.325158     7.1983e-06
+ 0.312365     5.38285e-06
+ 0.296066     1.98319e-06
+ 0.275083     5.8958e-06
+ 0.256257     8.45339e-06
+ 0.243702     4.75154e-06
+ 0.23001      1.78542e-05
+ 0.213587     8.3573e-06
+ 0.200172     1.61041e-05
+ 0.187065     1.79599e-05
+ 0.172145     1.40634e-05
+ 0.156872     1.37e-05
+ 0.144671     1.28365e-05
+ 0.131164     1.96398e-05
+ 0.118228     1.66498e-05
+ 0.104984     3.08658e-05
+ 0.0939772    2.00309e-05
+ 0.0811111    3.61135e-05
+ 0.0691546    4.66686e-05
+ 0.0574981    6.47249e-05
+-0.0574757    1.22807e-06
+-0.0529486    4.55509e-08
+-0.0514618    5.35132e-07
+-0.0490192    1.11895e-06
+ 0.0477825    0.000112314
+-0.0463366    5.89216e-06
+-0.0430699    1.02452e-05
+-0.0392534    1.87076e-05
+ 0.037143     0.000213901
+-0.0342808    3.29563e-05
+-0.0297131    6.76832e-05
+ 0.0276078    0.000512042
+-0.0240679    0.000167268
+ 0.0189625    0.00104442
+-0.0179972    0.000512565
+-0.0118533    0.00158118
+ 0.0105016    0.00299994
+-0.00469502   0.0110485
+ 0.00275799   0.0434585
+-8.48831e-05  0.937754
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00225.pt
+storing basis
+Iter 1. Time: 174.52
+Iter 2. Time: 172.15
+Iter 3. Time: 172.29
+Iter 4. Time: 172.01
+Iter 5. Time: 172.18
+Iter 6. Time: 172.13
+Iter 7. Time: 172.44
+Iter 8. Time: 172.43
+Iter 9. Time: 172.26
+Iter 10. Time: 172.26
+Iter 11. Time: 172.23
+Iter 12. Time: 172.45
+Iter 13. Time: 172.50
+Iter 14. Time: 172.19
+Iter 15. Time: 172.44
+Iter 16. Time: 172.24
+Iter 17. Time: 175.06
+Iter 18. Time: 174.17
+Iter 19. Time: 172.24
+Iter 20. Time: 172.44
+Iter 21. Time: 172.30
+Iter 22. Time: 173.07
+Iter 23. Time: 172.64
+Iter 24. Time: 172.03
+Iter 25. Time: 172.24
+Iter 26. Time: 172.05
+Iter 27. Time: 172.56
+Iter 28. Time: 172.62
+Iter 29. Time: 172.31
+Iter 30. Time: 172.58
+Iter 31. Time: 172.51
+Iter 32. Time: 172.46
+Iter 33. Time: 172.61
+Iter 34. Time: 172.28
+Iter 35. Time: 172.42
+Iter 36. Time: 172.49
+Iter 37. Time: 172.52
+Iter 38. Time: 172.44
+Iter 39. Time: 172.34
+Iter 40. Time: 174.69
+Iter 41. Time: 172.24
+Iter 42. Time: 172.61
+Iter 43. Time: 172.75
+Iter 44. Time: 172.64
+Iter 45. Time: 172.96
+Iter 46. Time: 172.59
+Iter 47. Time: 172.48
+Iter 48. Time: 172.76
+Iter 49. Time: 172.44
+Iter 50. Time: 172.45
+Iter 51. Time: 172.41
+Iter 52. Time: 172.59
+Iter 53. Time: 172.79
+Iter 54. Time: 172.34
+Iter 55. Time: 172.65
+Iter 56. Time: 172.57
+Iter 57. Time: 172.64
+Iter 58. Time: 172.95
+Iter 59. Time: 172.48
+Iter 60. Time: 172.77
+Iter 61. Time: 172.76
+Iter 62. Time: 172.72
+Iter 63. Time: 174.38
+Iter 64. Time: 172.45
+Iter 65. Time: 172.51
+Iter 66. Time: 172.43
+Iter 67. Time: 172.58
+Iter 68. Time: 173.01
+Iter 69. Time: 172.38
+Iter 70. Time: 172.06
+Iter 71. Time: 172.33
+Iter 72. Time: 172.50
+Iter 73. Time: 172.96
+Iter 74. Time: 172.46
+Iter 75. Time: 172.61
+Iter 76. Time: 172.43
+Iter 77. Time: 172.43
+Iter 78. Time: 172.18
+Iter 79. Time: 172.14
+Iter 80. Time: 172.37
+Iter 81. Time: 172.31
+Iter 82. Time: 172.86
+Iter 83. Time: 172.42
+Iter 84. Time: 172.41
+Iter 85. Time: 173.23
+Iter 86. Time: 172.55
+Iter 87. Time: 172.69
+Iter 88. Time: 172.77
+Iter 89. Time: 172.45
+Iter 90. Time: 172.25
+Iter 91. Time: 172.54
+Iter 92. Time: 172.56
+Iter 93. Time: 172.75
+Iter 94. Time: 172.69
+Iter 95. Time: 172.35
+Iter 96. Time: 172.60
+Iter 97. Time: 172.66
+Iter 98. Time: 172.51
+Iter 99. Time: 172.39
+Iter 100. Time: 172.35
+hessian
+      value       weight
+-----------  -----------
+ 7.13961     1.58892e-06
+ 5.51368     2.35356e-06
+ 3.29895     4.35917e-08
+ 2.99625     2.85077e-06
+ 2.79208     1.0195e-07
+ 2.61831     4.4657e-07
+ 2.45265     2.80689e-06
+ 2.36755     4.83795e-07
+ 2.26521     3.19689e-07
+ 1.94462     4.13709e-07
+ 1.92556     4.9621e-10
+ 1.89432     6.28552e-08
+ 1.80982     2.35451e-06
+ 1.76619     6.06868e-08
+ 1.61981     7.35131e-07
+ 1.55126     3.49488e-06
+ 1.51523     1.89763e-06
+ 1.46996     2.96544e-07
+ 1.41625     2.53035e-07
+ 1.40408     1.84491e-08
+ 1.36074     9.86215e-07
+ 1.33878     1.44771e-07
+ 1.28895     2.79147e-07
+ 1.26342     8.98688e-07
+ 1.24728     2.51437e-07
+-1.2316      2.35261e-07
+ 1.20192     1.39765e-08
+ 1.196       4.44445e-07
+ 1.17445     3.9055e-07
+ 1.16799     2.92103e-07
+ 1.12316     2.21708e-07
+ 1.10983     4.02978e-06
+ 1.08988     2.27684e-06
+ 1.06956     1.15541e-06
+ 1.02414     8.15158e-07
+-1.00744     1.93894e-07
+ 0.996854    7.90192e-06
+ 0.973856    2.68044e-06
+-0.969746    4.43882e-07
+ 0.933646    2.85733e-06
+ 0.917717    2.45858e-06
+-0.88494     3.78809e-07
+ 0.875662    5.37105e-06
+-0.871443    9.99748e-07
+ 0.836557    5.65524e-06
+ 0.810989    4.29996e-06
+-0.798336    9.69958e-08
+-0.791797    1.0392e-07
+ 0.77167     4.09274e-06
+-0.762924    1.90154e-06
+ 0.732794    9.33315e-06
+-0.712287    5.44084e-07
+ 0.701562    1.10332e-05
+-0.68007     3.10102e-06
+-0.672967    1.27257e-06
+ 0.665918    7.09405e-06
+-0.658056    2.26931e-06
+-0.654917    1.13986e-07
+-0.644045    5.68919e-06
+ 0.623868    1.27982e-05
+-0.623147    2.23145e-06
+ 0.592955    1.54689e-05
+-0.592047    4.15358e-07
+-0.575415    1.49984e-08
+ 0.551929    1.78425e-05
+-0.551643    4.27709e-07
+-0.532508    1.48779e-07
+-0.51878     2.94417e-07
+ 0.511957    2.33537e-05
+-0.487419    2.91141e-06
+ 0.475599    1.92311e-05
+-0.475382    4.68103e-06
+-0.4394      1.80555e-06
+ 0.436768    3.14582e-05
+-0.418608    3.36029e-06
+ 0.398528    3.34752e-05
+-0.387332    2.26294e-06
+-0.364259    5.52947e-06
+ 0.362795    6.22577e-05
+-0.328175    7.16352e-06
+ 0.32347     6.06805e-05
+-0.302909    6.25431e-06
+ 0.285167    8.47583e-05
+-0.269128    1.0948e-05
+ 0.247469    0.000122314
+-0.238227    2.2436e-05
+ 0.20941     0.000190783
+-0.205804    4.47513e-05
+-0.176383    6.42341e-05
+ 0.172872    0.00026288
+-0.140533    0.000135964
+ 0.136247    0.000473362
+-0.106721    0.000348534
+ 0.09935     0.0009497
+-0.0731412   0.000979848
+ 0.0630191   0.00259983
+-0.0385704   0.00532274
+ 0.0284945   0.0146587
+-0.00664602  0.197789
+ 0.00152916  0.775518
+Using model PreResNet110
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Loading CIFAR10 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data
+Files already downloaded and verified
+Using 5000 samples for validation [deterministic split]
+Files already downloaded and verified
+Using train (45000) + test (5000)
+Preparing model
+{'depth': 110}
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/ckpts/c10/PreResNet110/SGDOPT/runeval1/checkpoint-00225.pt
+storing basis
+Iter 1. Time: 120.67
+Iter 2. Time: 118.38
+Iter 3. Time: 118.44
+Iter 4. Time: 118.41
+Iter 5. Time: 118.54
+Iter 6. Time: 118.41
+Iter 7. Time: 118.44
+Iter 8. Time: 118.40
+Iter 9. Time: 118.42
+Iter 10. Time: 118.41
+Iter 11. Time: 118.51
+Iter 12. Time: 118.42
+Iter 13. Time: 118.33
+Iter 14. Time: 118.54
+Iter 15. Time: 118.13
+Iter 16. Time: 118.39
+Iter 17. Time: 118.42
+Iter 18. Time: 118.35
+Iter 19. Time: 118.26
+Iter 20. Time: 118.35
+Iter 21. Time: 118.37
+Iter 22. Time: 118.32
+Iter 23. Time: 118.41
+Iter 24. Time: 118.18
+Iter 25. Time: 118.44
+Iter 26. Time: 118.19
+Iter 27. Time: 118.27
+Iter 28. Time: 118.39
+Iter 29. Time: 118.21
+Iter 30. Time: 118.33
+Iter 31. Time: 118.58
+Iter 32. Time: 118.52
+Iter 33. Time: 128.00
+Iter 34. Time: 121.86
+Iter 35. Time: 118.45
+Iter 36. Time: 118.52
+Iter 37. Time: 118.84
+Iter 38. Time: 118.61
+Iter 39. Time: 118.44
+Iter 40. Time: 118.41
+Iter 41. Time: 118.41
+Iter 42. Time: 118.63
+Iter 43. Time: 118.45
+Iter 44. Time: 118.57
+Iter 45. Time: 118.51
+Iter 46. Time: 118.59
+Iter 47. Time: 118.58
+Iter 48. Time: 118.42
+Iter 49. Time: 118.70
+Iter 50. Time: 118.42
+Iter 51. Time: 118.41
+Iter 52. Time: 118.71
+Iter 53. Time: 118.89
+Iter 54. Time: 118.57
+Iter 55. Time: 118.56
+Iter 56. Time: 118.59
+Iter 57. Time: 118.63
+Iter 58. Time: 118.45
+Iter 59. Time: 118.55
+Iter 60. Time: 118.57
+Iter 61. Time: 118.41
+Iter 62. Time: 118.39
+Iter 63. Time: 118.47
+Iter 64. Time: 118.55
+Iter 65. Time: 118.40
+Iter 66. Time: 121.98
+Iter 67. Time: 121.19
+Iter 68. Time: 118.51
+Iter 69. Time: 118.35
+Iter 70. Time: 118.66
+Iter 71. Time: 118.48
+Iter 72. Time: 118.56
+Iter 73. Time: 118.39
+Iter 74. Time: 118.47
+Iter 75. Time: 118.50
+Iter 76. Time: 118.53
+Iter 77. Time: 118.41
+Iter 78. Time: 118.56
+Iter 79. Time: 118.47
+Iter 80. Time: 118.47
+Iter 81. Time: 118.67
+Iter 82. Time: 118.64
+Iter 83. Time: 118.59
+Iter 84. Time: 118.72
+Iter 85. Time: 118.49
+Iter 86. Time: 118.84
+Iter 87. Time: 118.55
+Iter 88. Time: 118.59
+Iter 89. Time: 118.73
+Iter 90. Time: 118.93
+Iter 91. Time: 118.54
+Iter 92. Time: 119.18
+Iter 93. Time: 118.66
+Iter 94. Time: 118.65
+Iter 95. Time: 118.56
+Iter 96. Time: 118.67
+Iter 97. Time: 118.50
+Iter 98. Time: 119.43
+Iter 99. Time: 122.55
+Iter 100. Time: 118.26
+hessian
+       value       weight
+------------  -----------
+ 6.07205      2.35578e-07
+ 6.03444      7.41725e-07
+ 4.02728      1.79433e-06
+ 3.73519      2.15563e-08
+ 3.26255      1.69299e-07
+ 3.10436      1.58453e-06
+ 2.57202      2.67485e-07
+ 2.21712      3.14025e-07
+ 1.9589       2.63295e-06
+ 1.76567      8.84383e-09
+ 1.57568      1.03029e-07
+ 1.47647      1.95344e-07
+ 1.28072      2.13565e-08
+ 1.17122      1.04263e-07
+ 1.05312      5.06389e-06
+ 0.914789     2.0341e-07
+ 0.797183     8.71615e-07
+ 0.750448     2.37614e-06
+ 0.714951     2.56356e-06
+ 0.663699     2.20253e-06
+ 0.650404     6.24744e-07
+ 0.600491     5.2381e-08
+ 0.543064     1.55391e-06
+ 0.525491     1.00743e-07
+ 0.503573     8.57276e-07
+ 0.491007     4.5424e-08
+ 0.478252     1.31932e-06
+ 0.458506     2.3168e-06
+ 0.443269     1.79788e-06
+ 0.421789     7.00328e-07
+ 0.412258     8.4616e-07
+ 0.407418     8.42532e-07
+ 0.398088     1.1128e-06
+ 0.379061     8.46504e-07
+ 0.367408     9.18321e-07
+ 0.359089     3.60464e-09
+ 0.34362      2.60954e-09
+ 0.338859     1.86103e-07
+ 0.333916     1.30314e-08
+ 0.320234     5.73087e-10
+ 0.318242     1.69387e-07
+ 0.307828     9.38855e-08
+ 0.30428      2.21216e-07
+ 0.29405      2.62181e-08
+ 0.283998     1.98657e-07
+ 0.279768     4.47519e-07
+ 0.269372     3.81789e-07
+ 0.268727     1.17246e-06
+ 0.261795     4.12366e-07
+ 0.252809     3.90739e-07
+ 0.242896     9.5218e-09
+ 0.236302     1.49724e-06
+ 0.2298       4.18433e-07
+ 0.22136      6.17173e-07
+ 0.217636     6.19618e-06
+ 0.207838     1.00938e-06
+ 0.201325     2.52245e-06
+ 0.189031     4.98469e-07
+ 0.181516     2.88584e-06
+ 0.175214     1.86544e-06
+ 0.167387     2.97364e-06
+ 0.161935     3.19868e-06
+ 0.14904      3.87435e-06
+ 0.142213     6.26671e-06
+ 0.136608     4.02838e-06
+ 0.126763     9.52797e-06
+ 0.118723     7.46946e-06
+ 0.112869     6.62582e-06
+ 0.105698     1.13175e-05
+ 0.0981516    1.09181e-05
+ 0.0892958    1.07564e-05
+ 0.0822041    2.02024e-05
+ 0.0749961    1.86888e-05
+ 0.0689705    2.5507e-05
+ 0.0622133    1.58368e-05
+ 0.0553674    1.99758e-05
+ 0.0488656    2.35061e-05
+ 0.0428587    2.64116e-05
+ 0.0367071    3.52746e-05
+ 0.0310269    7.20674e-05
+-0.0284149    2.52384e-08
+-0.0270603    2.80859e-08
+-0.0255326    4.93601e-07
+ 0.0255033    0.000111989
+-0.0245053    2.20767e-06
+-0.0232241    1.00202e-06
+-0.0217578    3.24374e-06
+ 0.0203457    0.000155892
+-0.0190403    8.54999e-06
+-0.0168695    2.09623e-05
+ 0.0153884    0.000345504
+-0.0141173    5.51393e-05
+-0.0112338    0.000160735
+ 0.0108335    0.000783602
+-0.00814351   0.000553261
+ 0.00656361   0.00206908
+-0.00494554   0.00194513
+ 0.00251062   0.0138166
+-0.00122977   0.0422419
+ 1.97139e-05  0.937326

@@ -1,0 +1,17 @@
+
+	Python anaconda is now loaded in your environment.
+
+Preparing directory ../out/ImageNet32/WideResNet28x10/Shrinkage_SGD/seed=1_lr=0.03_swastart=31.0_slr=0.03_wdfreq=10_matrix=hessian_wdend=None_num_curv_samples=8/
+Using model WideResNet28x10
+Loading ImageNet32 from ../data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from ../data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from ../data/
+You are going to run models on the test set. Are you sure?
+Using train (8) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+SWAG training

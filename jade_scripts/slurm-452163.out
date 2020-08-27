@@ -1,0 +1,6 @@
+Preparing directory out/ImageNet32/WideResNet28x10--stats_batch=128/Shrinkage_SGD/seed=1_lr=0.03_swastart=161_slr=0.02_wdfreq=10_matrix=hessian_wdend=None/
+Using model WideResNet28x10--stats_batch=128
+Traceback (most recent call last):
+  File "../shrinkage_sgd.py", line 92, in <module>
+    model_cfg = getattr(models, args.model)
+AttributeError: module 'curvature.models' has no attribute 'WideResNet28x10--stats_batch=128'

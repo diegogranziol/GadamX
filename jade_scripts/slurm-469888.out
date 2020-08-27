@@ -1,0 +1,31 @@
+
+	Python anaconda is now loaded in your environment.
+
+Preparing directory ../out/ImageNet32/WideResNet28x10/Shrinkage_SGD/seed=1_lr=0.03_swastart=31.0_slr=0.03_wdfreq=10_matrix=hessian_wdend=None_num_curv_samples=32/
+Using model WideResNet28x10
+Loading ImageNet32 from ../data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from ../data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Loading ImageNet32 from ../data/
+You are going to run models on the test set. Are you sure?
+Using train (32) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+SWAG training
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:106: void cunn_ClassNLLCriterion_updateOutput_kernel(Dtype *, Dtype *, Dtype *, long *, Dtype *, int, int, int, int, long) [with Dtype = float, Acctype = float]: block: [0,0,0], thread: [1,0,0] Assertion `t >= 0 && t < n_classes` failed.
+/pytorch/aten/src/THCUNN/ClassNLLCriterion.cu:106: void cunn_ClassNLLCriterion_updateOutput_kernel(Dtype *, Dtype *, Dtype *, long *, Dtype *, int, int, int, int, long) [with Dtype = float, Acctype = float]: block: [0,0,0], thread: [16,0,0] Assertion `t >= 0 && t < n_classes` failed.
+Traceback (most recent call last):
+  File "../shrinkage_sgd.py", line 219, in <module>
+    train_res = utils.train_epoch(loaders['train'], model, criterion, optimizer)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 112, in train_epoch
+    loss.backward()
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/tensor.py", line 166, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/autograd/__init__.py", line 93, in backward
+    grad_tensors = _make_grads(tensors, grad_tensors)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/torch/autograd/__init__.py", line 35, in _make_grads
+    new_grads.append(torch.ones_like(out))
+RuntimeError: CUDA error: device-side assert triggered

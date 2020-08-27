@@ -1,0 +1,15 @@
+numpy imported
+Preparing directory /home/xwan/PycharmProjects/kfac-curvature/out/VGG16BN/Adam/run1ImageNet32/WideResNet28x10/PadamX/seed=1_lr=0.03_wd=0.0003_swa_start=31.0_swa_lr=0.03/
+Traceback (most recent call last):
+  File "../run_padam.py", line 112, in <module>
+    os.makedirs(args.dir, exist_ok=True)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  [Previous line repeated 5 more times]
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/home/xwan'

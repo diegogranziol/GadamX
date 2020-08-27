@@ -1,0 +1,102 @@
+
+	Python anaconda is now loaded in your environment.
+
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/PadamX/seed=5_lr=0.03_wd=0.0003_swa_start=30.0_swa_lr=0.0005/
+Using model WideResNet28x10
+Loading ImageNet32 from ../../curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+No Covariance Estimation
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+  ep        lr    tr_loss    tr_acc    te_loss    te_acc    te_top5_acc  swa_tr_loss    swa_tr_acc    swa_te_loss    swa_te_acc    swa_te_top5_acc         time    mem_usage
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+   1    0.0300     4.7097   12.8206     3.8911   21.5640        45.0180                                                                               2260.7355       0.6950
+   2    0.0300     3.2866   30.0517     3.2424   31.5340        57.3140                                                                               2261.9026       0.6950
+   3    0.0300     2.7778   38.4838     2.8497   37.8820        64.1199                                                                               2260.0447       0.6950
+   4    0.0300     2.4777   43.9235     2.6579   41.1600        67.5600                                                                               2257.8543       0.6950
+   5    0.0300     2.2706   47.6933     2.5160   44.2520        70.0660                                                                               2258.4131       0.6950
+   6    0.0300     2.1179   50.5289     2.4198   45.8340        71.7760                                                                               2255.5908       0.6950
+   7    0.0300     1.9998   52.8575     2.3093   48.1060        73.3960                                                                               2254.5803       0.6950
+   8    0.0300     1.9054   54.6780     2.2859   49.0480        74.0700                                                                               2254.4205       0.6950
+   9    0.0300     1.8258   56.2407     2.2289   49.7980        75.2760                                                                               2256.0357       0.6950
+  10    0.0300     1.7608   57.4887     2.2388   49.8960        74.7280                                                                               2255.1523       0.6950
+  11    0.0300     1.7053   58.5651     2.2239   50.3620        75.4901                                                                               2255.7664       0.6950
+  12    0.0300     1.6549   59.5539     2.2038   50.8460        75.3940                                                                               2253.3215       0.6950
+  13    0.0300     1.6132   60.3789     2.1812   51.2460        76.0421                                                                               2254.4206       0.6950
+  14    0.0300     1.5754   61.1132     2.1895   51.2640        75.9320                                                                               2253.1194       0.6950
+  15    0.0300     1.5400   61.8401     2.1928   51.7460        76.0880                                                                               2255.1892       0.6950
+  16    0.0300     1.5092   62.4692     2.1554   52.0020        76.4460                                                                               2252.0547       0.6950
+  17    0.0300     1.4820   62.9753     2.1923   51.9020        76.5940                                                                               2263.0007       0.6950
+  18    0.0300     1.4556   63.5782     2.1697   51.9500        76.5400                                                                               2251.7377       0.6950
+  19    0.0300     1.4315   63.9849     2.1616   52.1940        76.7580                                                                               2259.0492       0.6950
+  20    0.0300     1.4108   64.3646     2.1324   53.1780        77.2040                                                                               2250.9168       0.6950
+  21    0.0300     1.3904   64.9167     2.1298   52.7720        77.2460                                                                               2252.4614       0.6950
+  22    0.0300     1.3722   65.2197     2.1345   53.1160        77.4020                                                                               2251.7825       0.6950
+  23    0.0300     1.3539   65.6035     2.1508   53.2160        77.4420                                                                               2258.5969       0.6950
+  24    0.0300     1.3370   65.9446     2.1524   53.1800        77.3500                                                                               2251.1679       0.6950
+  25    0.0300     1.3229   66.1897     2.1348   53.3520        77.5721                                                                               2252.0733       0.6950
+  26    0.0300     1.3075   66.5458     2.1766   53.1500        77.1980                                                                               2251.4725       0.6950
+  27    0.0285     1.2661   67.4223     2.1023   53.7200        77.9180                                                                               2267.5740       0.6950
+  28    0.0270     1.2190   68.4954     2.1366   53.9060        77.8980                                                                               2253.3824       0.6950
+  29    0.0255     1.1766   69.3990     2.1170   54.4620        78.4261                                                                               2260.4266       0.6950
+  30    0.0241     1.1300   70.4141     2.1374   54.2820        78.3560                                                                               2252.0246       0.6950
+  31    0.0226     1.0846   71.3898     2.0959   54.7040        78.4580         0.9364       75.0450         2.0044       55.7240            79.3600  2261.7157       0.6950
+  32    0.0226     1.0738   71.6126     2.0987   54.8800        78.6380         0.7089       81.1410         1.8372       59.0540            81.8300  2250.9238       0.8333
+  33    0.0226     1.0677   71.6897     2.1398   54.3940        78.5900         0.6400       83.0172         1.7895       60.1120            82.4901  2258.8158       0.8333
+  34    0.0226     1.0613   71.8058     2.1318   54.8740        78.7660         0.6009       84.1112         1.7662       60.7480            83.0220  2250.8160       0.8333
+  35    0.0226     1.0544   71.9346     2.1324   54.2360        78.4300         0.5764       84.8080         1.7556       61.1900            83.1501  2261.7196       0.8333
+  36    0.0226     1.0476   72.0712     2.1696   53.9480        77.9760         0.5600       85.2337         1.7497       61.3240            83.2880  2250.3536       0.8333
+  37    0.0226     1.0411   72.1723     2.1845   54.3340        78.2421         0.5452       85.5988         1.7473       61.3980            83.3760  2259.1138       0.8333
+  38    0.0226     1.0317   72.3461     2.2003   53.8240        77.9081         0.5333       85.9190         1.7429       61.5980            83.4620  2250.1592       0.8333
+  39    0.0226     1.0254   72.4761     2.1906   54.5320        78.3960         0.5227       86.2064         1.7410       61.6720            83.5520  2257.0171       0.8333
+  40    0.0226     1.0202   72.6225     2.1825   54.3180        78.0000         0.5135       86.4575         1.7387       61.6819            83.6221  2251.5314       0.8333
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+  ep        lr    tr_loss    tr_acc    te_loss    te_acc    te_top5_acc    swa_tr_loss    swa_tr_acc    swa_te_loss    swa_te_acc    swa_te_top5_acc       time    mem_usage
+----  --------  ---------  --------  ---------  --------  -------------  -------------  ------------  -------------  ------------  -----------------  ---------  -----------
+  41    0.0226     1.0118   72.8188     2.1992   53.7760        77.5820         0.5067       86.6431         1.7370       61.7840            83.6700  2262.5681       0.8333
+  42    0.0226     1.0048   72.9259     2.2242   54.2140        77.9640         0.4990       86.8255         1.7362       61.8180            83.6440  2250.4843       0.8333
+  43    0.0226     0.9968   73.1073     2.1764   54.3500        78.2100         0.4928       87.0016         1.7363       61.8900            83.7020  2256.2361       0.8333
+  44    0.0226     0.9909   73.2594     2.1852   54.6980        78.3760         0.4862       87.1926         1.7364       61.9660            83.7360  2250.5224       0.8333
+  45    0.0226     0.9857   73.3233     2.1747   54.6500        78.3641         0.4805       87.3337         1.7365       61.9640            83.7700  2254.9134       0.8333
+Traceback (most recent call last):
+  File "../run_padam.py", line 314, in <module>
+    model=model
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 1054, in save_weight_norm
+    linf_norms=linf_norm
+  File "<__array_function__ internals>", line 6, in savez
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 632, in savez
+    _savez(file, args, kwds, False)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 730, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 119, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+OSError: [Errno 27] File too large: '../out/ImageNet32/WideResNet28x10/PadamX/seed=5_lr=0.03_wd=0.0003_swa_start=30.0_swa_lr=0.0005/weight_norm-00046.pt.npz'
+numpy imported
+Preparing directory ../out/ImageNet32/WideResNet28x10/PadamX/seed=6_lr=0.03_wd=0.0003_swa_start=30.0_swa_lr=0.0005/
+Using model WideResNet28x10
+Loading ImageNet32 from ../../curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+No Covariance Estimation
+Traceback (most recent call last):
+  File "../run_padam.py", line 314, in <module>
+    model=model
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/utils.py", line 1054, in save_weight_norm
+    linf_norms=linf_norm
+  File "<__array_function__ internals>", line 6, in savez
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 632, in savez
+    _savez(file, args, kwds, False)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 730, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/site-packages/numpy/lib/npyio.py", line 119, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/.conda/envs/diegorubin/lib/python3.7/zipfile.py", line 1182, in __init__
+    self.fp = io.open(file, filemode)
+OSError: [Errno 27] File too large: '../out/ImageNet32/WideResNet28x10/PadamX/seed=6_lr=0.03_wd=0.0003_swa_start=30.0_swa_lr=0.0005/weight_norm-00001.pt.npz'

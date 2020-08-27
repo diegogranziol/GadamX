@@ -1,0 +1,16 @@
+
+	Python anaconda is now loaded in your environment.
+
+Preparing directory ../out/ImageNet32/WideResNet28x10/Shrinkage_SGD/seed=1_lr=0.03_swastart=31.0_slr=0.03_wdfreq=10_matrix=hessian_wdend=None/
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+Traceback (most recent call last):
+  File "../shrinkage_sgd.py", line 106, in <module>
+    use_validation=not args.use_test,
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 89, in loaders
+    dataset, path, transform_train, transform_test, use_validation=use_validation, val_size=val_size)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/data.py", line 24, in datasets
+    train_set = ds(root=path, train=True, download=False, transform=transform_train)
+  File "/jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/curvature/imagenet32_old.py", line 81, in __init__
+    fo = open(file, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/imagenet32/Imagenet32_train_npz/train_data_batch_1.npz'

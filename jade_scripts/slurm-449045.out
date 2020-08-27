@@ -1,0 +1,14 @@
+
+	Python anaconda is now loaded in your environment.
+
+directory is /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=10.0_slr=0.03/
+Using model WideResNet28x10
+Loading ImageNet32 from /jmain01/home/JAD017/sjr02/dxg49-sjr02/curvature/data/
+You are going to run models on the test set. Are you sure?
+Using train (1281167) + test (50000)
+Preparing model
+{'depth': 28, 'widen_factor': 10}
+SWA training
+Loading /jmain01/home/JAD017/sjr02/dxg49-sjr02/kfac-curvature/out/ImageNet32/WideResNet28x10/SGDSWA/seed=1_lr=0.03_mom=0.9_wd=8e-06_start=10.0_slr=0.03/checkpoint-00010.pt
+slurmstepd-dgj410: error: *** JOB 449045 ON dgj410 CANCELLED AT 2020-01-16T13:58:05 ***
+slurmstepd-dgj410: error: task_p_post_term: rmdir(/dev/cpuset/slurm_dgj410_449045/slurm449045.4294967294_0) failed Device or resource busy
